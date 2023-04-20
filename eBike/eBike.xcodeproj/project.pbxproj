@@ -21,9 +21,7 @@
 		25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6729F1FAB90020D84B /* PresenterInterface.swift */; };
 		25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6929F1FACB0020D84B /* InteractorInterface.swift */; };
 		25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6B29F1FADA0020D84B /* RouterInterface.swift */; };
-		2560CCBA7E2D929C8D6C98A3 /* Pods_eBikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3E6C60BB07860C425B7CFDF /* Pods_eBikeTests.framework */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
-		B6B3F7935222BBB863407A86 /* Pods_eBike_eBikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB1BC42C964A80CB98C2E14 /* Pods_eBike_eBikeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		015F1580D0A81BB8AA9A8D6C /* Pods-eBike-eBikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike-eBikeUITests.debug.xcconfig"; path = "Target Support Files/Pods-eBike-eBikeUITests/Pods-eBike-eBikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		1BB1BC42C964A80CB98C2E14 /* Pods_eBike_eBikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike_eBikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.release.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.release.xcconfig"; sourceTree = "<group>"; };
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,11 +62,7 @@
 		25360F6929F1FACB0020D84B /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		25360F6B29F1FADA0020D84B /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
-		33F11FBF1F3E304C15DA4F90 /* Pods-eBike-eBikeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike-eBikeUITests.release.xcconfig"; path = "Target Support Files/Pods-eBike-eBikeUITests/Pods-eBike-eBikeUITests.release.xcconfig"; sourceTree = "<group>"; };
-		768BA5FDFB8B7A00E918E9A4 /* Pods-eBikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBikeTests.release.xcconfig"; path = "Target Support Files/Pods-eBikeTests/Pods-eBikeTests.release.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3E6C60BB07860C425B7CFDF /* Pods_eBikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EDCB15470E429DDB80950A93 /* Pods-eBikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBikeTests.debug.xcconfig"; path = "Target Support Files/Pods-eBikeTests/Pods-eBikeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2560CCBA7E2D929C8D6C98A3 /* Pods_eBikeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B3F7935222BBB863407A86 /* Pods_eBike_eBikeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +186,6 @@
 			children = (
 				2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */,
 				1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */,
-				015F1580D0A81BB8AA9A8D6C /* Pods-eBike-eBikeUITests.debug.xcconfig */,
-				33F11FBF1F3E304C15DA4F90 /* Pods-eBike-eBikeUITests.release.xcconfig */,
-				EDCB15470E429DDB80950A93 /* Pods-eBikeTests.debug.xcconfig */,
-				768BA5FDFB8B7A00E918E9A4 /* Pods-eBikeTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -209,8 +195,6 @@
 			isa = PBXGroup;
 			children = (
 				BB06B36702166CF86FC6B55E /* Pods_eBike.framework */,
-				1BB1BC42C964A80CB98C2E14 /* Pods_eBike_eBikeUITests.framework */,
-				E3E6C60BB07860C425B7CFDF /* Pods_eBikeTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -240,7 +224,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25360F5729F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeTests" */;
 			buildPhases = (
-				00782F3AE8B5F7072E3E2A4E /* [CP] Check Pods Manifest.lock */,
 				25360F3C29F1F84D0020D84B /* Sources */,
 				25360F3D29F1F84D0020D84B /* Frameworks */,
 				25360F3E29F1F84D0020D84B /* Resources */,
@@ -259,7 +242,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 25360F5A29F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeUITests" */;
 			buildPhases = (
-				CDE7941FFBB55982D89BEB4E /* [CP] Check Pods Manifest.lock */,
 				25360F4629F1F84D0020D84B /* Sources */,
 				25360F4729F1F84D0020D84B /* Frameworks */,
 				25360F4829F1F84D0020D84B /* Resources */,
@@ -344,28 +326,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00782F3AE8B5F7072E3E2A4E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eBikeTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B05FF317661D0EA289E72964 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,28 +342,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-eBike-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDE7941FFBB55982D89BEB4E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eBike-eBikeUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -645,7 +583,6 @@
 		};
 		25360F5829F1F84D0020D84B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDCB15470E429DDB80950A93 /* Pods-eBikeTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -666,7 +603,6 @@
 		};
 		25360F5929F1F84D0020D84B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 768BA5FDFB8B7A00E918E9A4 /* Pods-eBikeTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -687,7 +623,6 @@
 		};
 		25360F5B29F1F84D0020D84B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 015F1580D0A81BB8AA9A8D6C /* Pods-eBike-eBikeUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -706,7 +641,6 @@
 		};
 		25360F5C29F1F84D0020D84B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33F11FBF1F3E304C15DA4F90 /* Pods-eBike-eBikeUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

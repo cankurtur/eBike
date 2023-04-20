@@ -6,14 +6,5 @@ target 'eBike' do
   use_frameworks!
 
   # Pods for eBike
-
-  target 'eBikeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'eBikeUITests' do
-    # Pods for testing
-  end
-
+  pod 'SwiftGen', '~> 6.0'
 end
