@@ -10,12 +10,17 @@
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3229F1F84C0020D84B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F3129F1F84C0020D84B /* ViewController.swift */; };
-		25360F3529F1F84C0020D84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3329F1F84C0020D84B /* Main.storyboard */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
 		25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */; };
 		25360F4529F1F84D0020D84B /* eBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4429F1F84D0020D84B /* eBikeTests.swift */; };
 		25360F4F29F1F84D0020D84B /* eBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4E29F1F84D0020D84B /* eBikeUITests.swift */; };
 		25360F5129F1F84D0020D84B /* eBikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */; };
+		25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6029F1FA4C0020D84B /* BaseViewController.swift */; };
+		25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6329F1FA740020D84B /* NSObjectExtension.swift */; };
+		25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6529F1FAA00020D84B /* ViewInterface.swift */; };
+		25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6729F1FAB90020D84B /* PresenterInterface.swift */; };
+		25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6929F1FACB0020D84B /* InteractorInterface.swift */; };
+		25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6B29F1FADA0020D84B /* RouterInterface.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,6 @@
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		25360F3129F1F84C0020D84B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		25360F3429F1F84C0020D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		25360F3629F1F84D0020D84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25360F3929F1F84D0020D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25360F3B29F1F84D0020D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +53,12 @@
 		25360F4A29F1F84D0020D84B /* eBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F4E29F1F84D0020D84B /* eBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITests.swift; sourceTree = "<group>"; };
 		25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25360F6029F1FA4C0020D84B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		25360F6329F1FA740020D84B /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		25360F6529F1FAA00020D84B /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		25360F6729F1FAB90020D84B /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		25360F6929F1FACB0020D84B /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		25360F6B29F1FADA0020D84B /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +109,10 @@
 		25360F2C29F1F84C0020D84B /* eBike */ = {
 			isa = PBXGroup;
 			children = (
-				25360F2D29F1F84C0020D84B /* AppDelegate.swift */,
-				25360F2F29F1F84C0020D84B /* SceneDelegate.swift */,
+				25360F5D29F1F9A50020D84B /* App */,
+				25360F5E29F1FA330020D84B /* Modulse */,
+				25360F6229F1FA5F0020D84B /* Extensions */,
 				25360F3129F1F84C0020D84B /* ViewController.swift */,
-				25360F3329F1F84C0020D84B /* Main.storyboard */,
 				25360F3629F1F84D0020D84B /* Assets.xcassets */,
 				25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */,
 				25360F3B29F1F84D0020D84B /* Info.plist */,
@@ -125,6 +135,43 @@
 				25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */,
 			);
 			path = eBikeUITests;
+			sourceTree = "<group>";
+		};
+		25360F5D29F1F9A50020D84B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25360F2D29F1F84C0020D84B /* AppDelegate.swift */,
+				25360F2F29F1F84C0020D84B /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25360F5E29F1FA330020D84B /* Modulse */ = {
+			isa = PBXGroup;
+			children = (
+				25360F5F29F1FA3D0020D84B /* Base */,
+			);
+			path = Modulse;
+			sourceTree = "<group>";
+		};
+		25360F5F29F1FA3D0020D84B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				25360F6029F1FA4C0020D84B /* BaseViewController.swift */,
+				25360F6529F1FAA00020D84B /* ViewInterface.swift */,
+				25360F6729F1FAB90020D84B /* PresenterInterface.swift */,
+				25360F6929F1FACB0020D84B /* InteractorInterface.swift */,
+				25360F6B29F1FADA0020D84B /* RouterInterface.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		25360F6229F1FA5F0020D84B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +280,6 @@
 			files = (
 				25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */,
 				25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */,
-				25360F3529F1F84C0020D84B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
 				25360F3229F1F84C0020D84B /* ViewController.swift in Sources */,
+				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
+				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
 				25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */,
+				25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */,
+				25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +349,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		25360F3329F1F84C0020D84B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				25360F3429F1F84C0020D84B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +486,6 @@
 				INFOPLIST_FILE = eBike/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +513,6 @@
 				INFOPLIST_FILE = eBike/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
