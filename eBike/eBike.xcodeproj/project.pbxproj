@@ -21,6 +21,13 @@
 		25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6729F1FAB90020D84B /* PresenterInterface.swift */; };
 		25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6929F1FACB0020D84B /* InteractorInterface.swift */; };
 		25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6B29F1FADA0020D84B /* RouterInterface.swift */; };
+		25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7229F1FCFF0020D84B /* Localizable.strings */; };
+		25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7529F1FD1B0020D84B /* Colors.xcassets */; };
+		25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7729F1FDE80020D84B /* swiftgen.yml */; };
+		25360F7B29F1FEB30020D84B /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7A29F1FEB30020D84B /* L10n.swift */; };
+		25360F7D29F1FEC40020D84B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7C29F1FEC40020D84B /* Images.swift */; };
+		25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7E29F1FECC0020D84B /* Fonts.swift */; };
+		25360F8129F1FED70020D84B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8029F1FED70020D84B /* Colors.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +68,13 @@
 		25360F6729F1FAB90020D84B /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
 		25360F6929F1FACB0020D84B /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
 		25360F6B29F1FADA0020D84B /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
+		25360F7229F1FCFF0020D84B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		25360F7529F1FD1B0020D84B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		25360F7729F1FDE80020D84B /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		25360F7A29F1FEB30020D84B /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		25360F7C29F1FEC40020D84B /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		25360F7E29F1FECC0020D84B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		25360F8029F1FED70020D84B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +108,7 @@
 		25360F2129F1F84C0020D84B = {
 			isa = PBXGroup;
 			children = (
+				25360F7729F1FDE80020D84B /* swiftgen.yml */,
 				25360F2C29F1F84C0020D84B /* eBike */,
 				25360F4329F1F84D0020D84B /* eBikeTests */,
 				25360F4D29F1F84D0020D84B /* eBikeUITests */,
@@ -119,9 +134,8 @@
 				25360F5D29F1F9A50020D84B /* App */,
 				25360F5E29F1FA330020D84B /* Modulse */,
 				25360F6229F1FA5F0020D84B /* Extensions */,
+				25360F6D29F1FCC60020D84B /* Resources */,
 				25360F3129F1F84C0020D84B /* ViewController.swift */,
-				25360F3629F1F84D0020D84B /* Assets.xcassets */,
-				25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */,
 				25360F3B29F1F84D0020D84B /* Info.plist */,
 			);
 			path = eBike;
@@ -181,13 +195,59 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		25360F6D29F1FCC60020D84B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25360F6E29F1FCD70020D84B /* Strings */,
+				25360F6F29F1FCDD0020D84B /* Fonts */,
+				25360F7029F1FCE20020D84B /* Colors */,
+				25360F7129F1FCE70020D84B /* Images */,
+				25360F3629F1F84D0020D84B /* Assets.xcassets */,
+				25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25360F6E29F1FCD70020D84B /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				25360F7A29F1FEB30020D84B /* L10n.swift */,
+				25360F7229F1FCFF0020D84B /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		25360F6F29F1FCDD0020D84B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25360F7E29F1FECC0020D84B /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25360F7029F1FCE20020D84B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				25360F8029F1FED70020D84B /* Colors.swift */,
+				25360F7529F1FD1B0020D84B /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		25360F7129F1FCE70020D84B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				25360F7C29F1FEC40020D84B /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */,
 				1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -207,6 +267,7 @@
 			buildConfigurationList = 25360F5429F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBike" */;
 			buildPhases = (
 				B05FF317661D0EA289E72964 /* [CP] Check Pods Manifest.lock */,
+				25360F7929F1FE070020D84B /* SwiftGen */,
 				25360F2629F1F84C0020D84B /* Sources */,
 				25360F2729F1F84C0020D84B /* Frameworks */,
 				25360F2829F1F84C0020D84B /* Resources */,
@@ -305,6 +366,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */,
+				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
+				25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */,
 				25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -326,6 +390,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25360F7929F1FE070020D84B /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
 		B05FF317661D0EA289E72964 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,8 +440,12 @@
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
 				25360F3229F1F84C0020D84B /* ViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
+				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,
 				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
+				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
+				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
 				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
 				25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */,
 				25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */,
