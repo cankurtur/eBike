@@ -7,3 +7,8 @@
 */
 
 "general.appName" = "eBike";
+"general.areYouOffline" = "Are you offline?";
+"general.checkInternetConnection" = "Check internet connection and try again";
+"general.TryAgain" = "Try again";
+"general.ok" = "OK";
+"general.error_title" = "Ups! Something went wrong";
