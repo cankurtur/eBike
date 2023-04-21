@@ -41,6 +41,19 @@
 		25360F9C29F201480020D84B /* MonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9B29F201480020D84B /* MonitorManager.swift */; };
 		25360F9E29F201810020D84B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9D29F201810020D84B /* Config.swift */; };
 		25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */; };
+		25360FA329F20DF00020D84B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA229F20DF00020D84B /* MainViewController.swift */; };
+		25360FA529F20E260020D84B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA429F20E260020D84B /* MainPresenter.swift */; };
+		25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA629F20E2D0020D84B /* MainInteractor.swift */; };
+		25360FA929F20E330020D84B /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA829F20E330020D84B /* MainRouter.swift */; };
+		25360FAB29F2136F0020D84B /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FAA29F2136F0020D84B /* TabType.swift */; };
+		25360FCE29F2DC290020D84B /* CircularSpotifyText-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */; };
+		25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */; };
+		25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */; };
+		25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */; };
+		25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */; };
+		25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */; };
+		25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */; };
+		25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +114,19 @@
 		25360F9B29F201480020D84B /* MonitorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorManager.swift; sourceTree = "<group>"; };
 		25360F9D29F201810020D84B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenion.swift; sourceTree = "<group>"; };
+		25360FA229F20DF00020D84B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25360FA429F20E260020D84B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		25360FA629F20E2D0020D84B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		25360FA829F20E330020D84B /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		25360FAA29F2136F0020D84B /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Black.otf"; sourceTree = "<group>"; };
+		25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Light.otf"; sourceTree = "<group>"; };
+		25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Book.otf"; sourceTree = "<group>"; };
+		25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Bold.otf"; sourceTree = "<group>"; };
+		25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Medium.otf"; sourceTree = "<group>"; };
+		25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-MediumItalic.otf"; sourceTree = "<group>"; };
+		25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BookItalic.otf"; sourceTree = "<group>"; };
+		25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BlackItalic.otf"; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -158,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				25360F5D29F1F9A50020D84B /* App */,
-				25360F5E29F1FA330020D84B /* Modulse */,
+				25360F5E29F1FA330020D84B /* Module */,
 				25360F8429F200130020D84B /* Network */,
 				25360F9229F200CC0020D84B /* Extensions */,
 				25360F9829F201220020D84B /* Utils */,
@@ -196,12 +222,13 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		25360F5E29F1FA330020D84B /* Modulse */ = {
+		25360F5E29F1FA330020D84B /* Module */ = {
 			isa = PBXGroup;
 			children = (
 				25360F5F29F1FA3D0020D84B /* Base */,
+				25360FA129F20DCF0020D84B /* Main */,
 			);
-			path = Modulse;
+			path = Module;
 			sourceTree = "<group>";
 		};
 		25360F5F29F1FA3D0020D84B /* Base */ = {
@@ -250,6 +277,14 @@
 		25360F6F29F1FCDD0020D84B /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */,
+				25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */,
+				25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */,
+				25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */,
+				25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */,
+				25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */,
+				25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */,
+				25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */,
 				25360F7E29F1FECC0020D84B /* Fonts.swift */,
 			);
 			path = Fonts;
@@ -321,6 +356,18 @@
 				25360F9D29F201810020D84B /* Config.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		25360FA129F20DCF0020D84B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25360FA229F20DF00020D84B /* MainViewController.swift */,
+				25360FA429F20E260020D84B /* MainPresenter.swift */,
+				25360FA629F20E2D0020D84B /* MainInteractor.swift */,
+				25360FA829F20E330020D84B /* MainRouter.swift */,
+				25360FAA29F2136F0020D84B /* TabType.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
@@ -448,8 +495,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */,
+				25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */,
+				25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */,
 				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
+				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,
+				25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */,
+				25360FCE29F2DC290020D84B /* CircularSpotifyText-Black.otf in Resources */,
+				25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */,
+				25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */,
 				25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */,
 				25360F8329F1FFB70020D84B /* Config.plist in Resources */,
 				25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */,
@@ -538,8 +593,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
+				25360FA929F20E330020D84B /* MainRouter.swift in Sources */,
+				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
 				25360F3229F1F84C0020D84B /* ViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
 				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
 				25360F9E29F201810020D84B /* Config.swift in Sources */,
@@ -551,9 +609,11 @@
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
 				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
+				25360FAB29F2136F0020D84B /* TabType.swift in Sources */,
 				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
 				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
 				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
+				25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */,
 				25360F9729F201010020D84B /* Typealias.swift in Sources */,
 				25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */,
 				25360F8B29F200560020D84B /* Responses.swift in Sources */,
