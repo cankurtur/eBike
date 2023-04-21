@@ -15,17 +15,17 @@ internal enum L10n {
     ///   eBike
     /// 
     ///   Created by Can Kurtur on 21.04.2023.
-    internal static let appName = L10n.tr("Localizable", "general.appName", fallback: "eBike")
-    /// Are you offline?
     internal static let areYouOffline = L10n.tr("Localizable", "general.areYouOffline", fallback: "Are you offline?")
     /// Check internet connection and try again
     internal static let checkInternetConnection = L10n.tr("Localizable", "general.checkInternetConnection", fallback: "Check internet connection and try again")
-    /// Ups! Something went wrong
-    internal static let errorTitle = L10n.tr("Localizable", "general.error_title", fallback: "Ups! Something went wrong")
     /// OK
     internal static let ok = L10n.tr("Localizable", "general.ok", fallback: "OK")
     /// Try again
     internal static let tryAgain = L10n.tr("Localizable", "general.TryAgain", fallback: "Try again")
+  }
+  internal enum TabBarItems {
+    /// Map
+    internal static let map = L10n.tr("Localizable", "tabBarItems.map", fallback: "Map")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
