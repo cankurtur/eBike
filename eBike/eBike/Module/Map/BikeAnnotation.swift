@@ -8,7 +8,9 @@
 import Foundation
 import MapKit
 
-class BikeAnnotation: NSObject, Encodable, Decodable, MKAnnotation {
+// MARK: - BikeAnnotationModel
+
+final class BikeAnnotation: NSObject, MKAnnotation {
     let id: String
     let name: String
     let color: String
@@ -16,12 +18,12 @@ class BikeAnnotation: NSObject, Encodable, Decodable, MKAnnotation {
     let location: LocationModel
     let rented: Bool
     
-    init(bikesResponseModel: BikesResponseModel) {
+    init(from bikesResponseModel: BikesResponseModel) {
         self.id = bikesResponseModel.id ?? ""
         self.name = bikesResponseModel.name ?? ""
         self.color = bikesResponseModel.color ?? ""
         self.pin = bikesResponseModel.pin ?? ""
-        self.location = LocationModel(locationResponseModel: bikesResponseModel.location)
+        self.location = LocationModel(from: bikesResponseModel.location)
         self.rented = bikesResponseModel.rented ?? false
     }
     
@@ -33,26 +35,14 @@ class BikeAnnotation: NSObject, Encodable, Decodable, MKAnnotation {
     }
 }
 
-class LocationModel: Encodable, Decodable {
+// MARK: - LocationModel
+
+final class LocationModel {
     let latitude: Double
     let longitude: Double
     
-    init(locationResponseModel: LocationResponseModel?) {
+    init(from locationResponseModel: LocationResponseModel?) {
         self.latitude = locationResponseModel?.latitude ?? 0
         self.longitude = locationResponseModel?.longitude ?? 0
     }
-}
-
-struct BikesResponseModel: Codable {
-    let id: String?
-    let name: String?
-    let color: String?
-    let pin: String?
-    let location: LocationResponseModel?
-    let rented: Bool?
-}
-
-struct LocationResponseModel: Codable {
-    let latitude: Double?
-    let longitude: Double?
 }

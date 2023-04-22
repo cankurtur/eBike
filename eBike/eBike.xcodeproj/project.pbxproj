@@ -61,6 +61,11 @@
 		25360FE229F33FD50020D84B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE129F33FD50020D84B /* LocationManager.swift */; };
 		25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE329F350C70020D84B /* BikeAnnotation.swift */; };
 		25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE629F352CC0020D84B /* BikesEndpointItem.swift */; };
+		25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */; };
+		25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */; };
+		25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEC29F3F8530020D84B /* EncodableExtension.swift */; };
+		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
+		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -141,6 +146,11 @@
 		25360FE129F33FD50020D84B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		25360FE329F350C70020D84B /* BikeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotation.swift; sourceTree = "<group>"; };
 		25360FE629F352CC0020D84B /* BikesEndpointItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesEndpointItem.swift; sourceTree = "<group>"; };
+		25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewBikeRequest.swift; sourceTree = "<group>"; };
+		25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBikeRequest.swift; sourceTree = "<group>"; };
+		25360FEC29F3F8530020D84B /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
+		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -351,6 +361,8 @@
 				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
 				25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */,
 				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
+				25360FEC29F3F8530020D84B /* EncodableExtension.swift */,
+				25360FF029F3FF120020D84B /* MKMapViewExtension.swift */,
 			);
 			name = Extensions;
 			path = Network/Extensions;
@@ -403,6 +415,9 @@
 			isa = PBXGroup;
 			children = (
 				25360FE629F352CC0020D84B /* BikesEndpointItem.swift */,
+				25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */,
+				25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */,
+				25360FEE29F3F8820020D84B /* BikesResponseModel.swift */,
 			);
 			path = Rest;
 			sourceTree = "<group>";
@@ -629,17 +644,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */,
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
 				25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */,
 				25360FA929F20E330020D84B /* MainRouter.swift in Sources */,
 				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */,
 				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
+				25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */,
 				25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */,
 				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
 				25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */,
 				25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */,
+				25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */,
+				25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */,
 				25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */,
 				25360F9E29F201810020D84B /* Config.swift in Sources */,
 				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,

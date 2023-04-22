@@ -25,14 +25,20 @@ final class MapPresenter {
     private let interactor: MapInteractorInterface
     private weak var view: MapViewInterface?
     private let locationManager: LocationManager
-
-    init(router: MapRouterInterface, interactor: MapInteractorInterface, view: MapViewInterface?, locationManager: LocationManager = LocationManager.shared) {
+    private let config: Config
+    
+    init(router: MapRouterInterface,
+         interactor: MapInteractorInterface,
+         view: MapViewInterface?,
+         locationManager: LocationManager = LocationManager.shared,
+         config: Config = Config.sharedInstance) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.locationManager = locationManager
+        self.config = config
     }
-
+    
 }
 
 // MARK: - MapPresenterInterface
@@ -58,14 +64,14 @@ extension MapPresenter: MapInteractorOutput {
     func onGetNearbyBikesReceived(_ result: Result<[BikesResponseModel], APIClientError>) {
         switch result {
         case .success(let bikes):
-            let allBikesAnnotationArray = bikes.map({ BikeAnnotation(bikesResponseModel: $0 )})
-            let availableBikesAnnotationArray = allBikesAnnotationArray.filter { $0.rented == false }
-           
+            let allBikesAnnotations = bikes.map({ BikeAnnotation(from: $0 )})
+            let availableBikesAnnotations = allBikesAnnotations.filter { $0.rented == false }
+            
             DispatchQueue.main.async { [weak self] in
-                self?.view?.configureAnnotations(nearbyBikesAnnotation: availableBikesAnnotationArray)
+                self?.view?.updateAnnotations(with: availableBikesAnnotations)
             }
         case.failure(let error):
-//            SwiftMessagesManager.shared.showAPIClientErrorPopup(error: error)
+            //            SwiftMessagesManager.shared.showAPIClientErrorPopup(error: error)
             print(error)
         }
     }
@@ -75,7 +81,7 @@ extension MapPresenter: MapInteractorOutput {
 
 extension MapPresenter: LocationManagerDelegate {
     func didUpdateLocation(with currentLocation: CLLocation) {
-        view?.render(currentLocation)
+        view?.render(with: currentLocation, and: config.regionRadius)
     }
     
     func shouldUpdateLocation(with currentLocation: CLLocation) {

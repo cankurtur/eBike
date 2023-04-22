@@ -20,7 +20,11 @@ class Config: NSObject {
 }
 
 extension Config {
-    func eBikeBaseUrl() -> String {
+    var eBikeBaseUrl: String {
         return configs.object(forKey: "eBikeBaseUrl") as! String
+    }
+    
+    var regionRadius: Double {
+        return configs.object(forKey: "regionRadius") as! Double
     }
 }

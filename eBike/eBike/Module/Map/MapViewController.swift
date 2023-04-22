@@ -23,8 +23,8 @@ private enum Constant {
 
 protocol MapViewInterface: ViewInterface {
     func prepareUI()
-    func configureAnnotations(nearbyBikesAnnotation: [BikeAnnotation])
-    func render(_ location: CLLocation)
+    func updateAnnotations(with annotations: [MKAnnotation])
+    func render(with location: CLLocation, and regionRadius: Double)
 }
 
 // MARK: - MapViewController
@@ -52,13 +52,13 @@ extension MapViewController: MapViewInterface {
         setupMapView()
     }
     
-    func configureAnnotations(nearbyBikesAnnotation: [BikeAnnotation]) {
-        mapView.removeAnnotationsIfNeeded(check: nearbyBikesAnnotation)
-        mapView.addAnnotationsIfExist(nearbyBikesAnnotation)
+    func updateAnnotations(with annotations: [MKAnnotation]) {
+        mapView.removeAnnotations(annotations)
+        mapView.addAnnotations(annotations)
     }
     
-    func render(_ location: CLLocation) {
-        mapView.setRegionMeterDistance(with: location, regionRadius: 500)
+    func render(with location: CLLocation, and regionRadius: Double) {
+        mapView.setRegionMeterDistance(with: location, regionRadius: regionRadius)
     }
 }
 
@@ -71,21 +71,21 @@ extension MapViewController: MKMapViewDelegate {
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "allBikesMapIdentifier") as? MKMarkerAnnotationView
         
         if let view = annotationView {
-          view.annotation = annotation
+            view.annotation = annotation
         }
         else {
             annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "allBikesMapIdentifier")
         }
-    
+        
         annotationView?.glyphText = Constant.AnnotationView.glyphText
         annotationView?.markerTintColor = Constant.AnnotationView.markerTintColor
         return annotationView
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        if let bikesAnnotation = view.annotation as? BikeAnnotation {
-            presenter.didSelectAnnotation(annotation: bikesAnnotation)
-        }
+        guard let bikeAnnotation = view.annotation as? BikeAnnotation else { return }
+       
+        presenter.didSelectAnnotation(annotation: bikeAnnotation)
     }
 }
 
@@ -95,43 +95,5 @@ private extension MapViewController {
     func setupMapView() {
         view.addSubview(mapView)
         mapView.edgesToSuperview()
-    }
-}
-
-// MARK: - Array + BikesAnnotation
-
-private extension Array where Element: MKAnnotation {
-  var bikesAnnotation: [BikeAnnotation] {
-    return compactMap { $0 as? BikeAnnotation }
-  }
-}
-
-private extension MKMapView {
-  func removeAnnotationsIfNeeded(check newAnnotations: [BikeAnnotation]) {
-    guard !newAnnotations.isEmpty else {
-      removeAnnotations(annotations)
-      return
-    }
-    annotations.bikesAnnotation.forEach { existingAnnotation in
-      if !newAnnotations.contains(existingAnnotation),
-         let redundantAnnotation = annotations.bikesAnnotation.first(where: { $0 == existingAnnotation })
-      {
-        removeAnnotation(redundantAnnotation as MKAnnotation)
-      }
-    }
-  }
-
-  func addAnnotationsIfExist(_ annotations: [BikeAnnotation]) {
-    if !annotations.isEmpty {
-      addAnnotations(annotations)
-    }
-  }
-}
-
-
-public extension MKMapView {
-    func setRegionMeterDistance(with location: CLLocation, regionRadius: CLLocationDistance) {
-        let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        setRegion(region, animated: true)
     }
 }
