@@ -8,6 +8,7 @@
 import UIKit
 
 extension UIView {
+    
     enum Margin {
         case top(_ constant: CGFloat)
         case bottom(_ constant: CGFloat)
@@ -16,6 +17,10 @@ extension UIView {
         case all(_ constant: CGFloat = 0.0)
     }
     
+    enum Dimension {
+        case height(_ constant: CGFloat)
+        case width(_ constant: CGFloat)
+    }
     
     func edgesToSuperview(_ constant: CGFloat = 0.0) {
         guard let superview = self.superview else {
@@ -43,6 +48,19 @@ extension UIView {
             case .all(let constant):
                 edgesToSuperview(constant)
                 return
+            }
+        }
+    }
+    
+    
+    func edgesToItself(to size: [Dimension]) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        size.forEach {
+            switch $0 {
+            case .height(let constant):
+                self.heightAnchor.constraint(equalToConstant: constant).isActive = true
+            case .width(let constant):
+                self.widthAnchor.constraint(equalToConstant: constant).isActive = true
             }
         }
     }
