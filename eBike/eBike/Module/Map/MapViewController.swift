@@ -7,6 +7,7 @@
 
 import UIKit
 import MapKit
+import Lottie
 
 // MARK: - Constant
 
@@ -16,6 +17,17 @@ private enum Constant {
     enum AnnotationView {
         static let glyphText: String = L10n.Map.Annotation.glyphText
         static let markerTintColor: UIColor = Colors.appGreen.color
+    }
+    
+    enum RefreshAnimationView {
+        static let animationName: String = Animations.refresh.rawValue
+        static let backgroundColor: UIColor = .clear
+        static let alpha: CGFloat = 1.0
+        static let cornerRadius: CGFloat = 20
+        static let heightConstant: CGFloat = 44
+        static let widthConstant: CGFloat = 44
+        static let topConstant: CGFloat = 60
+        static let trailingConstant: CGFloat = 30
     }
 }
 
@@ -37,6 +49,11 @@ final class MapViewController: BaseViewController {
         return mapView
     }()
     
+    private lazy var refreshAnimationView: LottieAnimationView = {
+        let animationView = LottieAnimationView(name: Constant.RefreshAnimationView.animationName)
+        return animationView
+    }()
+    
     var presenter: MapPresenterInterface!
     
     override func viewDidLoad() {
@@ -49,7 +66,8 @@ final class MapViewController: BaseViewController {
 
 extension MapViewController: MapViewInterface {
     func prepareUI() {
-        setupMapView()
+        setup()
+        prepare()
     }
     
     func updateAnnotations(with annotations: [MKAnnotation]) {
@@ -89,11 +107,58 @@ extension MapViewController: MKMapViewDelegate {
     }
 }
 
+// MARK: - Prepares
+
+private extension MapViewController {
+    func prepare() {
+        prepareAnimationViews()
+    }
+    
+    func prepareAnimationViews() {
+//        refreshAnimationView = .init(name: "refresh")
+        refreshAnimationView.backgroundColor = Constant.RefreshAnimationView.backgroundColor
+        refreshAnimationView.alpha = Constant.RefreshAnimationView.alpha
+        refreshAnimationView.loopMode = .playOnce
+        refreshAnimationView.contentMode = .scaleAspectFill
+        refreshAnimationView.layer.cornerRadius = Constant.RefreshAnimationView.cornerRadius
+        refreshAnimationView.addGestureRecognizer(UITapGestureRecognizer(
+            target: self,
+            action: #selector(refreshAnimationViewTapped))
+        )
+        refreshAnimationView.play()
+    }
+}
+
 // MARK: - Setups
 
 private extension MapViewController {
+    func setup() {
+        setupMapView()
+        setupRefreshAnimationView()
+    }
+    
     func setupMapView() {
         view.addSubview(mapView)
         mapView.edgesToSuperview()
+    }
+    
+    func setupRefreshAnimationView() {
+        view.addSubview(refreshAnimationView)
+        refreshAnimationView.edgesToItself(to: [
+            .height(Constant.RefreshAnimationView.heightConstant),
+            .width(Constant.RefreshAnimationView.widthConstant)
+        ])
+        refreshAnimationView.edgesTo(view, to: [
+            .top(Constant.RefreshAnimationView.topConstant),
+            .trailing(Constant.RefreshAnimationView.trailingConstant)
+        ])
+    }
+}
+
+@objc
+private extension MapViewController {
+    func refreshAnimationViewTapped() {
+        refreshAnimationView.play()
+        presenter.refreshAnimationViewTapped()
     }
 }
