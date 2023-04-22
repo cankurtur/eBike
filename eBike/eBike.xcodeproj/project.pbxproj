@@ -66,6 +66,7 @@
 		25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEC29F3F8530020D84B /* EncodableExtension.swift */; };
 		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
 		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
+		25360FF429F40AE20020D84B /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 25360FF329F40AE20020D84B /* refresh.json */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -151,6 +152,7 @@
 		25360FEC29F3F8530020D84B /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
 		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		25360FF329F40AE20020D84B /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -280,6 +282,7 @@
 		25360F6D29F1FCC60020D84B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25360FF229F40ACA0020D84B /* Lottie */,
 				25360F6E29F1FCD70020D84B /* Strings */,
 				25360F6F29F1FCDD0020D84B /* Fonts */,
 				25360F7029F1FCE20020D84B /* Colors */,
@@ -422,6 +425,14 @@
 			path = Rest;
 			sourceTree = "<group>";
 		};
+		25360FF229F40ACA0020D84B /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				25360FF329F40AE20020D84B /* refresh.json */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +561,7 @@
 				25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */,
 				25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */,
 				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25360FF429F40AE20020D84B /* refresh.json in Resources */,
 				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
 				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,
