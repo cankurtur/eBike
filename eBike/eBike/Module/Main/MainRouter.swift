@@ -67,7 +67,7 @@ extension MainRouter: MainRouterInterface {
             NSAttributedString.Key.font: Constant.TabBarItem.titleFont
         ]
 
-        let mapView = UINavigationController(rootViewController: ViewController())
+        let mapView = MapRouter.createModule()
         mapView.tabBarItem.title = Constant.TabBarItem.mapTitle
         mapView.tabBarItem?.image = Constant.TabBarItem.mapTabImage
         mapView.tabBarItem?.setTitleTextAttributes(selectedTitleTextAttributes, for: .selected)

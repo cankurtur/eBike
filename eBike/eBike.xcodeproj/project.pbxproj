@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
-		25360F3229F1F84C0020D84B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F3129F1F84C0020D84B /* ViewController.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
 		25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */; };
 		25360F4529F1F84D0020D84B /* eBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4429F1F84D0020D84B /* eBikeTests.swift */; };
@@ -54,6 +53,14 @@
 		25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */; };
 		25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */; };
 		25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */; };
+		25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FD729F2DFDB0020D84B /* MapViewController.swift */; };
+		25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FD929F2DFE70020D84B /* MapPresenter.swift */; };
+		25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDB29F2DFF10020D84B /* MapInteractor.swift */; };
+		25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDD29F2DFF70020D84B /* MapRouter.swift */; };
+		25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDF29F2E23A0020D84B /* UIViewExtension.swift */; };
+		25360FE229F33FD50020D84B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE129F33FD50020D84B /* LocationManager.swift */; };
+		25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE329F350C70020D84B /* BikeAnnotation.swift */; };
+		25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE629F352CC0020D84B /* BikesEndpointItem.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,7 +86,6 @@
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		25360F3129F1F84C0020D84B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		25360F3629F1F84D0020D84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		25360F3929F1F84D0020D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25360F3B29F1F84D0020D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +133,14 @@
 		25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-MediumItalic.otf"; sourceTree = "<group>"; };
 		25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BookItalic.otf"; sourceTree = "<group>"; };
 		25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BlackItalic.otf"; sourceTree = "<group>"; };
+		25360FD729F2DFDB0020D84B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		25360FD929F2DFE70020D84B /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		25360FDB29F2DFF10020D84B /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		25360FDD29F2DFF70020D84B /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		25360FDF29F2E23A0020D84B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		25360FE129F33FD50020D84B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		25360FE329F350C70020D84B /* BikeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotation.swift; sourceTree = "<group>"; };
+		25360FE629F352CC0020D84B /* BikesEndpointItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesEndpointItem.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -186,10 +200,10 @@
 				25360F5D29F1F9A50020D84B /* App */,
 				25360F5E29F1FA330020D84B /* Module */,
 				25360F8429F200130020D84B /* Network */,
+				25360FE529F352C10020D84B /* Rest */,
 				25360F9229F200CC0020D84B /* Extensions */,
 				25360F9829F201220020D84B /* Utils */,
 				25360F6D29F1FCC60020D84B /* Resources */,
-				25360F3129F1F84C0020D84B /* ViewController.swift */,
 				25360F3B29F1F84D0020D84B /* Info.plist */,
 			);
 			path = eBike;
@@ -227,6 +241,7 @@
 			children = (
 				25360F5F29F1FA3D0020D84B /* Base */,
 				25360FA129F20DCF0020D84B /* Main */,
+				25360FD629F2DFA80020D84B /* Map */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -335,6 +350,7 @@
 			children = (
 				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
 				25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */,
+				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
 			);
 			name = Extensions;
 			path = Network/Extensions;
@@ -354,6 +370,7 @@
 				25360F9929F201300020D84B /* AlertManager.swift */,
 				25360F9B29F201480020D84B /* MonitorManager.swift */,
 				25360F9D29F201810020D84B /* Config.swift */,
+				25360FE129F33FD50020D84B /* LocationManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -368,6 +385,26 @@
 				25360FAA29F2136F0020D84B /* TabType.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		25360FD629F2DFA80020D84B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				25360FD729F2DFDB0020D84B /* MapViewController.swift */,
+				25360FD929F2DFE70020D84B /* MapPresenter.swift */,
+				25360FDB29F2DFF10020D84B /* MapInteractor.swift */,
+				25360FDD29F2DFF70020D84B /* MapRouter.swift */,
+				25360FE329F350C70020D84B /* BikeAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		25360FE529F352C10020D84B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				25360FE629F352CC0020D84B /* BikesEndpointItem.swift */,
+			);
+			path = Rest;
 			sourceTree = "<group>";
 		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
@@ -593,24 +630,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
+				25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */,
 				25360FA929F20E330020D84B /* MainRouter.swift in Sources */,
 				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
-				25360F3229F1F84C0020D84B /* ViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
 				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
+				25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */,
 				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
+				25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */,
+				25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */,
+				25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */,
 				25360F9E29F201810020D84B /* Config.swift in Sources */,
 				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,
 				25360F9C29F201480020D84B /* MonitorManager.swift in Sources */,
 				25360F9129F200B80020D84B /* BaseUrl.swift in Sources */,
 				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
 				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
+				25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */,
+				25360FE229F33FD50020D84B /* LocationManager.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
 				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
 				25360FAB29F2136F0020D84B /* TabType.swift in Sources */,
 				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
+				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
 				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
 				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
 				25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */,

@@ -12,3 +12,5 @@
 "general.ok" = "OK";
 
 "tabBarItems.map" = "Map";
+
+"map.annotation.glyphText" = "🚲";
