@@ -56,39 +56,3 @@ enum BikesEndpointItem: Endpoint {
         }
     }
 }
-
-struct CreateNewBikeRequest: Codable {
-    let name: String
-    let pin: String
-    let color: String
-    let location: Location
-}
-
-struct Location: Codable {
-    let latitude: Double
-    let longitude: Double
-}
-
-struct UpdateBikeInfo {
-    let id: Int
-    let request: UpdateBikeRequest
-}
-
-struct UpdateBikeRequest: Codable {
-    let name: String
-    let color: String
-    let pin: String
-    let location: Location
-}
-
-
-
-public extension Encodable {
-    func parameters() -> [String: Any]? {
-        guard let data = try? JSONEncoder().encode(self),
-            let dictionary = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any] else {
-                return nil
-        }
-        return dictionary
-    }
-}

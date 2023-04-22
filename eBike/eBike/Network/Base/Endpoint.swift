@@ -28,7 +28,7 @@ public extension Endpoint {
     var url: String {
         switch baseUrl {
         case .eBikeBaseUrl:
-            let eBikeBaseUrl = Config.sharedInstance.eBikeBaseUrl()
+            let eBikeBaseUrl = Config.sharedInstance.eBikeBaseUrl
             return "\(eBikeBaseUrl)\(path)"
         }
     }

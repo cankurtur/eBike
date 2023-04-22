@@ -6,11 +6,15 @@
 	<dict>
 		<key>eBikeBaseUrl</key>
 		<string>http://localhost:3000/</string>
+		<key>regionRadius</key>
+		<integer>500</integer>
 	</dict>
 	<key>Release</key>
 	<dict>
 		<key>eBikeBaseUrl</key>
 		<string>http://localhost:3000/</string>
+		<key>regionRadius</key>
+		<integer>500</integer>
 	</dict>
 </dict>
 </plist>
