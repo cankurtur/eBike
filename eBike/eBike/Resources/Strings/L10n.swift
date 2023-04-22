@@ -23,6 +23,12 @@ internal enum L10n {
     /// Try again
     internal static let tryAgain = L10n.tr("Localizable", "general.TryAgain", fallback: "Try again")
   }
+  internal enum Map {
+    internal enum Annotation {
+      /// 🚲
+      internal static let glyphText = L10n.tr("Localizable", "map.annotation.glyphText", fallback: "🚲")
+    }
+  }
   internal enum TabBarItems {
     /// Map
     internal static let map = L10n.tr("Localizable", "tabBarItems.map", fallback: "Map")
