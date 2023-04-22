@@ -2,23 +2,29 @@ PODS:
   - Alamofire (5.6.4)
   - lottie-ios (4.1.3)
   - SwiftGen (6.6.2)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
 
 DEPENDENCIES:
   - Alamofire
   - lottie-ios
   - SwiftGen (~> 6.0)
+  - SwiftMessages
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - lottie-ios
     - SwiftGen
+    - SwiftMessages
 
 SPEC CHECKSUMS:
   Alamofire: 4e95d97098eacb88856099c4fc79b526a299e48c
   lottie-ios: d0954d3150061f662ed0adf96ef98d7421864c47
   SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
 
-PODFILE CHECKSUM: 76d335d4a2c1820aa04fdb8dc2508ca473c8ad3e
+PODFILE CHECKSUM: 42d0a81acab831364f6d0784942c609375cc9b6f
 
 COCOAPODS: 1.11.2

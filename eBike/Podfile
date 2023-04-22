@@ -9,4 +9,6 @@ target 'eBike' do
   pod 'SwiftGen', '~> 6.0'
   pod 'Alamofire'
   pod 'lottie-ios'
+  pod 'SwiftMessages'
+
 end
