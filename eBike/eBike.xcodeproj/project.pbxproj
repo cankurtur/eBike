@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		251A1D3529F4138E0049FD41 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D3429F4138E0049FD41 /* Animations.swift */; };
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
@@ -66,6 +67,7 @@
 		25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEC29F3F8530020D84B /* EncodableExtension.swift */; };
 		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
 		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
+		25360FF429F40AE20020D84B /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 25360FF329F40AE20020D84B /* refresh.json */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +90,7 @@
 
 /* Begin PBXFileReference section */
 		1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.release.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.release.xcconfig"; sourceTree = "<group>"; };
+		251A1D3429F4138E0049FD41 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +154,7 @@
 		25360FEC29F3F8530020D84B /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
 		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
 		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		25360FF329F40AE20020D84B /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -280,6 +284,7 @@
 		25360F6D29F1FCC60020D84B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				25360FF229F40ACA0020D84B /* Lottie */,
 				25360F6E29F1FCD70020D84B /* Strings */,
 				25360F6F29F1FCDD0020D84B /* Fonts */,
 				25360F7029F1FCE20020D84B /* Colors */,
@@ -422,6 +427,15 @@
 			path = Rest;
 			sourceTree = "<group>";
 		};
+		25360FF229F40ACA0020D84B /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				25360FF329F40AE20020D84B /* refresh.json */,
+				251A1D3429F4138E0049FD41 /* Animations.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -550,6 +564,7 @@
 				25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */,
 				25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */,
 				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25360FF429F40AE20020D84B /* refresh.json in Resources */,
 				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
 				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,
@@ -668,6 +683,7 @@
 				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
 				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
 				25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */,
+				251A1D3529F4138E0049FD41 /* Animations.swift in Sources */,
 				25360FE229F33FD50020D84B /* LocationManager.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,

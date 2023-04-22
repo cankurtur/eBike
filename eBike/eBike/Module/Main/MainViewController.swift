@@ -45,6 +45,8 @@ final class MainViewController: UITabBarController {
 extension MainViewController: MainViewInterface {
     func prepareUI() {
         view.backgroundColor = Constant.backgroundColor
+        navigationController?.setNavigationBarHidden(true, animated: true)
+
         prepareTabBar()
     }
     

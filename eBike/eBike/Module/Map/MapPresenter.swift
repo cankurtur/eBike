@@ -16,6 +16,7 @@ private enum Constant { }
 
 protocol MapPresenterInterface: PresenterInterface {
     func didSelectAnnotation(annotation: BikeAnnotation)
+    func refreshAnimationViewTapped()
 }
 
 // MARK: - MapPresenter
@@ -50,11 +51,25 @@ extension MapPresenter: MapPresenterInterface {
         
         guard let currentLocation = locationManager.getCurrentLocation() else { return }
         
-        interactor.getNearbyBikes(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, radius: 500)
+        interactor.getNearbyBikes(
+            latitude: currentLocation.coordinate.latitude,
+            longitude: currentLocation.coordinate.longitude,
+            radius: config.regionRadius
+        )
     }
     
     func didSelectAnnotation(annotation: BikeAnnotation) {
         // TODO: Add action
+    }
+    
+    func refreshAnimationViewTapped() {        
+        guard let currentLocation = locationManager.getCurrentLocation() else { return }
+        
+        interactor.getNearbyBikes(
+            latitude: currentLocation.coordinate.latitude,
+            longitude: currentLocation.coordinate.longitude,
+            radius: config.regionRadius
+        )
     }
 }
 
@@ -85,7 +100,7 @@ extension MapPresenter: LocationManagerDelegate {
     }
     
     func shouldUpdateLocation(with currentLocation: CLLocation) {
-        interactor.getNearbyBikes(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, radius: 500)
+        interactor.getNearbyBikes(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, radius: config.regionRadius)
     }
     
     func didChangeAuthorization(with status: CLAuthorizationStatus) {

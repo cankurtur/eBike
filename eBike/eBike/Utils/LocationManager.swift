@@ -43,11 +43,6 @@ final class LocationManager: NSObject {
         locationManager?.stopUpdatingLocation()
     }
     
-    func updateCurrentLocation() {
-        locationManager?.stopUpdatingLocation()
-        locationManager?.startUpdatingLocation()
-    }
-    
     func getCurrentLocation() -> CLLocation? {
         return currentLocation
     }
