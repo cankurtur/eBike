@@ -8,5 +8,5 @@ target 'eBike' do
   # Pods for eBike
   pod 'SwiftGen', '~> 6.0'
   pod 'Alamofire'
-
+  pod 'lottie-ios'
 end
