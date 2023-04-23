@@ -11,14 +11,14 @@ import Alamofire
 final public class NetworkManager<EndpointItem: Endpoint>: NetworkProtocol {
     private let sessionManager: Session
     private let monitorManager: MonitorManager
-    private let alertManager: AlertManager
+    private let swiftMessagesManager: SwiftMessagesManager
     
     init(sessionManager: Session = .init(configuration: URLSessionConfiguration.default),
          monitorManager: MonitorManager = MonitorManager.shared,
-         alertManager: AlertManager = AlertManager.shared) {
+         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared) {
         self.sessionManager = sessionManager
         self.monitorManager = monitorManager
-        self.alertManager = alertManager
+        self.swiftMessagesManager = swiftMessagesManager
     }
 
     
@@ -32,19 +32,25 @@ final public class NetworkManager<EndpointItem: Endpoint>: NetworkProtocol {
     public func request<T>(endpoint: EndpointItem, type: T.Type, networkCompletion: @escaping NetworkCompletion<T>, networkFailureCompletion: NetworkFailureCompletion? = nil) {
         
         guard monitorManager.isReachable else {
+            
+            let viewModel = AppPopupViewModel(title: L10n.General.areYouOffline,
+                                              description: L10n.General.checkInternetConnection,
+                                              buttonTitle: L10n.General.tryAgain) { [weak self] in
+                guard let self = self else { return }
+                
+                self.swiftMessagesManager.hide()
+                
+                if networkFailureCompletion != nil {
+                    networkFailureCompletion?()
+                } else {
+                    self.request(endpoint: endpoint, type: type.self, networkCompletion: networkCompletion)
+                }
+            }
+            
             DispatchQueue.main.async { [weak self] in
-                self?.alertManager.showAlertFromTopViewController(
-                    message:  L10n.General.checkInternetConnection,
-                    title: L10n.General.areYouOffline,
-                    firstButtonTitle: L10n.General.tryAgain) { [weak self] in
-                        guard let self = self else { return }
-                        
-                        if networkFailureCompletion != nil {
-                            networkFailureCompletion?()
-                        } else {
-                            self.request(endpoint: endpoint, type: type.self, networkCompletion: networkCompletion)
-                        }
-                    }
+                guard let self = self else { return }
+                
+                self.swiftMessagesManager.showForever(with: viewModel)
             }
             networkCompletion(.failure(.networkError))
             
