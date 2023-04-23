@@ -10,10 +10,10 @@ import MapKit
 
 // MARK: - BikeAnnotationModel
 
-final class BikeAnnotation: NSObject, MKAnnotation {
+final class BikeAnnotation: NSObject, Codable, MKAnnotation {
     let id: String
     let name: String
-    let color: String
+    let hexColor: String
     let pin: String
     let location: LocationModel
     let rented: Bool
@@ -21,7 +21,7 @@ final class BikeAnnotation: NSObject, MKAnnotation {
     init(from bikesResponseModel: BikesResponseModel) {
         self.id = bikesResponseModel.id ?? ""
         self.name = bikesResponseModel.name ?? ""
-        self.color = bikesResponseModel.color ?? ""
+        self.hexColor = bikesResponseModel.color ?? ""
         self.pin = bikesResponseModel.pin ?? ""
         self.location = LocationModel(from: bikesResponseModel.location)
         self.rented = bikesResponseModel.rented ?? false
@@ -37,7 +37,7 @@ final class BikeAnnotation: NSObject, MKAnnotation {
 
 // MARK: - LocationModel
 
-final class LocationModel {
+final class LocationModel: Codable {
     let latitude: Double
     let longitude: Double
     
