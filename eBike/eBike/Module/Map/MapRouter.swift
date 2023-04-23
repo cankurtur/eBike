@@ -9,7 +9,9 @@ import UIKit
 
 // MARK: - RouterInterface
 
-protocol MapRouterInterface: RouterInterface { }
+protocol MapRouterInterface: RouterInterface {
+    func navigateToRentBike(with annotation: BikeAnnotation, delegate: RentBikePresenterDelegate?)
+}
 
 // MARK: - MapRouter
 
@@ -39,4 +41,15 @@ final class MapRouter {
 
 // MARK: - MapRouterInterface
 
-extension MapRouter: MapRouterInterface { }
+extension MapRouter: MapRouterInterface {
+    func navigateToRentBike(with annotation: BikeAnnotation, delegate: RentBikePresenterDelegate?) {
+        let view = RentBikeRouter.createModule(navigationController: navigationController, annotation: annotation, delegate: delegate)
+        view.modalTransitionStyle = .crossDissolve
+        if let sheet = view.sheetPresentationController {
+            sheet.detents = [.medium()]
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.preferredCornerRadius = 30
+        }
+        navigationController?.present(view, animated: true)
+    }
+}

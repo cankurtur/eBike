@@ -35,7 +35,7 @@ private enum Constant {
 
 protocol MapViewInterface: ViewInterface {
     func prepareUI()
-    func updateAnnotations(with annotations: [MKAnnotation])
+    func updateAnnotations(with annotations: [BikeAnnotation])
     func render(with location: CLLocation, and regionRadius: Double)
 }
 
@@ -70,9 +70,12 @@ extension MapViewController: MapViewInterface {
         prepare()
     }
     
-    func updateAnnotations(with annotations: [MKAnnotation]) {
-        mapView.removeAnnotations(annotations)
-        mapView.addAnnotations(annotations)
+    func updateAnnotations(with annotations: [BikeAnnotation]) {
+        mapView.removeAnnotationsIfNeeded(check: annotations)
+        mapView.addAnnotationsIfExist(annotations)
+//        mapView.removeAnnotations(annotations)
+//        mapView.addAnnotations(annotations)
+        view.layoutIfNeeded()
     }
     
     func render(with location: CLLocation, and regionRadius: Double) {
@@ -155,10 +158,45 @@ private extension MapViewController {
     }
 }
 
+// MARK: - Actions
+
 @objc
 private extension MapViewController {
     func refreshAnimationViewTapped() {
         refreshAnimationView.play()
         presenter.refreshAnimationViewTapped()
     }
+}
+
+
+// MARK: - Array + BikesAnnotation
+
+private extension Array where Element: MKAnnotation {
+  var bikesAnnotation: [BikeAnnotation] {
+    return compactMap { $0 as? BikeAnnotation }
+  }
+}
+
+// MARK: - MKMapView + Remove Annotations
+
+private extension MKMapView {
+  func removeAnnotationsIfNeeded(check newAnnotations: [BikeAnnotation]) {
+    guard !newAnnotations.isEmpty else {
+      removeAnnotations(annotations)
+      return
+    }
+    annotations.bikesAnnotation.forEach { existingAnnotation in
+      if !newAnnotations.contains(existingAnnotation),
+         let redundantAnnotation = annotations.bikesAnnotation.first(where: { $0 == existingAnnotation })
+      {
+        removeAnnotation(redundantAnnotation as MKAnnotation)
+      }
+    }
+  }
+
+  func addAnnotationsIfExist(_ annotations: [BikeAnnotation]) {
+    if !annotations.isEmpty {
+      addAnnotations(annotations)
+    }
+  }
 }
