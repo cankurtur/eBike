@@ -10,6 +10,24 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
+  internal enum AppPopupView {
+    /// You have to select a color!
+    internal static let colorErrorMessage = L10n.tr("Localizable", "appPopupView.colorErrorMessage", fallback: "You have to select a color!")
+    /// Cool!
+    internal static let cool = L10n.tr("Localizable", "appPopupView.cool", fallback: "Cool!")
+    /// Error
+    internal static let error = L10n.tr("Localizable", "appPopupView.error", fallback: "Error")
+    /// You have to enter a name!
+    internal static let nameErrorMessage = L10n.tr("Localizable", "appPopupView.nameErrorMessage", fallback: "You have to enter a name!")
+    /// OK
+    internal static let ok = L10n.tr("Localizable", "appPopupView.ok", fallback: "OK")
+    /// You have to enter 4 characters for your pin!
+    internal static let pinErrorMessage = L10n.tr("Localizable", "appPopupView.pinErrorMessage", fallback: "You have to enter 4 characters for your pin!")
+    /// Success 🎉
+    internal static let success = L10n.tr("Localizable", "appPopupView.success", fallback: "Success 🎉")
+    /// You have successfully register your bike! Check it on the map. 🌍
+    internal static let youHaveRegister = L10n.tr("Localizable", "appPopupView.youHaveRegister", fallback: "You have successfully register your bike! Check it on the map. 🌍")
+  }
   internal enum General {
     /// Localizable.strings
     ///   eBike
