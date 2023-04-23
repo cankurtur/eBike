@@ -32,17 +32,20 @@ final class RegisterBikePresenter {
     private weak var view: RegisterBikeViewInterface?
     private let config: Config
     private let locationManager: LocationManager
+    private let swiftMessagesManager: SwiftMessagesManager
    
     init(router: RegisterBikeRouterInterface,
          interactor: RegisterBikeInteractorInterface,
          view: RegisterBikeViewInterface?,
          config: Config = Config.sharedInstance,
-         locationManager: LocationManager = LocationManager.shared) {
+         locationManager: LocationManager = LocationManager.shared,
+         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.config = config
         self.locationManager = locationManager
+        self.swiftMessagesManager = swiftMessagesManager
     }
 }
 
@@ -71,14 +74,17 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
     
     func registerButtonTapped(name: String?, pin: String?, color: String?) {
         guard let name = name, !name.isBlank else {
+            swiftMessagesManager.showForever(with: .registerBikeNameError)
             return
         }
 
         guard let pin = pin, !pin.isBlank else {
+            swiftMessagesManager.showForever(with: .registerBikePinError)
             return
         }
 
         guard let color = color, !color.isBlank else {
+            swiftMessagesManager.showForever(with: .registerBikeColorError)
             return
         }
         
@@ -111,6 +117,7 @@ extension RegisterBikePresenter: RegisterBikeInteractorOutput {
         switch result {
         case .success:
             view?.updateUIAfterRegister()
+            swiftMessagesManager.showForever(with: .registerBikeSuccess)
         case .failure(let error):
             break
         }
