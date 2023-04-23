@@ -11,6 +11,15 @@
 "general.TryAgain" = "Try again";
 "general.ok" = "OK";
 
+"tabBarItems.registerBike" = "Register Bike";
 "tabBarItems.map" = "Map";
 
 "map.annotation.glyphText" = "🚲";
+
+"register.register" = "Register";
+"register.ok" = "OK";
+"register.placeholder.name" = "Name";
+"register.placeholder.pin" = "Pin";
+"register.placeholder.color" = "Color";
+"register.empty" = "";
+"register.locationInfo" = "Bike location will be set as your current location.";
