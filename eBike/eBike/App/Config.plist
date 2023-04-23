@@ -8,6 +8,39 @@
 		<string>http://localhost:3000/</string>
 		<key>regionRadius</key>
 		<integer>500</integer>
+		<key>colorsWithHex</key>
+		<dict>
+			<key>Black</key>
+			<string>000000</string>
+			<key>Gray</key>
+			<string>808080</string>
+			<key>Red</key>
+			<string>FF0000</string>
+			<key>Green</key>
+			<string>008000</string>
+			<key>Blue</key>
+			<string>0000FF</string>
+			<key>Yellow</key>
+			<string>FFFF00</string>
+			<key>Orange</key>
+			<string>FFA500</string>
+			<key>Purple</key>
+			<string>800080</string>
+			<key>Pink</key>
+			<string>FFC0CB</string>
+		</dict>
+		<key>colorSet</key>
+		<array>
+			<string>Black</string>
+			<string>Gray</string>
+			<string>Red</string>
+			<string>Green</string>
+			<string>Blue</string>
+			<string>Yellow</string>
+			<string>Orange</string>
+			<string>Purple</string>
+			<string>Pink</string>
+		</array>
 	</dict>
 	<key>Release</key>
 	<dict>
@@ -15,6 +48,39 @@
 		<string>http://localhost:3000/</string>
 		<key>regionRadius</key>
 		<integer>500</integer>
+		<key>colorsWithHex</key>
+		<dict>
+			<key>Black</key>
+			<string>000000</string>
+			<key>Gray</key>
+			<string>808080</string>
+			<key>Red</key>
+			<string>FF0000</string>
+			<key>Green</key>
+			<string>008000</string>
+			<key>Blue</key>
+			<string>0000FF</string>
+			<key>Yellow</key>
+			<string>FFFF00</string>
+			<key>Orange</key>
+			<string>FFA500</string>
+			<key>Purple</key>
+			<string>800080</string>
+			<key>Pink</key>
+			<string>FFC0CB</string>
+		</dict>
+		<key>colorSet</key>
+		<array>
+			<string>Black</string>
+			<string>Gray</string>
+			<string>Red</string>
+			<string>Green</string>
+			<string>Blue</string>
+			<string>Yellow</string>
+			<string>Orange</string>
+			<string>Purple</string>
+			<string>Pink</string>
+		</array>
 	</dict>
 </dict>
 </plist>

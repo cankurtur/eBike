@@ -27,4 +27,12 @@ extension Config {
     var regionRadius: Double {
         return configs.object(forKey: "regionRadius") as! Double
     }
+    
+    var colorSet: [String] {
+        return configs.object(forKey: "colorSet") as! [String]
+    }
+    
+    var colorsWithHex: [String: String] {
+        return configs.object(forKey: "colorsWithHex") as! [String: String]
+    }
 }
