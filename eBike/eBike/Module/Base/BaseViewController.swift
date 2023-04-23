@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - BaseViewController
+
 class BaseViewController: UIViewController {
 
     var screenName: String {
@@ -16,11 +18,30 @@ class BaseViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.setNavigationBarHidden(true, animated: true)
-
+        hideKeyboardWhenTappedAround()
         print("initialized: ", screenName)
     }
     
     deinit {
         print("deinitialized:", screenName)
+    }
+}
+
+// MARK: - Helper
+
+private extension BaseViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+}
+
+// MARK: - Actions
+
+@objc
+private extension BaseViewController {
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
 }

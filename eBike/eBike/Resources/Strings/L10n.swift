@@ -29,9 +29,29 @@ internal enum L10n {
       internal static let glyphText = L10n.tr("Localizable", "map.annotation.glyphText", fallback: "🚲")
     }
   }
+  internal enum Register {
+    /// 
+    internal static let empty = L10n.tr("Localizable", "register.empty", fallback: "")
+    /// Bike location will be set as your current location.
+    internal static let locationInfo = L10n.tr("Localizable", "register.locationInfo", fallback: "Bike location will be set as your current location.")
+    /// OK
+    internal static let ok = L10n.tr("Localizable", "register.ok", fallback: "OK")
+    /// Register
+    internal static let register = L10n.tr("Localizable", "register.register", fallback: "Register")
+    internal enum Placeholder {
+      /// Color
+      internal static let color = L10n.tr("Localizable", "register.placeholder.color", fallback: "Color")
+      /// Name
+      internal static let name = L10n.tr("Localizable", "register.placeholder.name", fallback: "Name")
+      /// Pin
+      internal static let pin = L10n.tr("Localizable", "register.placeholder.pin", fallback: "Pin")
+    }
+  }
   internal enum TabBarItems {
     /// Map
     internal static let map = L10n.tr("Localizable", "tabBarItems.map", fallback: "Map")
+    /// Register Bike
+    internal static let registerBike = L10n.tr("Localizable", "tabBarItems.registerBike", fallback: "Register Bike")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

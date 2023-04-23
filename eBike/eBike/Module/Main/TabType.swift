@@ -8,5 +8,6 @@
 import Foundation
 
 enum TabType: Int {
+    case registerBike
     case map
 }
