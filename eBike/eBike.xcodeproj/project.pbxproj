@@ -18,6 +18,10 @@
 		251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */; };
 		251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7F29F575440049FD41 /* UIFontExtension.swift */; };
 		2527CE7429F590B200D5704E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7329F590B200D5704E /* StringExtension.swift */; };
+		2527CE7A29F591E600D5704E /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7929F591E600D5704E /* NibView.swift */; };
+		2527CE8229F5969300D5704E /* AppPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8129F5969300D5704E /* AppPopupView.swift */; };
+		2527CE8429F5969900D5704E /* AppPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2527CE8329F5969900D5704E /* AppPopupView.xib */; };
+		2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8529F599C600D5704E /* AppPopupViewModel.swift */; };
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
@@ -111,6 +115,10 @@
 		251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		251A1D7F29F575440049FD41 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2527CE7329F590B200D5704E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2527CE7929F591E600D5704E /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		2527CE8129F5969300D5704E /* AppPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupView.swift; sourceTree = "<group>"; };
+		2527CE8329F5969900D5704E /* AppPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppPopupView.xib; sourceTree = "<group>"; };
+		2527CE8529F599C600D5704E /* AppPopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupViewModel.swift; sourceTree = "<group>"; };
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -227,6 +235,24 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		2527CE7529F591A100D5704E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2527CE7629F591A900D5704E /* AppPopup */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2527CE7629F591A900D5704E /* AppPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2527CE8129F5969300D5704E /* AppPopupView.swift */,
+				2527CE8329F5969900D5704E /* AppPopupView.xib */,
+				2527CE8529F599C600D5704E /* AppPopupViewModel.swift */,
+			);
+			path = AppPopup;
+			sourceTree = "<group>";
+		};
 		25360F2129F1F84C0020D84B = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +281,7 @@
 			children = (
 				25360F5D29F1F9A50020D84B /* App */,
 				25360F5E29F1FA330020D84B /* Module */,
+				2527CE7529F591A100D5704E /* Components */,
 				25360F8429F200130020D84B /* Network */,
 				25360FE529F352C10020D84B /* Rest */,
 				25360F9229F200CC0020D84B /* Extensions */,
@@ -434,6 +461,7 @@
 				25360F9D29F201810020D84B /* Config.swift */,
 				25360FE129F33FD50020D84B /* LocationManager.swift */,
 				251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */,
+				2527CE7929F591E600D5704E /* NibView.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -617,6 +645,7 @@
 				25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */,
 				25360FCE29F2DC290020D84B /* CircularSpotifyText-Black.otf in Resources */,
 				25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */,
+				2527CE8429F5969900D5704E /* AppPopupView.xib in Resources */,
 				25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */,
 				25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */,
 				25360F8329F1FFB70020D84B /* Config.plist in Resources */,
@@ -735,6 +764,7 @@
 				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
 				25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */,
 				251A1D3529F4138E0049FD41 /* Animations.swift in Sources */,
+				2527CE8229F5969300D5704E /* AppPopupView.swift in Sources */,
 				25360FE229F33FD50020D84B /* LocationManager.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
@@ -744,6 +774,7 @@
 				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
 				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
 				251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */,
+				2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */,
 				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
 				251A1D7729F56AA50049FD41 /* RegisterBikeRouter.swift in Sources */,
 				25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */,
@@ -756,6 +787,7 @@
 				251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */,
 				251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */,
 				25360F8F29F200A70020D84B /* Errors.swift in Sources */,
+				2527CE7A29F591E600D5704E /* NibView.swift in Sources */,
 				25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */,
 				251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */,
 			);
