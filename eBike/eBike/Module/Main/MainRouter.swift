@@ -16,6 +16,8 @@ private enum Constant {
         static let selectedTitleColor: UIColor = Colors.appGreen.color
         static let unSelectedTitleColor: UIColor = Colors.appGray.color
         
+        static let registerBikeTabImage: UIImage = UIImage(systemName: "bicycle.circle")!.withRenderingMode(.alwaysTemplate)
+        static let registerBikeTitle: String = L10n.TabBarItems.registerBike
         static let mapTabImage: UIImage = UIImage(systemName: "map.circle")!.withRenderingMode(.alwaysTemplate)
         static let mapTitle: String = L10n.TabBarItems.map
     }
@@ -67,13 +69,20 @@ extension MainRouter: MainRouterInterface {
             NSAttributedString.Key.font: Constant.TabBarItem.titleFont
         ]
 
+        let registerBikeView = RegisterBikeRouter.createModule()
+        registerBikeView.tabBarItem.title = Constant.TabBarItem.registerBikeTitle
+        registerBikeView.tabBarItem?.image = Constant.TabBarItem.registerBikeTabImage
+        registerBikeView.tabBarItem?.setTitleTextAttributes(selectedTitleTextAttributes, for: .selected)
+        registerBikeView.tabBarItem?.setTitleTextAttributes(unselectedTitleTextAttributes, for: .normal)
+        
         let mapView = MapRouter.createModule()
         mapView.tabBarItem.title = Constant.TabBarItem.mapTitle
         mapView.tabBarItem?.image = Constant.TabBarItem.mapTabImage
         mapView.tabBarItem?.setTitleTextAttributes(selectedTitleTextAttributes, for: .selected)
         mapView.tabBarItem?.setTitleTextAttributes(unselectedTitleTextAttributes, for: .normal)
-
+        
         return [
+            registerBikeView,
             mapView
         ]
     }

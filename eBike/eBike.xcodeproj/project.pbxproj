@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		251A1D3529F4138E0049FD41 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D3429F4138E0049FD41 /* Animations.swift */; };
 		251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */; };
+		251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */; };
+		251A1D7329F56A8B0049FD41 /* RegisterBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */; };
+		251A1D7529F56A990049FD41 /* RegisterBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */; };
+		251A1D7729F56AA50049FD41 /* RegisterBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */; };
+		251A1D7A29F56B8D0049FD41 /* RegisterBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */; };
+		251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7B29F56C910049FD41 /* Storyboarded.swift */; };
+		251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */; };
+		251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7F29F575440049FD41 /* UIFontExtension.swift */; };
+		2527CE7429F590B200D5704E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7329F590B200D5704E /* StringExtension.swift */; };
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
@@ -93,6 +102,15 @@
 		1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.release.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.release.xcconfig"; sourceTree = "<group>"; };
 		251A1D3429F4138E0049FD41 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesManager.swift; sourceTree = "<group>"; };
+		251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeViewController.swift; sourceTree = "<group>"; };
+		251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikePresenter.swift; sourceTree = "<group>"; };
+		251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeInteractor.swift; sourceTree = "<group>"; };
+		251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeRouter.swift; sourceTree = "<group>"; };
+		251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterBike.storyboard; sourceTree = "<group>"; };
+		251A1D7B29F56C910049FD41 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
+		251A1D7F29F575440049FD41 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		2527CE7329F590B200D5704E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -187,6 +205,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		251A1D6F29F56A510049FD41 /* RegisterBike */ = {
+			isa = PBXGroup;
+			children = (
+				251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */,
+				251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */,
+				251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */,
+				251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */,
+				251A1D7F29F575440049FD41 /* UIFontExtension.swift */,
+			);
+			path = RegisterBike;
+			sourceTree = "<group>";
+		};
+		251A1D7829F56B7E0049FD41 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				251A1D7B29F56C910049FD41 /* Storyboarded.swift */,
+				251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */,
+				251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		25360F2129F1F84C0020D84B = {
 			isa = PBXGroup;
 			children = (
@@ -220,6 +260,7 @@
 				25360F9229F200CC0020D84B /* Extensions */,
 				25360F9829F201220020D84B /* Utils */,
 				25360F6D29F1FCC60020D84B /* Resources */,
+				251A1D7829F56B7E0049FD41 /* Storyboards */,
 				25360F3B29F1F84D0020D84B /* Info.plist */,
 			);
 			path = eBike;
@@ -258,6 +299,7 @@
 				25360F5F29F1FA3D0020D84B /* Base */,
 				25360FA129F20DCF0020D84B /* Main */,
 				25360FD629F2DFA80020D84B /* Map */,
+				251A1D6F29F56A510049FD41 /* RegisterBike */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -370,6 +412,7 @@
 				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
 				25360FEC29F3F8530020D84B /* EncodableExtension.swift */,
 				25360FF029F3FF120020D84B /* MKMapViewExtension.swift */,
+				2527CE7329F590B200D5704E /* StringExtension.swift */,
 			);
 			name = Extensions;
 			path = Network/Extensions;
@@ -577,6 +620,7 @@
 				25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */,
 				25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */,
 				25360F8329F1FFB70020D84B /* Config.plist in Resources */,
+				251A1D7A29F56B8D0049FD41 /* RegisterBike.storyboard in Resources */,
 				25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,17 +716,21 @@
 				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
 				25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */,
+				251A1D7329F56A8B0049FD41 /* RegisterBikePresenter.swift in Sources */,
 				25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */,
 				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
+				251A1D7529F56A990049FD41 /* RegisterBikeInteractor.swift in Sources */,
 				25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */,
 				25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */,
 				25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */,
 				25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */,
 				25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */,
+				251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */,
 				25360F9E29F201810020D84B /* Config.swift in Sources */,
 				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,
 				25360F9C29F201480020D84B /* MonitorManager.swift in Sources */,
 				25360F9129F200B80020D84B /* BaseUrl.swift in Sources */,
+				2527CE7429F590B200D5704E /* StringExtension.swift in Sources */,
 				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
 				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
 				25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */,
@@ -695,7 +743,9 @@
 				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
 				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
 				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
+				251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */,
 				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
+				251A1D7729F56AA50049FD41 /* RegisterBikeRouter.swift in Sources */,
 				25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */,
 				25360F9729F201010020D84B /* Typealias.swift in Sources */,
 				25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */,
@@ -703,9 +753,11 @@
 				25360F8929F200460020D84B /* NetworkManager.swift in Sources */,
 				25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */,
 				25360F8D29F200640020D84B /* Endpoint.swift in Sources */,
+				251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */,
 				251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */,
 				25360F8F29F200A70020D84B /* Errors.swift in Sources */,
 				25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */,
+				251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
