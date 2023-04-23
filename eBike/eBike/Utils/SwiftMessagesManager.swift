@@ -23,6 +23,31 @@ final class SwiftMessagesManager {
         SwiftMessages.show(config: config, view: view)
     }
     
+    func showForever(with defaultAppPopupState: DefaultAppPopupState) {
+        var config = SwiftMessages.defaultConfig
+        config.duration = .forever
+        config.presentationStyle = .center
+        config.dimMode = .color(color: Colors.appGray.color.withAlphaComponent(0.8), interactive: false)
+        
+        let view = AppPopupView()
+        let model = defaultAppPopupState.model
+        view.configure(with: model)
+        
+        SwiftMessages.show(config: config, view: view)
+    }
+    
+    func showForever(with model: AppPopupViewModel) {
+        var config = SwiftMessages.defaultConfig
+        config.duration = .forever
+        config.presentationStyle = .center
+        config.dimMode = .color(color: Colors.appGray.color.withAlphaComponent(0.8), interactive: false)
+        
+        let view = AppPopupView()
+        view.configure(with: model)
+        
+        SwiftMessages.show(config: config, view: view)
+    }
+    
     func hide() {
         SwiftMessages.hide()
     }
