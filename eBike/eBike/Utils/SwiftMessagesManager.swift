@@ -13,7 +13,7 @@ final class SwiftMessagesManager {
     
     private init() {}
     
-    static func showForever(view: UIView, dimColor: UIColor? = Colors.appGray.color.withAlphaComponent(0.8), presentationStyle: SwiftMessages.PresentationStyle = .top, interactive: Bool = false) {
+    func showForever(view: UIView, dimColor: UIColor? = Colors.appGray.color.withAlphaComponent(0.8), presentationStyle: SwiftMessages.PresentationStyle = .center, interactive: Bool = false) {
         var config = SwiftMessages.defaultConfig
         config.duration = .forever
         if let dimColor = dimColor {
@@ -23,7 +23,7 @@ final class SwiftMessagesManager {
         SwiftMessages.show(config: config, view: view)
     }
     
-    static func hide() {
+    func hide() {
         SwiftMessages.hide()
     }
 }
