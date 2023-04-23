@@ -32,3 +32,9 @@
 "appPopupView.nameErrorMessage" = "You have to enter a name!";
 "appPopupView.pinErrorMessage" = "You have to enter 4 characters for your pin!";
 "appPopupView.colorErrorMessage" = "You have to select a color!";
+
+"rentBikeView.color" = "Color";
+"rentBikeView.rent" = "Rent!";
+"rentBikeView.iGotIt" = "I Got It!";
+"rentBikeView.bikeOwner" = "Bike Owner";
+"rentBikeView.useThisPin" = "Use this pin to\nunlock your bike. 🔓";

@@ -65,6 +65,19 @@ internal enum L10n {
       internal static let pin = L10n.tr("Localizable", "register.placeholder.pin", fallback: "Pin")
     }
   }
+  internal enum RentBikeView {
+    /// Bike Owner
+    internal static let bikeOwner = L10n.tr("Localizable", "rentBikeView.bikeOwner", fallback: "Bike Owner")
+    /// Color
+    internal static let color = L10n.tr("Localizable", "rentBikeView.color", fallback: "Color")
+    /// I Got It!
+    internal static let iGotIt = L10n.tr("Localizable", "rentBikeView.iGotIt", fallback: "I Got It!")
+    /// Rent!
+    internal static let rent = L10n.tr("Localizable", "rentBikeView.rent", fallback: "Rent!")
+    /// Use this pin to
+    /// unlock your bike. 🔓
+    internal static let useThisPin = L10n.tr("Localizable", "rentBikeView.useThisPin", fallback: "Use this pin to\nunlock your bike. 🔓")
+  }
   internal enum TabBarItems {
     /// Map
     internal static let map = L10n.tr("Localizable", "tabBarItems.map", fallback: "Map")
