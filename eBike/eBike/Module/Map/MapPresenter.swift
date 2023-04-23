@@ -27,17 +27,20 @@ final class MapPresenter {
     private weak var view: MapViewInterface?
     private let locationManager: LocationManager
     private let config: Config
+    private let notificationCenter: NotificationCenterProtocol?
     
     init(router: MapRouterInterface,
          interactor: MapInteractorInterface,
          view: MapViewInterface?,
          locationManager: LocationManager = LocationManager.shared,
-         config: Config = Config.sharedInstance) {
+         config: Config = Config.sharedInstance,
+         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.locationManager = locationManager
         self.config = config
+        self.notificationCenter = notificationCenter
     }
     
 }
@@ -49,27 +52,22 @@ extension MapPresenter: MapPresenterInterface {
         view?.prepareUI()
         locationManager.delegate = self
         
-        guard let currentLocation = locationManager.getCurrentLocation() else { return }
-        
-        interactor.getNearbyBikes(
-            latitude: currentLocation.coordinate.latitude,
-            longitude: currentLocation.coordinate.longitude,
-            radius: config.regionRadius
+        notificationCenter?.add(
+            observer: self,
+            selector: #selector(didRegisterBike),
+            name: .didRegisterBike,
+            object: nil
         )
+        
+        fetchBikes()
     }
     
     func didSelectAnnotation(annotation: BikeAnnotation) {
-        // TODO: Add action
+        router.navigateToRentBike(with: annotation, delegate: self)
     }
     
-    func refreshAnimationViewTapped() {        
-        guard let currentLocation = locationManager.getCurrentLocation() else { return }
-        
-        interactor.getNearbyBikes(
-            latitude: currentLocation.coordinate.latitude,
-            longitude: currentLocation.coordinate.longitude,
-            radius: config.regionRadius
-        )
+    func refreshAnimationViewTapped() {
+        fetchBikes()
     }
 }
 
@@ -108,5 +106,35 @@ extension MapPresenter: LocationManagerDelegate {
             locationManager.startUpdatingLocation()
             LocationManager.shared.startUpdatingLocation()
         }
+    }
+}
+
+// MARK: - RentBikePresenterDelegate
+
+extension MapPresenter: RentBikePresenterDelegate {
+    func shouldDismissRentView() {
+        fetchBikes()
+    }
+}
+
+// MARK: - Helper
+
+private extension MapPresenter {
+    func fetchBikes() {
+        guard let currentLocation = locationManager.getCurrentLocation() else { return }
+        
+        interactor.getNearbyBikes(
+            latitude: currentLocation.coordinate.latitude,
+            longitude: currentLocation.coordinate.longitude,
+            radius: config.regionRadius
+        )
+    }
+}
+
+// MARK: - Actions
+@objc
+private extension MapPresenter {
+    func didRegisterBike() {
+        fetchBikes()
     }
 }

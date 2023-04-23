@@ -33,19 +33,26 @@ final class RegisterBikePresenter {
     private let config: Config
     private let locationManager: LocationManager
     private let swiftMessagesManager: SwiftMessagesManager
+    private let notificationCenter: NotificationCenterProtocol?
    
     init(router: RegisterBikeRouterInterface,
          interactor: RegisterBikeInteractorInterface,
          view: RegisterBikeViewInterface?,
          config: Config = Config.sharedInstance,
          locationManager: LocationManager = LocationManager.shared,
-         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared) {
+         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared,
+         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.config = config
         self.locationManager = locationManager
         self.swiftMessagesManager = swiftMessagesManager
+        self.notificationCenter = notificationCenter
+    }
+    
+    deinit {
+        notificationCenter?.removeWith(self)
     }
 }
 
@@ -95,7 +102,7 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
         let request = CreateNewBikeRequest(
             name: name,
             pin: pin,
-            color: color,
+            color: config.colorsWithHex[color] ?? "",
             location: Location(
                 latitude: location.coordinate.latitude,
                 longitude: location.coordinate.longitude
@@ -116,6 +123,7 @@ extension RegisterBikePresenter: RegisterBikeInteractorOutput {
     func onGetCreateNewBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
         switch result {
         case .success:
+            notificationCenter?.post(with: .didRegisterBike, object: nil)
             view?.updateUIAfterRegister()
             swiftMessagesManager.showForever(with: .registerBikeSuccess)
         case .failure(let error):

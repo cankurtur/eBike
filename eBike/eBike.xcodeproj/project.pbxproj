@@ -17,6 +17,11 @@
 		251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7B29F56C910049FD41 /* Storyboarded.swift */; };
 		251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */; };
 		251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7F29F575440049FD41 /* UIFontExtension.swift */; };
+		25205F8F29F5C02300611C42 /* RentBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F8E29F5C02300611C42 /* RentBikeViewController.swift */; };
+		25205F9129F5C02A00611C42 /* RentBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9029F5C02A00611C42 /* RentBikePresenter.swift */; };
+		25205F9329F5C03100611C42 /* RentBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9229F5C03100611C42 /* RentBikeInteractor.swift */; };
+		25205F9529F5C03B00611C42 /* RentBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9429F5C03B00611C42 /* RentBikeRouter.swift */; };
+		25205F9729F5C15E00611C42 /* RentBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25205F9629F5C15E00611C42 /* RentBike.storyboard */; };
 		2527CE7429F590B200D5704E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7329F590B200D5704E /* StringExtension.swift */; };
 		2527CE7A29F591E600D5704E /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7929F591E600D5704E /* NibView.swift */; };
 		2527CE8229F5969300D5704E /* AppPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8129F5969300D5704E /* AppPopupView.swift */; };
@@ -83,6 +88,9 @@
 		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
 		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
 		25360FF429F40AE20020D84B /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 25360FF329F40AE20020D84B /* refresh.json */; };
+		25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31129F5D78D001B128F /* UIColorExtension.swift */; };
+		25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */; };
+		25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -115,6 +123,11 @@
 		251A1D7B29F56C910049FD41 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
 		251A1D7F29F575440049FD41 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		25205F8E29F5C02300611C42 /* RentBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeViewController.swift; sourceTree = "<group>"; };
+		25205F9029F5C02A00611C42 /* RentBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikePresenter.swift; sourceTree = "<group>"; };
+		25205F9229F5C03100611C42 /* RentBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeInteractor.swift; sourceTree = "<group>"; };
+		25205F9429F5C03B00611C42 /* RentBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeRouter.swift; sourceTree = "<group>"; };
+		25205F9629F5C15E00611C42 /* RentBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RentBike.storyboard; sourceTree = "<group>"; };
 		2527CE7329F590B200D5704E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		2527CE7929F591E600D5704E /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
 		2527CE8129F5969300D5704E /* AppPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupView.swift; sourceTree = "<group>"; };
@@ -185,6 +198,9 @@
 		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
 		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		25360FF329F40AE20020D84B /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
+		25B2A31129F5D78D001B128F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationExtension.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -233,8 +249,20 @@
 				251A1D7B29F56C910049FD41 /* Storyboarded.swift */,
 				251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */,
 				251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */,
+				25205F9629F5C15E00611C42 /* RentBike.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		25205F8D29F5C00D00611C42 /* RentBike */ = {
+			isa = PBXGroup;
+			children = (
+				25205F8E29F5C02300611C42 /* RentBikeViewController.swift */,
+				25205F9029F5C02A00611C42 /* RentBikePresenter.swift */,
+				25205F9229F5C03100611C42 /* RentBikeInteractor.swift */,
+				25205F9429F5C03B00611C42 /* RentBikeRouter.swift */,
+			);
+			path = RentBike;
 			sourceTree = "<group>";
 		};
 		2527CE7529F591A100D5704E /* Components */ = {
@@ -330,6 +358,7 @@
 				25360FA129F20DCF0020D84B /* Main */,
 				25360FD629F2DFA80020D84B /* Map */,
 				251A1D6F29F56A510049FD41 /* RegisterBike */,
+				25205F8D29F5C00D00611C42 /* RentBike */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -443,6 +472,8 @@
 				25360FEC29F3F8530020D84B /* EncodableExtension.swift */,
 				25360FF029F3FF120020D84B /* MKMapViewExtension.swift */,
 				2527CE7329F590B200D5704E /* StringExtension.swift */,
+				25B2A31129F5D78D001B128F /* UIColorExtension.swift */,
+				25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */,
 			);
 			name = Extensions;
 			path = Network/Extensions;
@@ -465,6 +496,7 @@
 				25360FE129F33FD50020D84B /* LocationManager.swift */,
 				251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */,
 				2527CE7929F591E600D5704E /* NibView.swift */,
+				25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -641,6 +673,7 @@
 				25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */,
 				25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */,
 				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25205F9729F5C15E00611C42 /* RentBike.storyboard in Resources */,
 				25360FF429F40AE20020D84B /* refresh.json in Resources */,
 				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
@@ -741,9 +774,11 @@
 				25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */,
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
 				25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */,
+				25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */,
 				25360FA929F20E330020D84B /* MainRouter.swift in Sources */,
 				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25205F9129F5C02A00611C42 /* RentBikePresenter.swift in Sources */,
 				25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */,
 				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
@@ -753,10 +788,12 @@
 				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
 				251A1D7529F56A990049FD41 /* RegisterBikeInteractor.swift in Sources */,
 				25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */,
+				25205F9329F5C03100611C42 /* RentBikeInteractor.swift in Sources */,
 				25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */,
 				25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */,
 				25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */,
 				25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */,
+				25205F8F29F5C02300611C42 /* RentBikeViewController.swift in Sources */,
 				251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */,
 				25360F9E29F201810020D84B /* Config.swift in Sources */,
 				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,
@@ -774,6 +811,8 @@
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
 				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
 				25360FAB29F2136F0020D84B /* TabType.swift in Sources */,
+				25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */,
+				25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */,
 				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
 				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
 				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
@@ -791,6 +830,7 @@
 				251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */,
 				251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */,
 				25360F8F29F200A70020D84B /* Errors.swift in Sources */,
+				25205F9529F5C03B00611C42 /* RentBikeRouter.swift in Sources */,
 				2527CE7A29F591E600D5704E /* NibView.swift in Sources */,
 				25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */,
 				251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */,
