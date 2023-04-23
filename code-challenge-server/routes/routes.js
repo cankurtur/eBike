@@ -41,7 +41,7 @@ module.exports = function (app) {
 			return res.status(400).send("Invalid 🚲 — take a deep breath and try again");
 		}
 
-		bike.id = bikes.length;
+		bike.id = bikes.length.toString();
 		bike.rented = false;
 		bikes.push(bike);
 		res.status(200).send();
