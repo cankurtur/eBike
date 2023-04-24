@@ -22,17 +22,24 @@ final class MyBikePresenter {
     private weak var view: MyBikeViewInterface?
     private let locationManager: LocationManager
     private let swiftMessagesManager: SwiftMessagesManager
+    private let notificationCenter: NotificationCenterProtocol?
     
     init(router: MyBikeRouterInterface,
          interactor: MyBikeInteractorInterface,
          view: MyBikeViewInterface?,
          locationManager: LocationManager = LocationManager.shared,
-         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared) {
+         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared,
+         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.locationManager = locationManager
         self.swiftMessagesManager = swiftMessagesManager
+        self.notificationCenter = notificationCenter
+    }
+    
+    deinit {
+        notificationCenter?.removeWith(self)
     }
 }
 
@@ -66,6 +73,8 @@ extension MyBikePresenter: MyBikeInteractorOutput {
         case .success:
             UserDefaultsConfig.currentBike = nil
             UserDefaultsConfig.isOnTrip = false
+            notificationCenter?.post(with: .shouldUpdateMap, object: nil)
+
             let appPopupModel = AppPopupViewModel(
                 title: L10n.AppPopupView.tripIsComplete,
                 description: L10n.AppPopupView.successfullyReturned,
@@ -78,7 +87,6 @@ extension MyBikePresenter: MyBikeInteractorOutput {
             
             swiftMessagesManager.showForever(with: appPopupModel)
             view?.updateUIAfterMyBike()
-
         case .failure(let error):
             break
         }

@@ -8,7 +8,7 @@
 import Foundation
 
 extension NSNotification.Name {
-    static let didRegisterBike = NSNotification.Name(rawValue: "didRegisterBike")
+    static let shouldUpdateMap = NSNotification.Name(rawValue: "shouldUpdateMap")
 }
 
 protocol NotificationCenterProtocol {

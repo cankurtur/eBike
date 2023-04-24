@@ -123,7 +123,7 @@ extension RegisterBikePresenter: RegisterBikeInteractorOutput {
     func onGetCreateNewBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
         switch result {
         case .success:
-            notificationCenter?.post(with: .didRegisterBike, object: nil)
+            notificationCenter?.post(with: .shouldUpdateMap, object: nil)
             view?.updateUIAfterRegister()
             swiftMessagesManager.showForever(with: .registerBikeSuccess)
         case .failure(let error):

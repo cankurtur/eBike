@@ -54,8 +54,8 @@ extension MapPresenter: MapPresenterInterface {
         
         notificationCenter?.add(
             observer: self,
-            selector: #selector(didRegisterBike),
-            name: .didRegisterBike,
+            selector: #selector(shouldUpdateMap),
+            name: .shouldUpdateMap,
             object: nil
         )
         
@@ -132,9 +132,10 @@ private extension MapPresenter {
 }
 
 // MARK: - Actions
+
 @objc
 private extension MapPresenter {
-    func didRegisterBike() {
+    func shouldUpdateMap() {
         fetchBikes()
     }
 }
