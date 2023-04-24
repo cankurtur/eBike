@@ -10,7 +10,9 @@ import CoreLocation
 
 // MARK: - Constant
 
-private enum Constant { }
+private enum Constant {
+    static let refreshTime: TimeInterval = 10
+}
 
 // MARK: - PresenterInterface
 
@@ -29,6 +31,7 @@ final class MapPresenter {
     private let locationManager: LocationManager
     private let config: Config
     private let notificationCenter: NotificationCenterProtocol?
+    private var refreshTimer: Timer?
     
     init(router: MapRouterInterface,
          interactor: MapInteractorInterface,
@@ -68,13 +71,11 @@ extension MapPresenter: MapPresenterInterface {
     }
     
     func refreshAnimationViewTapped() {
-        fetchBikes()
+        fetchBikesIfRefreshEnable()
     }
     
     func currentLocationButtonTapped() {
-        guard let currentLocation = locationManager.getCurrentLocation() else { return }
-        
-        view?.render(with: currentLocation, and: config.regionRadius)
+        renderMapWithCurrentLocation()
     }
 }
 
@@ -100,10 +101,6 @@ extension MapPresenter: MapInteractorOutput {
 // MARK: - LocationManagerDelegate
 
 extension MapPresenter: LocationManagerDelegate {
-    func didUpdateLocation(with currentLocation: CLLocation) {
-        view?.render(with: currentLocation, and: config.regionRadius)
-    }
-    
     func shouldUpdateLocation(with currentLocation: CLLocation) {
         interactor.getNearbyBikes(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, radius: config.regionRadius)
     }
@@ -136,6 +133,25 @@ private extension MapPresenter {
             radius: config.regionRadius
         )
     }
+    
+    func fetchBikesIfRefreshEnable() {
+        guard refreshTimer == nil else { return }
+        
+        refreshTimer = Timer.scheduledTimer(timeInterval: Constant.refreshTime,
+                                                        target: self,
+                                                        selector: #selector(updateUIWhenRefreshTimerEnd),
+                                                        userInfo: nil,
+                                                        repeats: false)
+        fetchBikes()
+        view?.updateRefreshView(isEnable: false)
+        renderMapWithCurrentLocation()
+    }
+    
+    func renderMapWithCurrentLocation() {
+        guard let currentLocation = locationManager.getCurrentLocation() else { return }
+        
+        view?.render(with: currentLocation, and: config.regionRadius)
+    }
 }
 
 // MARK: - Actions
@@ -144,5 +160,10 @@ private extension MapPresenter {
 private extension MapPresenter {
     func shouldUpdateMap() {
         fetchBikes()
+    }
+    
+    func updateUIWhenRefreshTimerEnd() {
+        refreshTimer = nil
+        view?.updateRefreshView(isEnable: true)
     }
 }
