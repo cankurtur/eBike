@@ -34,5 +34,7 @@
 		<string>CircularSpotifyText-Medium.otf</string>
 		<string>CircularSpotifyText-MediumItalic.otf</string>
 	</array>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
 </dict>
 </plist>
