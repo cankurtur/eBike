@@ -73,8 +73,6 @@ extension MapViewController: MapViewInterface {
     func updateAnnotations(with annotations: [BikeAnnotation]) {
         mapView.removeAnnotationsIfNeeded(check: annotations)
         mapView.addAnnotationsIfExist(annotations)
-//        mapView.removeAnnotations(annotations)
-//        mapView.addAnnotations(annotations)
         view.layoutIfNeeded()
     }
     
@@ -118,7 +116,6 @@ private extension MapViewController {
     }
     
     func prepareAnimationViews() {
-//        refreshAnimationView = .init(name: "refresh")
         refreshAnimationView.backgroundColor = Constant.RefreshAnimationView.backgroundColor
         refreshAnimationView.alpha = Constant.RefreshAnimationView.alpha
         refreshAnimationView.loopMode = .playOnce
