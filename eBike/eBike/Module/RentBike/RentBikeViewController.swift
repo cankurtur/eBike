@@ -14,13 +14,13 @@ private enum Constant {
     static let backgroundColor: UIColor = .white
     
     enum BikeOwnerLabel {
-        static let textColor: UIColor = .white
+        static let textColor: UIColor = Colors.appBlack.color
         static let font: UIFont = .bold16
         static let text: String = L10n.RentBikeView.bikeOwner
     }
     
     enum NameLabel {
-        static let textColor: UIColor = .white
+        static let textColor: UIColor = Colors.appBlack.color
         static let font: UIFont = .bold14
     }
     
@@ -87,7 +87,6 @@ final class RentBikeViewController: BaseViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.viewDidLoad()
-        view.backgroundColor = Colors.appGray.color
     }
 }
 

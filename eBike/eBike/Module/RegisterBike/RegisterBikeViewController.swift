@@ -32,7 +32,7 @@ private enum Constant {
         static let titleColor: UIColor = .white
         static let font: UIFont = .bold20
         static let backgroundColor: UIColor = Colors.appGreen.color
-        static let cornerRadius: CGFloat = 8
+        static let cornerRadius: CGFloat = 25
     }
     
     enum LocationInfoLabel {
