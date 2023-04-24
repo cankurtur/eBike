@@ -20,13 +20,23 @@ private enum Constant {
     }
     
     enum RefreshAnimationView {
-        static let backgroundColor: UIColor = .clear
+        static let backgroundColor: UIColor = .white
         static let alpha: CGFloat = 1.0
+        static let cornerRadius: CGFloat = 20
+    }
+    
+    enum RefreshAnimationCircleView {
+        static let activeBackgroundColor: UIColor = .clear
+        static let passiveBackgroundColor: UIColor = .gray
         static let cornerRadius: CGFloat = 20
     }
     
     enum CurrentLocationButton {
         static let image: UIImage = UIImage(systemName: "location.fill")!.withRenderingMode(.alwaysOriginal).withTintColor(Colors.appGreen.color)
+    }
+    
+    enum MapView {
+        static let identifier: String = "allBikesMapIdentifier"
     }
 }
 
@@ -36,6 +46,7 @@ protocol MapViewInterface: ViewInterface {
     func prepareUI()
     func updateAnnotations(with annotations: [BikeAnnotation])
     func render(with location: CLLocation, and regionRadius: Double)
+    func updateRefreshView(isEnable: Bool)
 }
 
 // MARK: - MapViewController
@@ -44,6 +55,7 @@ final class MapViewController: BaseViewController, Storyboarded {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var refreshAnimationView: LottieAnimationView!
+    @IBOutlet weak var refreshAnimationCircleView: UIView!
     @IBOutlet weak var currentLocationButton: UIButton!
     
     static var storyboardName: StoryboardNames {
@@ -63,7 +75,7 @@ final class MapViewController: BaseViewController, Storyboarded {
 extension MapViewController: MapViewInterface {
     func prepareUI() {
         prepareMapView()
-        prepareAnimationViews()
+        prepareViews()
         prepareButtons()
     }
     
@@ -76,6 +88,11 @@ extension MapViewController: MapViewInterface {
     func render(with location: CLLocation, and regionRadius: Double) {
         mapView.setRegionMeterDistance(with: location, regionRadius: regionRadius)
     }
+    
+    func updateRefreshView(isEnable: Bool) {
+        refreshAnimationView.isUserInteractionEnabled = isEnable
+        refreshAnimationCircleView.backgroundColor = isEnable ? Constant.RefreshAnimationCircleView.activeBackgroundColor : Constant.RefreshAnimationCircleView.passiveBackgroundColor
+    }
 }
 
 // MARK: - MKMapViewDelegate
@@ -84,13 +101,13 @@ extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard let annotation = annotation as? BikeAnnotation else { return nil }
         
-        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "allBikesMapIdentifier") as? MKMarkerAnnotationView
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: Constant.MapView.identifier) as? MKMarkerAnnotationView
         
         if let view = annotationView {
             view.annotation = annotation
         }
         else {
-            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: "allBikesMapIdentifier")
+            annotationView = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: Constant.MapView.identifier)
         }
         
         annotationView?.glyphText = Constant.AnnotationView.glyphText
@@ -112,7 +129,7 @@ private extension MapViewController {
         mapView.delegate = self
     }
     
-    func prepareAnimationViews() {
+    func prepareViews() {
         refreshAnimationView.backgroundColor = Constant.RefreshAnimationView.backgroundColor
         refreshAnimationView.alpha = Constant.RefreshAnimationView.alpha
         refreshAnimationView.loopMode = .playOnce
@@ -123,6 +140,9 @@ private extension MapViewController {
             action: #selector(refreshAnimationViewTapped))
         )
         refreshAnimationView.play()
+        
+        refreshAnimationCircleView.layer.cornerRadius = Constant.RefreshAnimationCircleView.cornerRadius
+        refreshAnimationCircleView.backgroundColor = Constant.RefreshAnimationCircleView.activeBackgroundColor
     }
     
     func prepareButtons() {

@@ -20,11 +20,21 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7E-oh-wvh" customClass="LottieAnimationView" customModule="Lottie">
-                                <rect key="frame" x="340" y="60" width="44" height="44"/>
+                                <rect key="frame" x="344" y="60" width="40" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsa-br-YIt">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="BTr-vE-tMZ"/>
-                                    <constraint firstAttribute="width" constant="44" id="vZo-zw-yHB"/>
+                                    <constraint firstAttribute="trailing" secondItem="bsa-br-YIt" secondAttribute="trailing" id="9Vx-aT-qgx"/>
+                                    <constraint firstAttribute="height" constant="40" id="BTr-vE-tMZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="bsa-br-YIt" secondAttribute="bottom" id="aIB-hD-0AM"/>
+                                    <constraint firstItem="bsa-br-YIt" firstAttribute="top" secondItem="I7E-oh-wvh" secondAttribute="top" id="fLa-FK-25M"/>
+                                    <constraint firstAttribute="width" constant="40" id="vZo-zw-yHB"/>
+                                    <constraint firstItem="bsa-br-YIt" firstAttribute="leading" secondItem="I7E-oh-wvh" secondAttribute="leading" id="ysR-eJ-42k"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="refresh"/>
@@ -56,6 +66,7 @@
                     <connections>
                         <outlet property="currentLocationButton" destination="cca-lW-Lre" id="a8k-0N-P8i"/>
                         <outlet property="mapView" destination="eyp-mO-02p" id="cMl-xZ-gTY"/>
+                        <outlet property="refreshAnimationCircleView" destination="bsa-br-YIt" id="0fn-BU-TBt"/>
                         <outlet property="refreshAnimationView" destination="I7E-oh-wvh" id="YH2-xn-Evo"/>
                     </connections>
                 </viewController>

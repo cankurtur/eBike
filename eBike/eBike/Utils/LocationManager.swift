@@ -11,7 +11,6 @@ import CoreLocation
 // MARK: - LocationManagerDelegate
 
 protocol LocationManagerDelegate: AnyObject {
-    func didUpdateLocation(with currentLocation: CLLocation)
     func shouldUpdateLocation(with currentLocation: CLLocation)
     func didChangeAuthorization(with status: CLAuthorizationStatus)
 }
@@ -55,7 +54,6 @@ extension LocationManager: CLLocationManagerDelegate {
         guard let location = locations.last else { return }
         currentLocation = location
         measureDistanceBetweenLocations(currentLocation: location)
-        delegate?.didUpdateLocation(with: location)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
