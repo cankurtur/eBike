@@ -17,6 +17,7 @@ private enum Constant { }
 protocol MapPresenterInterface: PresenterInterface {
     func didSelectAnnotation(annotation: BikeAnnotation)
     func refreshAnimationViewTapped()
+    func currentLocationButtonTapped()
 }
 
 // MARK: - MapPresenter
@@ -68,6 +69,12 @@ extension MapPresenter: MapPresenterInterface {
     
     func refreshAnimationViewTapped() {
         fetchBikes()
+    }
+    
+    func currentLocationButtonTapped() {
+        guard let currentLocation = locationManager.getCurrentLocation() else { return }
+        
+        view?.render(with: currentLocation, and: config.regionRadius)
     }
 }
 
