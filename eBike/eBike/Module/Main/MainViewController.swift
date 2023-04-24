@@ -15,6 +15,8 @@ private enum Constant {
     enum TabBar {
         static let tintColor: UIColor = Colors.appGreen.color
         static let unselectedItemTintColor: UIColor = Colors.appGray.color
+        static let lineColor: UIColor = Colors.appGray.color.withAlphaComponent(0.5)
+        static let lineHeight: CGFloat = 1
     }
 }
 
@@ -60,6 +62,10 @@ extension MainViewController: MainViewInterface {
 
 private extension MainViewController {
     func prepareTabBar() {
+        let lineView = UIView(frame: CGRect(x: 0, y: 0, width: tabBar.frame.width, height: Constant.TabBar.lineHeight))
+        lineView.backgroundColor = Constant.TabBar.lineColor
+        tabBar.addSubview(lineView)
+        
         tabBar.backgroundColor = .white
         tabBar.tintColor = Constant.TabBar.tintColor
         tabBar.unselectedItemTintColor = Constant.TabBar.unselectedItemTintColor
