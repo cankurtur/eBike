@@ -51,6 +51,18 @@ internal enum L10n {
       internal static let glyphText = L10n.tr("Localizable", "map.annotation.glyphText", fallback: "🚲")
     }
   }
+  internal enum MyBike {
+    /// Looks like you do not have a rented bike.
+    internal static let dontHaveRentalBike = L10n.tr("Localizable", "myBike.dontHaveRentalBike", fallback: "Looks like you do not have a rented bike.")
+    /// PIN
+    internal static let pin = L10n.tr("Localizable", "myBike.pin", fallback: "PIN")
+    /// Rent now!
+    internal static let rentOneNow = L10n.tr("Localizable", "myBike.rentOneNow", fallback: "Rent now!")
+    /// Return Bike
+    internal static let returnBike = L10n.tr("Localizable", "myBike.returnBike", fallback: "Return Bike")
+    /// Your Rented Bike Info
+    internal static let yourBikesInfo = L10n.tr("Localizable", "myBike.yourBikesInfo", fallback: "Your Rented Bike Info")
+  }
   internal enum Register {
     /// 
     internal static let empty = L10n.tr("Localizable", "register.empty", fallback: "")
@@ -82,25 +94,13 @@ internal enum L10n {
     /// unlock your bike. 🔓
     internal static let useThisPin = L10n.tr("Localizable", "rentBikeView.useThisPin", fallback: "Use this pin to\nunlock your bike. 🔓")
   }
-  internal enum ReturnBike {
-    /// Looks like you do not have a rented bike.
-    internal static let dontHaveRentalBike = L10n.tr("Localizable", "returnBike.dontHaveRentalBike", fallback: "Looks like you do not have a rented bike.")
-    /// PIN
-    internal static let pin = L10n.tr("Localizable", "returnBike.pin", fallback: "PIN")
-    /// Rent now!
-    internal static let rentOneNow = L10n.tr("Localizable", "returnBike.rentOneNow", fallback: "Rent now!")
-    /// Return Bike
-    internal static let returnBike = L10n.tr("Localizable", "returnBike.returnBike", fallback: "Return Bike")
-    /// Your Rented Bike Info
-    internal static let yourBikesInfo = L10n.tr("Localizable", "returnBike.yourBikesInfo", fallback: "Your Rented Bike Info")
-  }
   internal enum TabBarItems {
     /// Map
     internal static let map = L10n.tr("Localizable", "tabBarItems.map", fallback: "Map")
+    /// My Bike
+    internal static let myBike = L10n.tr("Localizable", "tabBarItems.myBike", fallback: "My Bike")
     /// Register Bike
     internal static let registerBike = L10n.tr("Localizable", "tabBarItems.registerBike", fallback: "Register Bike")
-    /// My Bike
-    internal static let returnBike = L10n.tr("Localizable", "tabBarItems.returnBike", fallback: "My Bike")
   }
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length

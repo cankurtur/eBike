@@ -1,5 +1,5 @@
 //
-//  ReturnBikeInteractor.swift
+//  MyBikeInteractor.swift
 //  eBike
 //
 //  Created by Can Kurtur on 24.04.2023.
@@ -9,22 +9,22 @@ import Foundation
 
 // MARK: - InteractorInterface
 
-protocol ReturnBikeInteractorInterface: InteractorInterface {
+protocol MyBikeInteractorInterface: InteractorInterface {
     func updateBike(with updateBikeInfo: UpdateBikeInfo)
-    func returnBike(with bikeID: Int)
+    func MyBike(with bikeID: Int)
 }
 
-// MARK: - ReturnBikeInteractorOutput
+// MARK: - MyBikeInteractorOutput
 
-protocol ReturnBikeInteractorOutput: AnyObject {
+protocol MyBikeInteractorOutput: AnyObject {
     func onUpdateBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
-    func onReturnBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
+    func onMyBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
 }
 
-// MARK: - ReturnBikeInteractor
+// MARK: - MyBikeInteractor
 
-final class ReturnBikeInteractor {
-    weak var output: ReturnBikeInteractorOutput?
+final class MyBikeInteractor {
+    weak var output: MyBikeInteractorOutput?
     
     private var networkManager: NetworkManager<BikesEndpointItem>
     
@@ -33,9 +33,9 @@ final class ReturnBikeInteractor {
     }
 }
 
-// MARK: - ReturnBikeInteractorInterface
+// MARK: - MyBikeInteractorInterface
 
-extension ReturnBikeInteractor: ReturnBikeInteractorInterface {
+extension MyBikeInteractor: MyBikeInteractorInterface {
     func updateBike(with updateBikeInfo: UpdateBikeInfo) {
         networkManager.request(endpoint: .updateBike(info: updateBikeInfo), type: EmptyResponse.self) { [weak self] result in
             guard let self = self else { return }
@@ -44,11 +44,11 @@ extension ReturnBikeInteractor: ReturnBikeInteractorInterface {
         }
     }
     
-    func returnBike(with bikeID: Int) {
+    func MyBike(with bikeID: Int) {
         networkManager.request(endpoint: .returnBike(bikeId: bikeID), type: EmptyResponse.self) { [weak self] result in
             guard let self = self else { return }
             
-            self.output?.onReturnBikeReceived(result)
+            self.output?.onMyBikeReceived(result)
         }
     }
 }
