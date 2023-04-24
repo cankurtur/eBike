@@ -32,6 +32,7 @@ final class RegisterBikeInteractor {
 }
 
 // MARK: - RegisterBikeInteractorInterface
+
 extension RegisterBikeInteractor: RegisterBikeInteractorInterface {
     func createNewBike(with requestBody: CreateNewBikeRequest) {
         networkManager.request(endpoint: .createNewBike(request: requestBody), type: EmptyResponse.self) { [weak self] result in
