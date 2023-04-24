@@ -10,5 +10,5 @@ import Foundation
 public enum StoryboardNames: String {
     case registerBike = "RegisterBike"
     case rentBike = "RentBike"
-    case returnBike = "ReturnBike"
+    case myBike = "MyBike"
 }

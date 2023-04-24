@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Return Bike View Controller-->
+        <!--My Bike View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="ReturnBikeViewController" id="Y6W-OH-hqX" customClass="ReturnBikeViewController" customModule="eBike" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyBikeViewController" id="Y6W-OH-hqX" customClass="MyBikeViewController" customModule="eBike" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="trailing" secondItem="26f-zA-7Wb" secondAttribute="trailing" id="qky-WJ-IIU"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxH-Sa-Qrf" userLabel="Return Bike View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxH-Sa-Qrf" userLabel="My Bike View">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E1h-Yo-zGb">
@@ -132,16 +132,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addNewBikeButton" destination="aB0-3D-ulg" id="9lf-Q0-IiZ"/>
-                        <outlet property="emptyImageView" destination="gOQ-8y-TxQ" id="ida-TV-j7c"/>
-                        <outlet property="emptyTitleLabel" destination="mwk-hJ-NNQ" id="F42-QY-EXb"/>
-                        <outlet property="emptyView" destination="nfR-vz-oVe" id="my1-Xd-ctW"/>
-                        <outlet property="infoImageView" destination="K5x-pq-dfm" id="QqS-oX-zP1"/>
-                        <outlet property="infoLabel" destination="kF8-m1-Pe4" id="ghu-hq-9Rc"/>
-                        <outlet property="pinLabel" destination="n7f-jV-CXe" id="as3-bS-tkx"/>
-                        <outlet property="pinTitleLabel" destination="s15-eh-Xmo" id="ToM-rS-kUQ"/>
-                        <outlet property="returnBikeButton" destination="M8j-Cc-FRf" id="imd-bO-Y9C"/>
-                        <outlet property="returnBikeView" destination="lxH-Sa-Qrf" id="Bxe-5I-0gt"/>
+                        <outlet property="MyBikeButton" destination="M8j-Cc-FRf" id="nIm-EH-kvm"/>
+                        <outlet property="MyBikeView" destination="lxH-Sa-Qrf" id="EgZ-8t-hCd"/>
+                        <outlet property="addNewBikeButton" destination="aB0-3D-ulg" id="vYW-ho-7fZ"/>
+                        <outlet property="emptyImageView" destination="gOQ-8y-TxQ" id="7Ob-Ry-2va"/>
+                        <outlet property="emptyTitleLabel" destination="mwk-hJ-NNQ" id="SO4-R1-8s9"/>
+                        <outlet property="emptyView" destination="nfR-vz-oVe" id="jCj-FB-gv8"/>
+                        <outlet property="infoImageView" destination="K5x-pq-dfm" id="L0j-Qc-wtC"/>
+                        <outlet property="infoLabel" destination="kF8-m1-Pe4" id="mwt-O3-3xV"/>
+                        <outlet property="pinLabel" destination="n7f-jV-CXe" id="gec-dI-mS8"/>
+                        <outlet property="pinTitleLabel" destination="s15-eh-Xmo" id="gle-Gi-uAG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

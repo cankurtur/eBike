@@ -13,7 +13,7 @@
 
 "tabBarItems.registerBike" = "Register Bike";
 "tabBarItems.map" = "Map";
-"tabBarItems.returnBike" = "My Bike";
+"tabBarItems.myBike" = "My Bike";
 
 "map.annotation.glyphText" = "🚲";
 
@@ -42,8 +42,8 @@
 "rentBikeView.bikeOwner" = "Bike Owner";
 "rentBikeView.useThisPin" = "Use this pin to\nunlock your bike. 🔓";
 
-"returnBike.dontHaveRentalBike" = "Looks like you do not have a rented bike.";
-"returnBike.rentOneNow" = "Rent now!";
-"returnBike.yourBikesInfo" = "Your Rented Bike Info";
-"returnBike.returnBike" = "Return Bike";
-"returnBike.pin" = "PIN";
+"myBike.dontHaveRentalBike" = "Looks like you do not have a rented bike.";
+"myBike.rentOneNow" = "Rent now!";
+"myBike.yourBikesInfo" = "Your Rented Bike Info";
+"myBike.returnBike" = "Return Bike";
+"myBike.pin" = "PIN";

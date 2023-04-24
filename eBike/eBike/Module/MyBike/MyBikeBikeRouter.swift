@@ -1,5 +1,5 @@
 //
-//  ReturnBikeRouter.swift
+//  MyBikeRouter.swift
 //  eBike
 //
 //  Created by Can Kurtur on 24.04.2023.
@@ -9,14 +9,14 @@ import UIKit
 
 // MARK: - RouterInterface
 
-protocol ReturnBikeRouterInterface: RouterInterface {
+protocol MyBikeRouterInterface: RouterInterface {
     func navigateToMap()
 }
 
-// MARK: - ReturnBikeRouter
+// MARK: - MyBikeRouter
 
-final class ReturnBikeRouter {
-    private weak var presenter: ReturnBikePresenter?
+final class MyBikeRouter {
+    private weak var presenter: MyBikePresenter?
     private weak var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController?) {
@@ -25,12 +25,12 @@ final class ReturnBikeRouter {
     
     static func createModule() -> UINavigationController {
 
-        let interactor = ReturnBikeInteractor()
-        let view = ReturnBikeViewController.instantiate()
+        let interactor = MyBikeInteractor()
+        let view = MyBikeViewController.instantiate()
         let navCon = UINavigationController(rootViewController: view)
         navCon.modalPresentationStyle = .fullScreen
-        let router = ReturnBikeRouter(navigationController: navCon)
-        let presenter = ReturnBikePresenter(router: router, interactor: interactor, view: view)
+        let router = MyBikeRouter(navigationController: navCon)
+        let presenter = MyBikePresenter(router: router, interactor: interactor, view: view)
         router.presenter = presenter
         view.presenter = presenter
         interactor.output = presenter
@@ -39,9 +39,9 @@ final class ReturnBikeRouter {
     }
 }
 
-// MARK: - ReturnBikeRouterInterface
+// MARK: - MyBikeRouterInterface
 
-extension ReturnBikeRouter: ReturnBikeRouterInterface {
+extension MyBikeRouter: MyBikeRouterInterface {
     func navigateToMap() {
         navigationController?.tabBarController?.selectedIndex = TabType.map.rawValue
     }

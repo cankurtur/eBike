@@ -10,5 +10,5 @@ import Foundation
 enum TabType: Int {
     case registerBike
     case map
-    case returnBike
+    case myBike
 }

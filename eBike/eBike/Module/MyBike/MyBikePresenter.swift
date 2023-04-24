@@ -1,5 +1,5 @@
 //
-//  ReturnBikePresenter.swift
+//  MyBikePresenter.swift
 //  eBike
 //
 //  Created by Can Kurtur on 24.04.2023.
@@ -9,23 +9,23 @@ import Foundation
 
 // MARK: - PresenterInterface
 
-protocol ReturnBikePresenterInterface: PresenterInterface {
+protocol MyBikePresenterInterface: PresenterInterface {
     func addNewBikeButtonTapped()
-    func returnBikeButtonTapped()
+    func MyBikeButtonTapped()
 }
 
-// MARK: - ReturnBikePresenter
+// MARK: - MyBikePresenter
 
-final class ReturnBikePresenter {
-    private let router: ReturnBikeRouterInterface
-    private let interactor: ReturnBikeInteractorInterface
-    private weak var view: ReturnBikeViewInterface?
+final class MyBikePresenter {
+    private let router: MyBikeRouterInterface
+    private let interactor: MyBikeInteractorInterface
+    private weak var view: MyBikeViewInterface?
     private let locationManager: LocationManager
     private let swiftMessagesManager: SwiftMessagesManager
     
-    init(router: ReturnBikeRouterInterface,
-         interactor: ReturnBikeInteractorInterface,
-         view: ReturnBikeViewInterface?,
+    init(router: MyBikeRouterInterface,
+         interactor: MyBikeInteractorInterface,
+         view: MyBikeViewInterface?,
          locationManager: LocationManager = LocationManager.shared,
          swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared) {
         self.router = router
@@ -36,9 +36,9 @@ final class ReturnBikePresenter {
     }
 }
 
-// MARK: - ReturnBikePresenterInterface
+// MARK: - MyBikePresenterInterface
 
-extension ReturnBikePresenter: ReturnBikePresenterInterface {
+extension MyBikePresenter: MyBikePresenterInterface {
     func viewDidLoad() {
         prepareUI()
     }
@@ -51,17 +51,17 @@ extension ReturnBikePresenter: ReturnBikePresenterInterface {
         router.navigateToMap()
     }
     
-    func returnBikeButtonTapped() {
+    func MyBikeButtonTapped() {
         guard let bikeInfo = createUpdateBikeInfo() else { return }
         
         interactor.updateBike(with: bikeInfo)
     }
 }
 
-// MARK: - ReturnBikeInteractorOutput
+// MARK: - MyBikeInteractorOutput
 
-extension ReturnBikePresenter: ReturnBikeInteractorOutput {
-    func onReturnBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
+extension MyBikePresenter: MyBikeInteractorOutput {
+    func onMyBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
         switch result {
         case .success:
             UserDefaultsConfig.currentBike = nil
@@ -77,7 +77,7 @@ extension ReturnBikePresenter: ReturnBikeInteractorOutput {
                 }
             
             swiftMessagesManager.showForever(with: appPopupModel)
-            view?.updateUIAfterReturnBike()
+            view?.updateUIAfterMyBike()
 
         case .failure(let error):
             break
@@ -92,7 +92,7 @@ extension ReturnBikePresenter: ReturnBikeInteractorOutput {
                 return
             }
             
-            interactor.returnBike(with: intBikeID)
+            interactor.MyBike(with: intBikeID)
         case .failure(let error):
             break
         }
@@ -101,7 +101,7 @@ extension ReturnBikePresenter: ReturnBikeInteractorOutput {
 
 // MARK: - Helper
 
-private extension ReturnBikePresenter {
+private extension MyBikePresenter {
     func prepareUI() {
         view?.prepareUI(
             isOnTrip: UserDefaultsConfig.isOnTrip,
