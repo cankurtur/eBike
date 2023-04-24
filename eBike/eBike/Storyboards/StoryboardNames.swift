@@ -8,6 +8,7 @@
 import Foundation
 
 public enum StoryboardNames: String {
+    case map = "Map"
     case registerBike = "RegisterBike"
     case rentBike = "RentBike"
     case myBike = "MyBike"

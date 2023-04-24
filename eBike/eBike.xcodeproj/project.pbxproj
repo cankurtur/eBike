@@ -28,6 +28,7 @@
 		2527CE8429F5969900D5704E /* AppPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2527CE8329F5969900D5704E /* AppPopupView.xib */; };
 		2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8529F599C600D5704E /* AppPopupViewModel.swift */; };
 		2527CE8829F5A6CA00D5704E /* DefaultAppPopupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8729F5A6CA00D5704E /* DefaultAppPopupState.swift */; };
+		2528B47129F71BF10076989F /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2528B47029F71BF10076989F /* Map.storyboard */; };
 		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
@@ -139,6 +140,7 @@
 		2527CE8329F5969900D5704E /* AppPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppPopupView.xib; sourceTree = "<group>"; };
 		2527CE8529F599C600D5704E /* AppPopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupViewModel.swift; sourceTree = "<group>"; };
 		2527CE8729F5A6CA00D5704E /* DefaultAppPopupState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppPopupState.swift; sourceTree = "<group>"; };
+		2528B47029F71BF10076989F /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 			children = (
 				251A1D7B29F56C910049FD41 /* Storyboarded.swift */,
 				251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */,
+				2528B47029F71BF10076989F /* Map.storyboard */,
 				251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */,
 				25205F9629F5C15E00611C42 /* RentBike.storyboard */,
 				25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */,
@@ -699,6 +702,7 @@
 				25205F9729F5C15E00611C42 /* RentBike.storyboard in Resources */,
 				25360FF429F40AE20020D84B /* refresh.json in Resources */,
 				25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */,
+				2528B47129F71BF10076989F /* Map.storyboard in Resources */,
 				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
 				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,

@@ -20,14 +20,13 @@ private enum Constant {
     }
     
     enum RefreshAnimationView {
-        static let animationName: String = Animations.refresh.rawValue
         static let backgroundColor: UIColor = .clear
         static let alpha: CGFloat = 1.0
         static let cornerRadius: CGFloat = 20
-        static let heightConstant: CGFloat = 44
-        static let widthConstant: CGFloat = 44
-        static let topConstant: CGFloat = 60
-        static let trailingConstant: CGFloat = 30
+    }
+    
+    enum CurrentLocationButton {
+        static let image: UIImage = UIImage(systemName: "location.fill")!.withRenderingMode(.alwaysOriginal).withTintColor(Colors.appGreen.color)
     }
 }
 
@@ -41,18 +40,15 @@ protocol MapViewInterface: ViewInterface {
 
 // MARK: - MapViewController
 
-final class MapViewController: BaseViewController {
+final class MapViewController: BaseViewController, Storyboarded {
     
-    private lazy var mapView: MKMapView = {
-        let mapView = MKMapView()
-        mapView.delegate = self
-        return mapView
-    }()
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var refreshAnimationView: LottieAnimationView!
+    @IBOutlet weak var currentLocationButton: UIButton!
     
-    private lazy var refreshAnimationView: LottieAnimationView = {
-        let animationView = LottieAnimationView(name: Constant.RefreshAnimationView.animationName)
-        return animationView
-    }()
+    static var storyboardName: StoryboardNames {
+        return .map
+    }
     
     var presenter: MapPresenterInterface!
     
@@ -66,8 +62,9 @@ final class MapViewController: BaseViewController {
 
 extension MapViewController: MapViewInterface {
     func prepareUI() {
-        setup()
-        prepare()
+        prepareMapView()
+        prepareAnimationViews()
+        prepareButtons()
     }
     
     func updateAnnotations(with annotations: [BikeAnnotation]) {
@@ -111,8 +108,8 @@ extension MapViewController: MKMapViewDelegate {
 // MARK: - Prepares
 
 private extension MapViewController {
-    func prepare() {
-        prepareAnimationViews()
+    func prepareMapView() {
+        mapView.delegate = self
     }
     
     func prepareAnimationViews() {
@@ -127,31 +124,13 @@ private extension MapViewController {
         )
         refreshAnimationView.play()
     }
-}
-
-// MARK: - Setups
-
-private extension MapViewController {
-    func setup() {
-        setupMapView()
-        setupRefreshAnimationView()
-    }
     
-    func setupMapView() {
-        view.addSubview(mapView)
-        mapView.edgesToSuperview()
-    }
-    
-    func setupRefreshAnimationView() {
-        view.addSubview(refreshAnimationView)
-        refreshAnimationView.edgesToItself(to: [
-            .height(Constant.RefreshAnimationView.heightConstant),
-            .width(Constant.RefreshAnimationView.widthConstant)
-        ])
-        refreshAnimationView.edgesTo(view, to: [
-            .top(Constant.RefreshAnimationView.topConstant),
-            .trailing(Constant.RefreshAnimationView.trailingConstant)
-        ])
+    func prepareButtons() {
+        currentLocationButton.setImage(Constant.CurrentLocationButton.image, for: .normal)
+        currentLocationButton.contentVerticalAlignment = .fill
+        currentLocationButton.contentHorizontalAlignment = .fill
+
+        currentLocationButton.addTarget(self, action: #selector(currentLocationButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -162,6 +141,10 @@ private extension MapViewController {
     func refreshAnimationViewTapped() {
         refreshAnimationView.play()
         presenter.refreshAnimationViewTapped()
+    }
+    
+    func currentLocationButtonTapped() {
+        presenter.currentLocationButtonTapped()
     }
 }
 

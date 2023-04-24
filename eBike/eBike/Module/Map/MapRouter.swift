@@ -26,7 +26,7 @@ final class MapRouter {
     static func createModule() -> UINavigationController {
 
         let interactor = MapInteractor()
-        let view = MapViewController()
+        let view = MapViewController.instantiate()
         let navCon = UINavigationController(rootViewController: view)
         navCon.modalPresentationStyle = .fullScreen
         let router = MapRouter(navigationController: navCon)
