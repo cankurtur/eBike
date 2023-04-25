@@ -109,7 +109,6 @@ extension MapPresenter: LocationManagerDelegate {
     func didChangeAuthorization(with status: CLAuthorizationStatus) {
         if status == .authorizedWhenInUse || status == .authorizedAlways {
             locationManager.startUpdatingLocation()
-            LocationManager.shared.startUpdatingLocation()
         }
     }
 }
