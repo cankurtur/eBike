@@ -7,18 +7,8 @@
 
 import Foundation
 
-public protocol APIError: Codable {
-    var message: String? { get }
-    var statusCode: Int? { get set }
-}
-
-public class ClientError: APIError {
-    public var message: String?
-    public var statusCode: Int?
-}
-
 public enum APIClientError: Error {
-    case handledError(error: APIError)
+    case handledError(error: String?)
     case networkError
     case decoding(error: DecodingError?)
     case timeout
@@ -28,7 +18,7 @@ public enum APIClientError: Error {
     public var message: String {
         switch self {
         case .handledError(let error):
-            return error.message ?? ""
+            return error ?? ""
         case .decoding:
             return "Decoding Error"
         case .networkError:
@@ -42,8 +32,8 @@ public enum APIClientError: Error {
     
     public var statusCode: Int {
         switch self {
-        case .handledError(let error):
-            return error.statusCode ?? 0
+        case .handledError:
+            return 400
         case .networkError:
             return NSURLErrorCannotDecodeRawData
         case .decoding:

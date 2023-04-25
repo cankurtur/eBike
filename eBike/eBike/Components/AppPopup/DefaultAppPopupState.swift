@@ -7,37 +7,28 @@
 
 import Foundation
 
-enum DefaultAppPopupState {
-    case registerBikeSuccess
-    case registerBikeNameError
-    case registerBikePinError
-    case registerBikeColorError
+public enum DefaultAppPopupState {
+    case defaultPopup(title: String,
+                      message: String,
+                      buttonTitle: String,
+                      action: (() -> Void)?)
+    case networkErrorPopup(message: String, action: (() -> Void)?)
     
     var model: AppPopupViewModel {
         switch self {
-        case .registerBikeSuccess:
-            return AppPopupViewModel(title: L10n.AppPopupView.success,
-                                     description: L10n.AppPopupView.youHaveRegister,
-                                     buttonTitle: L10n.AppPopupView.cool) {
+        case .defaultPopup(let title, let message, let buttonTitle, let action):
+            return AppPopupViewModel(title: title,
+                                     description: message,
+                                     buttonTitle: buttonTitle) {
                 SwiftMessagesManager.shared.hide()
+                action?()
             }
-        case .registerBikeNameError:
+        case .networkErrorPopup(let message, let action):
             return AppPopupViewModel(title: L10n.AppPopupView.error,
-                                     description: L10n.AppPopupView.nameErrorMessage,
+                                     description: message,
                                      buttonTitle: L10n.AppPopupView.ok) {
                 SwiftMessagesManager.shared.hide()
-            }
-        case .registerBikePinError:
-            return AppPopupViewModel(title: L10n.AppPopupView.error,
-                                     description: L10n.AppPopupView.pinErrorMessage,
-                                     buttonTitle: L10n.AppPopupView.ok) {
-                SwiftMessagesManager.shared.hide()
-            }
-        case .registerBikeColorError:
-            return AppPopupViewModel(title: L10n.AppPopupView.error,
-                                     description: L10n.AppPopupView.colorErrorMessage,
-                                     buttonTitle: L10n.AppPopupView.ok) {
-                SwiftMessagesManager.shared.hide()
+                action?()
             }
         }
     }

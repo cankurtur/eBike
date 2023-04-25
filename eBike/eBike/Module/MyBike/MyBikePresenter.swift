@@ -21,20 +21,17 @@ final class MyBikePresenter {
     private let interactor: MyBikeInteractorInterface
     private weak var view: MyBikeViewInterface?
     private let locationManager: LocationManager
-    private let swiftMessagesManager: SwiftMessagesManager
     private let notificationCenter: NotificationCenterProtocol?
     
     init(router: MyBikeRouterInterface,
          interactor: MyBikeInteractorInterface,
          view: MyBikeViewInterface?,
          locationManager: LocationManager = LocationManager.shared,
-         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared,
          notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.locationManager = locationManager
-        self.swiftMessagesManager = swiftMessagesManager
         self.notificationCenter = notificationCenter
     }
     
@@ -74,21 +71,16 @@ extension MyBikePresenter: MyBikeInteractorOutput {
             UserDefaultsConfig.currentBike = nil
             UserDefaultsConfig.isOnTrip = false
             notificationCenter?.post(with: .shouldUpdateMap, object: nil)
-
-            let appPopupModel = AppPopupViewModel(
-                title: L10n.AppPopupView.tripIsComplete,
-                description: L10n.AppPopupView.successfullyReturned,
-                buttonTitle:  L10n.AppPopupView.cool) { [weak self] in
-                    guard let self = self else { return }
-                    
-                    self.swiftMessagesManager.hide()
-                    self.router.navigateToMap()
-                }
             
-            swiftMessagesManager.showForever(with: appPopupModel)
+            view?.showPopup(title: L10n.AppPopupView.tripIsComplete,
+                            message: L10n.AppPopupView.successfullyReturned,
+                            buttonTitle: L10n.AppPopupView.cool,
+                            buttonAction: { [weak self] in
+                self?.router.navigateToMap()
+            })
             view?.updateUIAfterMyBike()
         case .failure(let error):
-            break
+            view?.showPopup(error: error, buttonAction: nil)
         }
     }
     
@@ -102,6 +94,7 @@ extension MyBikePresenter: MyBikeInteractorOutput {
             
             interactor.MyBike(with: intBikeID)
         case .failure(let error):
+            view?.showPopup(error: error, buttonAction: nil)
             break
         }
     }

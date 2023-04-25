@@ -77,7 +77,13 @@ extension RentBikePresenter: RentBikeInteractorOutput {
             UserDefaultsConfig.isOnTrip = true
             view?.updateUIAfterRentBike()
         case .failure(let error):
-            print(error)
+            view?.showPopup(error: error, buttonAction: { [weak self] in
+                guard let self = self else { return }
+                
+                self.delegate?.shouldDismissRentView()
+                self.router.dismiss()
+            })
         }
     }
 }
+
