@@ -84,18 +84,12 @@ final public class NetworkManager<EndpointItem: Endpoint>: NetworkProtocol {
                 if (error as NSError).code == NSURLErrorTimedOut {
                     networkCompletion(.failure(.timeout))
                 } else {
-                    do {
-                        guard let data = response.data else {
-                            networkCompletion(.failure(.networkError))
-                            return
-                        }
-                        let clientError = try JSONDecoder().decode(ClientError.self, from: data)
-                        clientError.statusCode = error.asAFError?.responseCode
-                        networkCompletion(.failure(.handledError(error: clientError)))
-                    } catch {
-                        let decodingError = APIClientError.decoding(error: error as? DecodingError)
-                        networkCompletion(.failure(decodingError))
+                    guard let data = response.data else {
+                        networkCompletion(.failure(.networkError))
+                        return
                     }
+                    let handledError = String(data: data, encoding: String.Encoding.utf8)
+                    networkCompletion(.failure(.handledError(error: handledError)))
                 }
             }
         })
