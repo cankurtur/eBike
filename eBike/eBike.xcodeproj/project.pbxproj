@@ -99,6 +99,7 @@
 		25D3C8C629F6F0E10056FF00 /* MyBikeBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C529F6F0E10056FF00 /* MyBikeBikeInteractor.swift */; };
 		25D3C8C829F6F0E90056FF00 /* MyBikeBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */; };
 		25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */; };
+		25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F329F84A9B006CB941 /* HUDManager.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -217,6 +218,7 @@
 		25D3C8C529F6F0E10056FF00 /* MyBikeBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeBikeInteractor.swift; sourceTree = "<group>"; };
 		25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeBikeRouter.swift; sourceTree = "<group>"; };
 		25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBike.storyboard; sourceTree = "<group>"; };
+		25E559F329F84A9B006CB941 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -526,6 +528,7 @@
 				25360FE129F33FD50020D84B /* LocationManager.swift */,
 				251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */,
 				2527CE7929F591E600D5704E /* NibView.swift */,
+				25E559F329F84A9B006CB941 /* HUDManager.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -852,6 +855,7 @@
 				25360FE229F33FD50020D84B /* LocationManager.swift in Sources */,
 				2528B47629F722FD0076989F /* UserDefaultsExtension.swift in Sources */,
 				2528B47429F722DD0076989F /* UserDefaultProperty.swift in Sources */,
+				25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */,
 				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
 				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
 				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
