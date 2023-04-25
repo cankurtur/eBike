@@ -132,16 +132,16 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="MyBikeButton" destination="M8j-Cc-FRf" id="nIm-EH-kvm"/>
-                        <outlet property="MyBikeView" destination="lxH-Sa-Qrf" id="EgZ-8t-hCd"/>
                         <outlet property="addNewBikeButton" destination="aB0-3D-ulg" id="vYW-ho-7fZ"/>
                         <outlet property="emptyImageView" destination="gOQ-8y-TxQ" id="7Ob-Ry-2va"/>
                         <outlet property="emptyTitleLabel" destination="mwk-hJ-NNQ" id="SO4-R1-8s9"/>
                         <outlet property="emptyView" destination="nfR-vz-oVe" id="jCj-FB-gv8"/>
                         <outlet property="infoImageView" destination="K5x-pq-dfm" id="L0j-Qc-wtC"/>
                         <outlet property="infoLabel" destination="kF8-m1-Pe4" id="mwt-O3-3xV"/>
+                        <outlet property="myBikeView" destination="lxH-Sa-Qrf" id="1ah-yI-2Bl"/>
                         <outlet property="pinLabel" destination="n7f-jV-CXe" id="gec-dI-mS8"/>
                         <outlet property="pinTitleLabel" destination="s15-eh-Xmo" id="gle-Gi-uAG"/>
+                        <outlet property="returnBikeButton" destination="M8j-Cc-FRf" id="0pg-IT-0Zy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

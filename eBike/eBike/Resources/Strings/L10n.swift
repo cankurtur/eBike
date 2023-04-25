@@ -40,6 +40,8 @@ internal enum L10n {
     internal static let areYouOffline = L10n.tr("Localizable", "general.areYouOffline", fallback: "Are you offline?")
     /// Check internet connection and try again
     internal static let checkInternetConnection = L10n.tr("Localizable", "general.checkInternetConnection", fallback: "Check internet connection and try again")
+    /// Loading
+    internal static let hudLoading = L10n.tr("Localizable", "general.hudLoading", fallback: "Loading")
     /// OK
     internal static let ok = L10n.tr("Localizable", "general.ok", fallback: "OK")
     /// Try again

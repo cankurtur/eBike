@@ -9,7 +9,7 @@ import SwiftMessages
 
 final class SwiftMessagesManager {
     
-    static let shared = SwiftMessagesManager()
+    static let shared: SwiftMessagesManager = SwiftMessagesManager()
     
     private init() {}
     

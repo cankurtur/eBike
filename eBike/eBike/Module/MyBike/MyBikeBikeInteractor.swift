@@ -11,14 +11,14 @@ import Foundation
 
 protocol MyBikeInteractorInterface: InteractorInterface {
     func updateBike(with updateBikeInfo: UpdateBikeInfo)
-    func MyBike(with bikeID: Int)
+    func returnBike(with bikeID: Int)
 }
 
 // MARK: - MyBikeInteractorOutput
 
 protocol MyBikeInteractorOutput: AnyObject {
     func onUpdateBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
-    func onMyBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
+    func onReturnBikeReceived(_ result: Result<EmptyResponse, APIClientError>)
 }
 
 // MARK: - MyBikeInteractor
@@ -44,11 +44,11 @@ extension MyBikeInteractor: MyBikeInteractorInterface {
         }
     }
     
-    func MyBike(with bikeID: Int) {
+    func returnBike(with bikeID: Int) {
         networkManager.request(endpoint: .returnBike(bikeId: bikeID), type: EmptyResponse.self) { [weak self] result in
             guard let self = self else { return }
             
-            self.output?.onMyBikeReceived(result)
+            self.output?.onReturnBikeReceived(result)
         }
     }
 }

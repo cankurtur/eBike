@@ -83,6 +83,7 @@ extension MapPresenter: MapPresenterInterface {
 
 extension MapPresenter: MapInteractorOutput {
     func onGetNearbyBikesReceived(_ result: Result<[BikesResponseModel], APIClientError>) {
+        view?.dismissHUD()
         switch result {
         case .success(let bikes):
             let allBikesAnnotations = bikes.map({ BikeAnnotation(from: $0 )})
@@ -127,6 +128,7 @@ private extension MapPresenter {
     func fetchBikes() {
         guard let currentLocation = locationManager.getCurrentLocation() else { return }
         
+        view?.showHUD()
         interactor.getNearbyBikes(
             latitude: currentLocation.coordinate.latitude,
             longitude: currentLocation.coordinate.longitude,
