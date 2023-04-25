@@ -169,34 +169,5 @@ private extension MapViewController {
 }
 
 
-// MARK: - Array + BikesAnnotation
 
-private extension Array where Element: MKAnnotation {
-  var bikesAnnotation: [BikeAnnotation] {
-    return compactMap { $0 as? BikeAnnotation }
-  }
-}
 
-// MARK: - MKMapView + Remove Annotations
-
-private extension MKMapView {
-  func removeAnnotationsIfNeeded(check newAnnotations: [BikeAnnotation]) {
-    guard !newAnnotations.isEmpty else {
-      removeAnnotations(annotations)
-      return
-    }
-    annotations.bikesAnnotation.forEach { existingAnnotation in
-      if !newAnnotations.contains(existingAnnotation),
-         let redundantAnnotation = annotations.bikesAnnotation.first(where: { $0 == existingAnnotation })
-      {
-        removeAnnotation(redundantAnnotation as MKAnnotation)
-      }
-    }
-  }
-
-  func addAnnotationsIfExist(_ annotations: [BikeAnnotation]) {
-    if !annotations.isEmpty {
-      addAnnotations(annotations)
-    }
-  }
-}
