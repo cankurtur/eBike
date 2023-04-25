@@ -16,23 +16,18 @@ protocol MyBikePresenterInterface: PresenterInterface {
 
 // MARK: - MyBikePresenter
 
-final class MyBikePresenter {
+final class MyBikePresenter: BasePresenter {
     private let router: MyBikeRouterInterface
     private let interactor: MyBikeInteractorInterface
     private weak var view: MyBikeViewInterface?
-    private let locationManager: LocationManager
-    private let notificationCenter: NotificationCenterProtocol?
     
     init(router: MyBikeRouterInterface,
          interactor: MyBikeInteractorInterface,
-         view: MyBikeViewInterface?,
-         locationManager: LocationManager = LocationManager.shared,
-         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
+         view: MyBikeViewInterface?) {
         self.router = router
         self.interactor = interactor
         self.view = view
-        self.locationManager = locationManager
-        self.notificationCenter = notificationCenter
+        super.init(router: router, interactor: interactor, view: view)
     }
     
     deinit {
@@ -56,6 +51,11 @@ extension MyBikePresenter: MyBikePresenterInterface {
     }
     
     func RetunBikeButtonTapped() {
+        guard hasLocationPermission else {
+            handleLocationPermission()
+            return
+        }
+        
         guard let bikeInfo = createUpdateBikeInfo() else { return }
         
         interactor.updateBike(with: bikeInfo)

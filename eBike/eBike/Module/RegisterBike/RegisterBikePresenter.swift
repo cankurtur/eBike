@@ -26,26 +26,21 @@ protocol RegisterBikePresenterInterface: PresenterInterface {
 
 // MARK: - RegisterBikePresenter
 
-final class RegisterBikePresenter {
+final class RegisterBikePresenter: BasePresenter {
     private let router: RegisterBikeRouterInterface
     private let interactor: RegisterBikeInteractorInterface
     private weak var view: RegisterBikeViewInterface?
     private let config: Config
-    private let locationManager: LocationManager
-    private let notificationCenter: NotificationCenterProtocol?
    
     init(router: RegisterBikeRouterInterface,
          interactor: RegisterBikeInteractorInterface,
          view: RegisterBikeViewInterface?,
-         config: Config = Config.sharedInstance,
-         locationManager: LocationManager = LocationManager.shared,
-         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
+         config: Config = Config.sharedInstance) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.config = config
-        self.locationManager = locationManager
-        self.notificationCenter = notificationCenter
+        super.init(router: router, interactor: interactor, view: view)
     }
     
     deinit {
@@ -89,6 +84,11 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
 
         guard let color = color, !color.isBlank else {
             view?.showPopup(title: L10n.AppPopupView.error, message: L10n.AppPopupView.colorErrorMessage)
+            return
+        }
+        
+        guard hasLocationPermission else {
+            handleLocationPermission()
             return
         }
         
