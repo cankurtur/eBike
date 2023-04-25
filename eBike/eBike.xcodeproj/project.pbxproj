@@ -60,7 +60,6 @@
 		25360F9129F200B80020D84B /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9029F200B80020D84B /* BaseUrl.swift */; };
 		25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9329F200E30020D84B /* HTTPMethodExrension.swift */; };
 		25360F9729F201010020D84B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9629F201010020D84B /* Typealias.swift */; };
-		25360F9A29F201300020D84B /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9929F201300020D84B /* AlertManager.swift */; };
 		25360F9C29F201480020D84B /* MonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9B29F201480020D84B /* MonitorManager.swift */; };
 		25360F9E29F201810020D84B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9D29F201810020D84B /* Config.swift */; };
 		25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */; };
@@ -179,7 +178,6 @@
 		25360F9029F200B80020D84B /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
 		25360F9329F200E30020D84B /* HTTPMethodExrension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodExrension.swift; sourceTree = "<group>"; };
 		25360F9629F201010020D84B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
-		25360F9929F201300020D84B /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		25360F9B29F201480020D84B /* MonitorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorManager.swift; sourceTree = "<group>"; };
 		25360F9D29F201810020D84B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenion.swift; sourceTree = "<group>"; };
@@ -522,7 +520,6 @@
 			isa = PBXGroup;
 			children = (
 				2528B47229F722B90076989F /* UserDefaults */,
-				25360F9929F201300020D84B /* AlertManager.swift */,
 				25360F9B29F201480020D84B /* MonitorManager.swift */,
 				25360F9D29F201810020D84B /* Config.swift */,
 				25360FE129F33FD50020D84B /* LocationManager.swift */,
@@ -865,7 +862,6 @@
 				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
 				25D3C8C429F6F0D90056FF00 /* MyBikePresenter.swift in Sources */,
 				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
-				25360F9A29F201300020D84B /* AlertManager.swift in Sources */,
 				251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */,
 				2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */,
 				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
