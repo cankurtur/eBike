@@ -99,6 +99,7 @@
 		25D3C8C829F6F0E90056FF00 /* MyBikeBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */; };
 		25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */; };
 		25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F329F84A9B006CB941 /* HUDManager.swift */; };
+		25E559F829F876C4006CB941 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F729F876C4006CB941 /* BasePresenter.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -217,6 +218,7 @@
 		25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeBikeRouter.swift; sourceTree = "<group>"; };
 		25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBike.storyboard; sourceTree = "<group>"; };
 		25E559F329F84A9B006CB941 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
+		25E559F729F876C4006CB941 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -396,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				25360F6029F1FA4C0020D84B /* BaseViewController.swift */,
+				25E559F729F876C4006CB941 /* BasePresenter.swift */,
 				25360F6529F1FAA00020D84B /* ViewInterface.swift */,
 				25360F6729F1FAB90020D84B /* PresenterInterface.swift */,
 				25360F6929F1FACB0020D84B /* InteractorInterface.swift */,
@@ -814,6 +817,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */,
+				25E559F829F876C4006CB941 /* BasePresenter.swift in Sources */,
 				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
 				25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */,
 				25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */,
