@@ -92,7 +92,7 @@ extension MapPresenter: MapInteractorOutput {
                 self?.view?.updateAnnotations(with: availableBikesAnnotations)
             }
         case.failure(let error):
-            //            SwiftMessagesManager.shared.showAPIClientErrorPopup(error: error)
+            view?.showPopup(error: error, buttonAction: nil)
             print(error)
         }
     }

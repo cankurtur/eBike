@@ -32,7 +32,6 @@ final class RegisterBikePresenter {
     private weak var view: RegisterBikeViewInterface?
     private let config: Config
     private let locationManager: LocationManager
-    private let swiftMessagesManager: SwiftMessagesManager
     private let notificationCenter: NotificationCenterProtocol?
    
     init(router: RegisterBikeRouterInterface,
@@ -40,14 +39,12 @@ final class RegisterBikePresenter {
          view: RegisterBikeViewInterface?,
          config: Config = Config.sharedInstance,
          locationManager: LocationManager = LocationManager.shared,
-         swiftMessagesManager: SwiftMessagesManager = SwiftMessagesManager.shared,
          notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor
         self.view = view
         self.config = config
         self.locationManager = locationManager
-        self.swiftMessagesManager = swiftMessagesManager
         self.notificationCenter = notificationCenter
     }
     
@@ -81,17 +78,17 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
     
     func registerButtonTapped(name: String?, pin: String?, color: String?) {
         guard let name = name, !name.isBlank else {
-            swiftMessagesManager.showForever(with: .registerBikeNameError)
+            view?.showPopup(title: L10n.AppPopupView.error, message: L10n.AppPopupView.nameErrorMessage)
             return
         }
 
         guard let pin = pin, !pin.isBlank else {
-            swiftMessagesManager.showForever(with: .registerBikePinError)
+            view?.showPopup(title: L10n.AppPopupView.error, message: L10n.AppPopupView.pinErrorMessage)
             return
         }
 
         guard let color = color, !color.isBlank else {
-            swiftMessagesManager.showForever(with: .registerBikeColorError)
+            view?.showPopup(title: L10n.AppPopupView.error, message: L10n.AppPopupView.colorErrorMessage)
             return
         }
         
@@ -125,8 +122,11 @@ extension RegisterBikePresenter: RegisterBikeInteractorOutput {
         case .success:
             notificationCenter?.post(with: .shouldUpdateMap, object: nil)
             view?.updateUIAfterRegister()
-            swiftMessagesManager.showForever(with: .registerBikeSuccess)
+            view?.showPopup(title: L10n.AppPopupView.success,
+                            message: L10n.AppPopupView.youHaveRegister,
+                            buttonTitle: L10n.AppPopupView.cool)
         case .failure(let error):
+            view?.showPopup(error: error, buttonAction: nil)
             break
         }
     }
