@@ -11,6 +11,8 @@ import Foundation
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum L10n {
   internal enum AppPopupView {
+    /// You already have a rented bike. Check it on the return bike screen!
+    internal static let alreadyHaveBike = L10n.tr("Localizable", "appPopupView.alreadyHaveBike", fallback: "You already have a rented bike. Check it on the return bike screen!")
     /// You have to select a color!
     internal static let colorErrorMessage = L10n.tr("Localizable", "appPopupView.colorErrorMessage", fallback: "You have to select a color!")
     /// Cool!
@@ -21,6 +23,8 @@ internal enum L10n {
     internal static let nameErrorMessage = L10n.tr("Localizable", "appPopupView.nameErrorMessage", fallback: "You have to enter a name!")
     /// OK
     internal static let ok = L10n.tr("Localizable", "appPopupView.ok", fallback: "OK")
+    /// Oops...
+    internal static let oops = L10n.tr("Localizable", "appPopupView.oops", fallback: "Oops...")
     /// You have to enter 4 characters for your pin!
     internal static let pinErrorMessage = L10n.tr("Localizable", "appPopupView.pinErrorMessage", fallback: "You have to enter 4 characters for your pin!")
     /// Success 🎉
