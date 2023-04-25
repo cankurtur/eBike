@@ -22,7 +22,7 @@ protocol RentBikePresenterInterface: PresenterInterface {
 
 // MARK: - RentBikePresenter
 
-final class RentBikePresenter {
+final class RentBikePresenter: BasePresenter {
     private let router: RentBikeRouterInterface
     private let interactor: RentBikeInteractorInterface
     private weak var view: RentBikeViewInterface?
@@ -39,6 +39,7 @@ final class RentBikePresenter {
         self.view = view
         self.annotation = annotation
         self.delegate = delegate
+        super.init(router: router, interactor: interactor, view: view)
     }
 }
 
@@ -54,7 +55,21 @@ extension RentBikePresenter: RentBikePresenterInterface {
     }
     
     func rentButtonTapped() {
-        guard !UserDefaultsConfig.isOnTrip else { return }
+        guard hasLocationPermission else {
+            handleLocationPermission()
+            return
+        }
+        
+        guard !UserDefaultsConfig.isOnTrip else {
+            view?.showPopup(title: L10n.AppPopupView.oops,
+                            message: L10n.AppPopupView.alreadyHaveBike,
+                            buttonTitle: L10n.General.ok,
+                            buttonAction: { [weak self] in
+                self?.delegate?.shouldDismissRentView()
+                self?.router.dismiss()
+            })
+            return
+        }
         
         guard let id = Int(annotation.id) else { return }
         

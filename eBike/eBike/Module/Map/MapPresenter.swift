@@ -24,27 +24,22 @@ protocol MapPresenterInterface: PresenterInterface {
 
 // MARK: - MapPresenter
 
-final class MapPresenter {
+final class MapPresenter: BasePresenter {
     private let router: MapRouterInterface
     private let interactor: MapInteractorInterface
     private weak var view: MapViewInterface?
-    private let locationManager: LocationManager
     private let config: Config
-    private let notificationCenter: NotificationCenterProtocol?
     private var refreshTimer: Timer?
     
     init(router: MapRouterInterface,
          interactor: MapInteractorInterface,
          view: MapViewInterface?,
-         locationManager: LocationManager = LocationManager.shared,
-         config: Config = Config.sharedInstance,
-         notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
+         config: Config = Config.sharedInstance) {
         self.router = router
         self.interactor = interactor
         self.view = view
-        self.locationManager = locationManager
         self.config = config
-        self.notificationCenter = notificationCenter
+        super.init(router: router, interactor: interactor, view: view)
     }
     
 }
@@ -63,7 +58,7 @@ extension MapPresenter: MapPresenterInterface {
             object: nil
         )
         
-        fetchBikes()
+        handleLocationPermission()
     }
     
     func didSelectAnnotation(annotation: BikeAnnotation) {
@@ -71,10 +66,20 @@ extension MapPresenter: MapPresenterInterface {
     }
     
     func refreshAnimationViewTapped() {
+        guard hasLocationPermission else {
+            handleLocationPermission()
+            return
+        }
+        
         fetchBikesIfRefreshEnable()
     }
     
     func currentLocationButtonTapped() {
+        guard hasLocationPermission else {
+            handleLocationPermission()
+            return
+        }
+        
         renderMapWithCurrentLocation()
     }
 }
@@ -106,10 +111,13 @@ extension MapPresenter: LocationManagerDelegate {
         interactor.getNearbyBikes(latitude: currentLocation.coordinate.latitude, longitude: currentLocation.coordinate.longitude, radius: config.regionRadius)
     }
     
-    func didChangeAuthorization(with status: CLAuthorizationStatus) {
-        if status == .authorizedWhenInUse || status == .authorizedAlways {
-            locationManager.startUpdatingLocation()
-        }
+    func didChangeAuthorization() {
+        handleLocationPermission()
+    }
+    
+    func didGetFirstLocation() {
+        fetchBikes()
+        renderMapWithCurrentLocation()
     }
 }
 

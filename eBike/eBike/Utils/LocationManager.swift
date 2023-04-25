@@ -12,7 +12,8 @@ import CoreLocation
 
 protocol LocationManagerDelegate: AnyObject {
     func shouldUpdateLocation(with currentLocation: CLLocation)
-    func didChangeAuthorization(with status: CLAuthorizationStatus)
+    func didGetFirstLocation()
+    func didChangeAuthorization()
 }
 
 // MARK: - LocationManager
@@ -26,20 +27,24 @@ final class LocationManager: NSObject {
     private var currentLocation: CLLocation?
     private var lastLocation: CLLocation?
     private var locationTimer: Timer?
+    private var isNeedFirstLocation: Bool = true
     
     override private init() {
         super.init()
         setupLocationManager()
         setupTimer()
-        checkLocationManagerAuthorization()
+    }
+    
+    func getAuthorizationStatus() -> CLAuthorizationStatus? {
+        locationManager?.authorizationStatus
+    }
+    
+    func requestWhenInUseAuthorization() {
+        locationManager?.requestWhenInUseAuthorization()
     }
     
     func startUpdatingLocation() {
         locationManager?.startUpdatingLocation()
-    }
-    
-    func stopUpdatingLocation() {
-        locationManager?.stopUpdatingLocation()
     }
     
     func getCurrentLocation() -> CLLocation? {
@@ -52,12 +57,19 @@ final class LocationManager: NSObject {
 extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.last else { return }
+        
+        if isNeedFirstLocation {
+            currentLocation = location
+            delegate?.didGetFirstLocation()
+            isNeedFirstLocation = false
+        }
+        
         currentLocation = location
         measureDistanceBetweenLocations(currentLocation: location)
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        delegate?.didChangeAuthorization(with: status)
+        delegate?.didChangeAuthorization()
     }
 }
 
@@ -76,17 +88,6 @@ private extension LocationManager {
         
         delegate?.shouldUpdateLocation(with: currentLocation)
         self.lastLocation = currentLocation
-    }
-    
-    private func checkLocationManagerAuthorization() {
-        switch locationManager?.authorizationStatus {
-        case .notDetermined:
-            locationManager?.requestWhenInUseAuthorization()
-        case .authorizedAlways, .authorizedWhenInUse:
-            locationManager?.startUpdatingLocation()
-        default:
-            break
-        }
     }
 }
 

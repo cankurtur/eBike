@@ -30,12 +30,14 @@
 "appPopupView.error" = "Error";
 "appPopupView.cool" = "Cool!";
 "appPopupView.ok" = "OK";
+"appPopupView.oops" = "Oops...";
 "appPopupView.youHaveRegister" = "You have successfully register your bike! Check it on the map. 🌍";
 "appPopupView.nameErrorMessage" = "You have to enter a name!";
 "appPopupView.pinErrorMessage" = "You have to enter 4 characters for your pin!";
 "appPopupView.colorErrorMessage" = "You have to select a color!";
 "appPopupView.tripIsComplete" = "Your trip is completed! 🎉";
 "appPopupView.successfullyReturned" = "You have successfully returned the bike.";
+"appPopupView.alreadyHaveBike" = "You already have a rented bike. Check it on the return bike screen!";
 
 "rentBikeView.color" = "Color";
 "rentBikeView.rent" = "Rent!";
