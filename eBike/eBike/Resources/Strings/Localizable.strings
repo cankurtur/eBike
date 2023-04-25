@@ -10,6 +10,7 @@
 "general.checkInternetConnection" = "Check internet connection and try again";
 "general.TryAgain" = "Try again";
 "general.ok" = "OK";
+"general.hudLoading" = "Loading";
 
 "tabBarItems.registerBike" = "Register Bike";
 "tabBarItems.map" = "Map";

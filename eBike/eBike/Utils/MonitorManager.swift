@@ -10,6 +10,7 @@ import Network
 final class MonitorManager {
    
     static let shared: MonitorManager = MonitorManager()
+    
     private let monitor: NWPathMonitor = NWPathMonitor()
     private var status: NWPath.Status = .satisfied
     var isReachable: Bool { status == .satisfied }

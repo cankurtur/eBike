@@ -27,7 +27,7 @@ final class LocationManager: NSObject {
     private var lastLocation: CLLocation?
     private var locationTimer: Timer?
     
-    override init() {
+    override private init() {
         super.init()
         setupLocationManager()
         setupTimer()

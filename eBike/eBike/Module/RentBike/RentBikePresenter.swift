@@ -58,6 +58,7 @@ extension RentBikePresenter: RentBikePresenterInterface {
         
         guard let id = Int(annotation.id) else { return }
         
+        view?.showHUD()
         interactor.rentBike(with: id)
     }
     
@@ -71,6 +72,7 @@ extension RentBikePresenter: RentBikePresenterInterface {
 
 extension RentBikePresenter: RentBikeInteractorOutput {
     func onRentBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
+        view?.dismissHUD()
         switch result {
         case .success:
             UserDefaultsConfig.currentBike = annotation

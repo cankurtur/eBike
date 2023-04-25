@@ -11,7 +11,7 @@ import Foundation
 
 protocol MyBikePresenterInterface: PresenterInterface {
     func addNewBikeButtonTapped()
-    func MyBikeButtonTapped()
+    func RetunBikeButtonTapped()
 }
 
 // MARK: - MyBikePresenter
@@ -55,7 +55,7 @@ extension MyBikePresenter: MyBikePresenterInterface {
         router.navigateToMap()
     }
     
-    func MyBikeButtonTapped() {
+    func RetunBikeButtonTapped() {
         guard let bikeInfo = createUpdateBikeInfo() else { return }
         
         interactor.updateBike(with: bikeInfo)
@@ -65,7 +65,7 @@ extension MyBikePresenter: MyBikePresenterInterface {
 // MARK: - MyBikeInteractorOutput
 
 extension MyBikePresenter: MyBikeInteractorOutput {
-    func onMyBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
+    func onReturnBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
         switch result {
         case .success:
             UserDefaultsConfig.currentBike = nil
@@ -78,7 +78,7 @@ extension MyBikePresenter: MyBikeInteractorOutput {
                             buttonAction: { [weak self] in
                 self?.router.navigateToMap()
             })
-            view?.updateUIAfterMyBike()
+            view?.updateUIIfReturnBikeSuccess()
         case .failure(let error):
             view?.showPopup(error: error, buttonAction: nil)
         }
@@ -92,7 +92,7 @@ extension MyBikePresenter: MyBikeInteractorOutput {
                 return
             }
             
-            interactor.MyBike(with: intBikeID)
+            interactor.returnBike(with: intBikeID)
         case .failure(let error):
             view?.showPopup(error: error, buttonAction: nil)
             break

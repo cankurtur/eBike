@@ -10,5 +10,5 @@ target 'eBike' do
   pod 'Alamofire'
   pod 'lottie-ios'
   pod 'SwiftMessages'
-
+  pod 'MBProgressHUD'
 end

@@ -105,7 +105,7 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
                 longitude: location.coordinate.longitude
             )
         )
-        
+        view?.showHUD()
         interactor.createNewBike(with: request)
     }
     
@@ -118,6 +118,7 @@ extension RegisterBikePresenter: RegisterBikePresenterInterface {
 
 extension RegisterBikePresenter: RegisterBikeInteractorOutput {
     func onGetCreateNewBikeReceived(_ result: Result<EmptyResponse, APIClientError>) {
+        view?.dismissHUD()
         switch result {
         case .success:
             notificationCenter?.post(with: .shouldUpdateMap, object: nil)

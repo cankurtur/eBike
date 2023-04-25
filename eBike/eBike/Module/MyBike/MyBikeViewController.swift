@@ -63,7 +63,7 @@ private enum Constant {
         static let numberOfLines: Int = 1
     }
     
-    enum MyBikeButton {
+    enum ReturnBikeButton {
         static let title: String = L10n.MyBike.returnBike
         static let titleFont: UIFont = .bold20
         static let titleColor: UIColor = .white
@@ -76,7 +76,7 @@ private enum Constant {
 
 protocol MyBikeViewInterface: ViewInterface {
     func prepareUI(isOnTrip: Bool, pinText: String, bikeColorHex: String)
-    func updateUIAfterMyBike()
+    func updateUIIfReturnBikeSuccess()
 }
 
 // MARK: - MyBikeViewController
@@ -87,12 +87,12 @@ final class MyBikeViewController: BaseViewController, Storyboarded {
     @IBOutlet private weak var emptyTitleLabel: UILabel!
     @IBOutlet private weak var emptyImageView: UIImageView!
     @IBOutlet private weak var addNewBikeButton: UIButton!
-    @IBOutlet private weak var MyBikeView: UIView!
+    @IBOutlet private weak var myBikeView: UIView!
     @IBOutlet private weak var infoLabel: UILabel!
     @IBOutlet private weak var infoImageView: UIImageView!
     @IBOutlet private weak var pinTitleLabel: UILabel!
     @IBOutlet private weak var pinLabel: UILabel!
-    @IBOutlet private weak var MyBikeButton: UIButton!
+    @IBOutlet private weak var returnBikeButton: UIButton!
     
     static var storyboardName: StoryboardNames {
         return .myBike
@@ -124,12 +124,12 @@ extension MyBikeViewController: MyBikeViewInterface {
         prepareButtons()
     }
     
-    func updateUIAfterMyBike() {
+    func updateUIIfReturnBikeSuccess() {
         UIView.animate(withDuration: 0.8) { [weak self] in
             guard let self = self else { return }
             
             self.emptyView.isHidden = false
-            self.MyBikeView.isHidden = true
+            self.myBikeView.isHidden = true
         }
     }
 }
@@ -140,7 +140,7 @@ private extension MyBikeViewController {
     
     func prepareViews(_ isOnTrip: Bool) {
         emptyView.isHidden = isOnTrip
-        MyBikeView.isHidden = !isOnTrip
+        myBikeView.isHidden = !isOnTrip
     }
     
     func prepareLabels(_ pinText: String) {
@@ -186,12 +186,12 @@ private extension MyBikeViewController {
         addNewBikeButton.layer.cornerRadius = Constant.AddNewBikeButton.cornerRadius
         addNewBikeButton.addTarget(self, action: #selector(addNewBikeButtonTapped), for: .touchUpInside)
         
-        MyBikeButton.setTitle(Constant.MyBikeButton.title, for: .normal)
-        MyBikeButton.setTitleColor(Constant.MyBikeButton.titleColor, for: .normal)
-        MyBikeButton.titleLabel?.font = Constant.MyBikeButton.titleFont
-        MyBikeButton.backgroundColor = Constant.MyBikeButton.backgroundColor
-        MyBikeButton.layer.cornerRadius = Constant.MyBikeButton.cornerRadius
-        MyBikeButton.addTarget(self, action: #selector(MyBikeButtonTapped), for: .touchUpInside)
+        returnBikeButton.setTitle(Constant.ReturnBikeButton.title, for: .normal)
+        returnBikeButton.setTitleColor(Constant.ReturnBikeButton.titleColor, for: .normal)
+        returnBikeButton.titleLabel?.font = Constant.ReturnBikeButton.titleFont
+        returnBikeButton.backgroundColor = Constant.ReturnBikeButton.backgroundColor
+        returnBikeButton.layer.cornerRadius = Constant.ReturnBikeButton.cornerRadius
+        returnBikeButton.addTarget(self, action: #selector(RetunBikeButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -203,7 +203,7 @@ private extension MyBikeViewController {
         presenter.addNewBikeButtonTapped()
     }
     
-    func MyBikeButtonTapped() {
-        presenter.MyBikeButtonTapped()
+    func RetunBikeButtonTapped() {
+        presenter.RetunBikeButtonTapped()
     }
 }
