@@ -38,6 +38,12 @@
 "appPopupView.tripIsComplete" = "Your trip is completed! 🎉";
 "appPopupView.successfullyReturned" = "You have successfully returned the bike.";
 "appPopupView.alreadyHaveBike" = "You already have a rented bike. Check it on the return bike screen!";
+"appPopupView.locationSevicesUnavailable" = "Location services are currently unavailable. Please check device settings and try again.";
+"appPopupView.settings" = "Settings";
+"appPopupView.eBike" = "eBike";
+"appPopupView.giveAccess" = "Access";
+"appPopupView.openAppSettings" = "Open App Settings";
+"appPopupView.somethingWentWrong" = "Something went wrong while trying to access the location.";
 
 "rentBikeView.color" = "Color";
 "rentBikeView.rent" = "Rent!";
