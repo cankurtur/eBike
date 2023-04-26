@@ -18,6 +18,9 @@ extension UIFont {
     /// Circular Spotify Bold 20
     static let bold20: UIFont = FontFamily.CircularSpotifyText.bold.font(size: 20.0)
     
+    /// Circular Spotify Bold 18
+    static let bold18: UIFont = FontFamily.CircularSpotifyText.bold.font(size: 18.0)
+    
     /// Circular Spotify Bold 16
     static let bold16: UIFont = FontFamily.CircularSpotifyText.bold.font(size: 16.0)
     
@@ -26,6 +29,9 @@ extension UIFont {
     
     /// Circular Spotify Medium 14
     static let medium14: UIFont = FontFamily.CircularSpotifyText.medium.font(size: 14.0)
+    
+    /// Circular Spotify Medium 13
+    static let medium13: UIFont = FontFamily.CircularSpotifyText.medium.font(size: 13.0)
     
     /// Circular Spotify Black Italic 14
     static let blackItalic14: UIFont = FontFamily.CircularSpotifyText.blackItalic.font(size: 14.0)

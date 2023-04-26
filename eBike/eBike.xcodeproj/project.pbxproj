@@ -90,6 +90,8 @@
 		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
 		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
 		25360FF429F40AE20020D84B /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 25360FF329F40AE20020D84B /* refresh.json */; };
+		258B207229F97DB500C57456 /* AccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B207129F97DB500C57456 /* AccessPopupView.swift */; };
+		258B207429F97DBA00C57456 /* AccessPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258B207329F97DBA00C57456 /* AccessPopupView.xib */; };
 		25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31129F5D78D001B128F /* UIColorExtension.swift */; };
 		25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */; };
 		25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */; };
@@ -210,6 +212,8 @@
 		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
 		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		25360FF329F40AE20020D84B /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
+		258B207129F97DB500C57456 /* AccessPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPopupView.swift; sourceTree = "<group>"; };
+		258B207329F97DBA00C57456 /* AccessPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessPopupView.xib; sourceTree = "<group>"; };
 		25B2A31129F5D78D001B128F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
 		25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationExtension.swift; sourceTree = "<group>"; };
@@ -290,6 +294,7 @@
 		2527CE7529F591A100D5704E /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				258B207029F97D9A00C57456 /* AccessPopup */,
 				2527CE7629F591A900D5704E /* AppPopup */,
 			);
 			path = Components;
@@ -580,6 +585,15 @@
 			path = Lottie;
 			sourceTree = "<group>";
 		};
+		258B207029F97D9A00C57456 /* AccessPopup */ = {
+			isa = PBXGroup;
+			children = (
+				258B207129F97DB500C57456 /* AccessPopupView.swift */,
+				258B207329F97DBA00C57456 /* AccessPopupView.xib */,
+			);
+			path = AccessPopup;
+			sourceTree = "<group>";
+		};
 		25D3C8C029F6F0B70056FF00 /* MyBike */ = {
 			isa = PBXGroup;
 			children = (
@@ -724,6 +738,7 @@
 				25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */,
 				2528B47129F71BF10076989F /* Map.storyboard in Resources */,
 				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
+				258B207429F97DBA00C57456 /* AccessPopupView.xib in Resources */,
 				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
 				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,
 				25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */,
@@ -828,6 +843,7 @@
 				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
 				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
 				25205F9129F5C02A00611C42 /* RentBikePresenter.swift in Sources */,
+				258B207229F97DB500C57456 /* AccessPopupView.swift in Sources */,
 				25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */,
 				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
 				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,

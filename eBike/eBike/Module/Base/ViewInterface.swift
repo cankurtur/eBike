@@ -12,6 +12,7 @@ public protocol ViewInterface: AnyObject {
     func showPopup(title: String, message: String, buttonTitle: String)
     func showPopup(title: String, message: String, buttonTitle: String, buttonAction: (() -> Void)?)
     func showPopup(error: APIClientError, buttonAction: (() -> Void)?)
+    func showLocationAccessPopup()
     func showHUD()
     func showHUD(text: String, onMainThread: Bool)
     func dismissHUD()
@@ -42,6 +43,11 @@ public extension ViewInterface where Self: UIViewController {
     func showPopup(error: APIClientError, buttonAction: (() -> Void)?) {
         SwiftMessagesManager.shared.showForever(with: .networkErrorPopup(message: error.message,
                                                                          action: buttonAction))
+    }
+    
+    func showLocationAccessPopup() {
+        let view = AccessPopupView()
+        SwiftMessagesManager.shared.showForever(view: view)
     }
     
     func showHUD() {

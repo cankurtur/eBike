@@ -17,16 +17,28 @@ internal enum L10n {
     internal static let colorErrorMessage = L10n.tr("Localizable", "appPopupView.colorErrorMessage", fallback: "You have to select a color!")
     /// Cool!
     internal static let cool = L10n.tr("Localizable", "appPopupView.cool", fallback: "Cool!")
+    /// eBike
+    internal static let eBike = L10n.tr("Localizable", "appPopupView.eBike", fallback: "eBike")
     /// Error
     internal static let error = L10n.tr("Localizable", "appPopupView.error", fallback: "Error")
+    /// Access
+    internal static let giveAccess = L10n.tr("Localizable", "appPopupView.giveAccess", fallback: "Access")
+    /// Location services are currently unavailable. Please check device settings and try again.
+    internal static let locationSevicesUnavailable = L10n.tr("Localizable", "appPopupView.locationSevicesUnavailable", fallback: "Location services are currently unavailable. Please check device settings and try again.")
     /// You have to enter a name!
     internal static let nameErrorMessage = L10n.tr("Localizable", "appPopupView.nameErrorMessage", fallback: "You have to enter a name!")
     /// OK
     internal static let ok = L10n.tr("Localizable", "appPopupView.ok", fallback: "OK")
     /// Oops...
     internal static let oops = L10n.tr("Localizable", "appPopupView.oops", fallback: "Oops...")
+    /// Open App Settings
+    internal static let openAppSettings = L10n.tr("Localizable", "appPopupView.openAppSettings", fallback: "Open App Settings")
     /// You have to enter 4 characters for your pin!
     internal static let pinErrorMessage = L10n.tr("Localizable", "appPopupView.pinErrorMessage", fallback: "You have to enter 4 characters for your pin!")
+    /// Settings
+    internal static let settings = L10n.tr("Localizable", "appPopupView.settings", fallback: "Settings")
+    /// Something went wrong while trying to access the location.
+    internal static let somethingWentWrong = L10n.tr("Localizable", "appPopupView.somethingWentWrong", fallback: "Something went wrong while trying to access the location.")
     /// Success 🎉
     internal static let success = L10n.tr("Localizable", "appPopupView.success", fallback: "Success 🎉")
     /// You have successfully returned the bike.
