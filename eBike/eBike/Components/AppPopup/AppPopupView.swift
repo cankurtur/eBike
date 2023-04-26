@@ -64,6 +64,8 @@ final class AppPopupView: NibView {
 
 private extension AppPopupView {
     func prepareUI() {
+        view.backgroundColor = .clear
+        
         prepareViews()
         prepareLabels()
         prepareButtons()

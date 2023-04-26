@@ -19,7 +19,7 @@ class BasePresenter {
     
     var hasLocationPermission: Bool {
         guard let status = locationManager.getAuthorizationStatus() else {
-            view?.showPopup(title: "something went wrong", message: "error")
+            view?.showPopup(title: L10n.AppPopupView.oops, message: L10n.AppPopupView.somethingWentWrong)
             return false
         }
         return status == .authorizedAlways || status == .authorizedWhenInUse
@@ -39,7 +39,7 @@ class BasePresenter {
     
     func handleLocationPermission() {
         guard let status = locationManager.getAuthorizationStatus() else {
-            view?.showPopup(title: "something went wrong", message: "error")
+            view?.showPopup(title: L10n.AppPopupView.oops, message: L10n.AppPopupView.somethingWentWrong)
             return
         }
         
@@ -47,7 +47,7 @@ class BasePresenter {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
         case .denied, .restricted:
-            view?.showPopup(title: "need location", message: "need location")
+            view?.showLocationAccessPopup()
         case .authorizedAlways, .authorizedWhenInUse:
             locationManager.startUpdatingLocation()
         default:
