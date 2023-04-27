@@ -41,6 +41,7 @@ final class RegisterBikePresenter: BasePresenter {
         self.view = view
         self.config = config
         super.init(router: router, interactor: interactor, view: view)
+        
     }
     
     deinit {

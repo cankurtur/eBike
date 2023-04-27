@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 final public class NetworkManager<EndpointItem: Endpoint>: NetworkProtocol {
+  
     private let sessionManager: Session
     private let monitorManager: MonitorManager
     private let swiftMessagesManager: SwiftMessagesManager

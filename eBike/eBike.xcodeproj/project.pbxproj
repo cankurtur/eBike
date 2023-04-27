@@ -35,7 +35,6 @@
 		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
 		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
 		25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */; };
-		25360F4529F1F84D0020D84B /* eBikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4429F1F84D0020D84B /* eBikeTests.swift */; };
 		25360F4F29F1F84D0020D84B /* eBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4E29F1F84D0020D84B /* eBikeUITests.swift */; };
 		25360F5129F1F84D0020D84B /* eBikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */; };
 		25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6029F1FA4C0020D84B /* BaseViewController.swift */; };
@@ -103,6 +102,30 @@
 		25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F329F84A9B006CB941 /* HUDManager.swift */; };
 		25E559F829F876C4006CB941 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F729F876C4006CB941 /* BasePresenter.swift */; };
 		25E559FA29F897F3006CB941 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F929F897F3006CB941 /* ArrayExtension.swift */; };
+		25FCB00529FA4AB5008BF4CD /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */; };
+		25FCB00629FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */; };
+		25FCB00729FA4AB5008BF4CD /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00129FA4AB5008BF4CD /* MapRouter.swift */; };
+		25FCB00829FA4AB5008BF4CD /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */; };
+		25FCB00929FA4AB5008BF4CD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00329FA4AB5008BF4CD /* MapViewController.swift */; };
+		25FCB00A29FA4AB5008BF4CD /* MapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */; };
+		25FCB00F29FA5069008BF4CD /* MyBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */; };
+		25FCB01129FA5072008BF4CD /* MyBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */; };
+		25FCB01329FA507D008BF4CD /* MyBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */; };
+		25FCB01529FA508A008BF4CD /* MyBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */; };
+		25FCB01A29FA624C008BF4CD /* RentBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */; };
+		25FCB01C29FA6256008BF4CD /* RentBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */; };
+		25FCB01E29FA625F008BF4CD /* RentBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */; };
+		25FCB02029FA6275008BF4CD /* RentBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */; };
+		25FCB02329FA65CC008BF4CD /* RegisterBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */; };
+		25FCB02529FA65D8008BF4CD /* RegisterBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */; };
+		25FCB02729FA65E1008BF4CD /* RegisterBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */; };
+		25FCB02929FA65EF008BF4CD /* RegisterBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */; };
+		25FCB02B29FA6978008BF4CD /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */; };
+		25FCB02E29FA6D24008BF4CD /* MockNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */; };
+		25FCB03129FAE239008BF4CD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03029FAE239008BF4CD /* MainRouter.swift */; };
+		25FCB03329FAE241008BF4CD /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03229FAE241008BF4CD /* MainInteractor.swift */; };
+		25FCB03529FAE251008BF4CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03429FAE251008BF4CD /* MainViewController.swift */; };
+		25FCB03729FAE25A008BF4CD /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */; };
 		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
 /* End PBXBuildFile section */
 
@@ -156,7 +179,6 @@
 		25360F3929F1F84D0020D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		25360F3B29F1F84D0020D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		25360F4029F1F84D0020D84B /* eBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		25360F4429F1F84D0020D84B /* eBikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeTests.swift; sourceTree = "<group>"; };
 		25360F4A29F1F84D0020D84B /* eBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25360F4E29F1F84D0020D84B /* eBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITests.swift; sourceTree = "<group>"; };
 		25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -225,6 +247,30 @@
 		25E559F329F84A9B006CB941 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
 		25E559F729F876C4006CB941 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
 		25E559F929F897F3006CB941 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationManagerDelegateConformed.swift; sourceTree = "<group>"; };
+		25FCB00129FA4AB5008BF4CD /* MapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		25FCB00329FA4AB5008BF4CD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
+		25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationCenter.swift; sourceTree = "<group>"; };
+		25FCB03029FAE239008BF4CD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		25FCB03229FAE241008BF4CD /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		25FCB03429FAE251008BF4CD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
 		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -262,7 +308,6 @@
 				251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */,
 				251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */,
 				251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */,
-				251A1D7F29F575440049FD41 /* UIFontExtension.swift */,
 			);
 			path = RegisterBike;
 			sourceTree = "<group>";
@@ -364,7 +409,13 @@
 		25360F4329F1F84D0020D84B /* eBikeTests */ = {
 			isa = PBXGroup;
 			children = (
-				25360F4429F1F84D0020D84B /* eBikeTests.swift */,
+				25FCB02C29FA6D18008BF4CD /* NotificationCenter */,
+				25FCAFFD29FA4AB5008BF4CD /* LocationManager */,
+				25FCB02F29FAE227008BF4CD /* Main */,
+				25FCB00D29FA5053008BF4CD /* MyBike */,
+				25FCB00029FA4AB5008BF4CD /* Map */,
+				25FCB01829FA6161008BF4CD /* RentBike */,
+				25FCB02129FA65B0008BF4CD /* RegisterBike */,
 			);
 			path = eBikeTests;
 			sourceTree = "<group>";
@@ -505,6 +556,7 @@
 		25360F9229F200CC0020D84B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				251A1D7F29F575440049FD41 /* UIFontExtension.swift */,
 				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
 				25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */,
 				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
@@ -603,6 +655,79 @@
 				25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */,
 			);
 			path = MyBike;
+			sourceTree = "<group>";
+		};
+		25FCAFFD29FA4AB5008BF4CD /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */,
+				25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */,
+				25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		25FCB00029FA4AB5008BF4CD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB00129FA4AB5008BF4CD /* MapRouter.swift */,
+				25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */,
+				25FCB00329FA4AB5008BF4CD /* MapViewController.swift */,
+				25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		25FCB00D29FA5053008BF4CD /* MyBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */,
+				25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */,
+				25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */,
+				25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */,
+			);
+			path = MyBike;
+			sourceTree = "<group>";
+		};
+		25FCB01829FA6161008BF4CD /* RentBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */,
+				25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */,
+				25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */,
+				25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */,
+			);
+			path = RentBike;
+			sourceTree = "<group>";
+		};
+		25FCB02129FA65B0008BF4CD /* RegisterBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */,
+				25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */,
+				25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */,
+				25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */,
+			);
+			path = RegisterBike;
+			sourceTree = "<group>";
+		};
+		25FCB02C29FA6D18008BF4CD /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		25FCB02F29FAE227008BF4CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB03029FAE239008BF4CD /* MainRouter.swift */,
+				25FCB03229FAE241008BF4CD /* MainInteractor.swift */,
+				25FCB03429FAE251008BF4CD /* MainViewController.swift */,
+				25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		830ADD8DB21D50D375B5E3AA /* Pods */ = {
@@ -913,7 +1038,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				25360F4529F1F84D0020D84B /* eBikeTests.swift in Sources */,
+				25FCB02329FA65CC008BF4CD /* RegisterBikeRouter.swift in Sources */,
+				25FCB03529FAE251008BF4CD /* MainViewController.swift in Sources */,
+				25FCB01129FA5072008BF4CD /* MyBikeInteractor.swift in Sources */,
+				25FCB03729FAE25A008BF4CD /* MainPresenterTests.swift in Sources */,
+				25FCB02529FA65D8008BF4CD /* RegisterBikeInteractor.swift in Sources */,
+				25FCB00529FA4AB5008BF4CD /* MockLocationManager.swift in Sources */,
+				25FCB02929FA65EF008BF4CD /* RegisterBikePresenterTests.swift in Sources */,
+				25FCB00929FA4AB5008BF4CD /* MapViewController.swift in Sources */,
+				25FCB00A29FA4AB5008BF4CD /* MapPresenterTests.swift in Sources */,
+				25FCB02029FA6275008BF4CD /* RentBikePresenterTests.swift in Sources */,
+				25FCB03129FAE239008BF4CD /* MainRouter.swift in Sources */,
+				25FCB00729FA4AB5008BF4CD /* MapRouter.swift in Sources */,
+				25FCB01529FA508A008BF4CD /* MyBikePresenterTests.swift in Sources */,
+				25FCB01C29FA6256008BF4CD /* RentBikeInteractor.swift in Sources */,
+				25FCB00829FA4AB5008BF4CD /* MapInteractor.swift in Sources */,
+				25FCB00629FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift in Sources */,
+				25FCB02E29FA6D24008BF4CD /* MockNotificationCenter.swift in Sources */,
+				25FCB02729FA65E1008BF4CD /* RegisterBikeViewController.swift in Sources */,
+				25FCB02B29FA6978008BF4CD /* LocationManagerTests.swift in Sources */,
+				25FCB03329FAE241008BF4CD /* MainInteractor.swift in Sources */,
+				25FCB00F29FA5069008BF4CD /* MyBikeRouter.swift in Sources */,
+				25FCB01A29FA624C008BF4CD /* RentBikeRouter.swift in Sources */,
+				25FCB01329FA507D008BF4CD /* MyBikeViewController.swift in Sources */,
+				25FCB01E29FA625F008BF4CD /* RentBikeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

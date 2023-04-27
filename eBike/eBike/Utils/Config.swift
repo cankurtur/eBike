@@ -7,7 +7,8 @@
 
 import Foundation
 
-class Config: NSObject {
+final class Config: NSObject {
+  
     static let sharedInstance = Config()
     
     private var configs: NSDictionary!

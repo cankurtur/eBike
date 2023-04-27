@@ -8,6 +8,14 @@
 import Foundation
 import CoreLocation
 
+protocol LocationManagerInterface {
+    var delegate: LocationManagerDelegate? { get set }
+    func getAuthorizationStatus() -> CLAuthorizationStatus?
+    func requestWhenInUseAuthorization()
+    func startUpdatingLocation()
+    func getCurrentLocation() -> CLLocation?
+}
+
 // MARK: - LocationManagerDelegate
 
 protocol LocationManagerDelegate: AnyObject {
@@ -18,7 +26,7 @@ protocol LocationManagerDelegate: AnyObject {
 
 // MARK: - LocationManager
 
-final class LocationManager: NSObject {
+final class LocationManager: NSObject, LocationManagerInterface {
     
     static let shared: LocationManager = LocationManager()
     
