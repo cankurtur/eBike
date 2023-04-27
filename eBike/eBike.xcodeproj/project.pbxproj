@@ -61,7 +61,6 @@
 		25360F9729F201010020D84B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9629F201010020D84B /* Typealias.swift */; };
 		25360F9C29F201480020D84B /* MonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9B29F201480020D84B /* MonitorManager.swift */; };
 		25360F9E29F201810020D84B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9D29F201810020D84B /* Config.swift */; };
-		25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */; };
 		25360FA329F20DF00020D84B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA229F20DF00020D84B /* MainViewController.swift */; };
 		25360FA529F20E260020D84B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA429F20E260020D84B /* MainPresenter.swift */; };
 		25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA629F20E2D0020D84B /* MainInteractor.swift */; };
@@ -206,7 +205,6 @@
 		25360F9629F201010020D84B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		25360F9B29F201480020D84B /* MonitorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorManager.swift; sourceTree = "<group>"; };
 		25360F9D29F201810020D84B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtenion.swift; sourceTree = "<group>"; };
 		25360FA229F20DF00020D84B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		25360FA429F20E260020D84B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		25360FA629F20E2D0020D84B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
@@ -558,7 +556,6 @@
 			children = (
 				251A1D7F29F575440049FD41 /* UIFontExtension.swift */,
 				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
-				25360F9F29F201F90020D84B /* UIApplicationExtenion.swift */,
 				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
 				25360FEC29F3F8530020D84B /* EncodableExtension.swift */,
 				25360FF029F3FF120020D84B /* MKMapViewExtension.swift */,
@@ -1008,7 +1005,6 @@
 				25360FAB29F2136F0020D84B /* TabType.swift in Sources */,
 				25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */,
 				25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */,
-				25360FA029F201F90020D84B /* UIApplicationExtenion.swift in Sources */,
 				25D3C8C429F6F0D90056FF00 /* MyBikePresenter.swift in Sources */,
 				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
 				251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */,

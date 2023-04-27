@@ -41,6 +41,10 @@ final class RentBikePresenter: BasePresenter {
         self.delegate = delegate
         super.init(router: router, interactor: interactor, view: view)
     }
+    
+    deinit {
+        delegate?.shouldDismissRentView()
+    }
 }
 
 // MARK: - RentBikePresenterInterface
