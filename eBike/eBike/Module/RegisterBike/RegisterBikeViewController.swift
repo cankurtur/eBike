@@ -83,6 +83,7 @@ final class RegisterBikeViewController: BaseViewController, Storyboarded {
 extension RegisterBikeViewController: RegisterBikeViewInterface {
     func prepareUI() {
         view.backgroundColor = Constant.backgroundColor
+        
         preparePickerView()
         prepareTextFields()
         prepareButtons()

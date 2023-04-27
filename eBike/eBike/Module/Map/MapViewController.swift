@@ -74,6 +74,8 @@ final class MapViewController: BaseViewController, Storyboarded {
 
 extension MapViewController: MapViewInterface {
     func prepareUI() {
+        view.backgroundColor = Constant.backgroundColor
+        
         prepareMapView()
         prepareViews()
         prepareButtons()
