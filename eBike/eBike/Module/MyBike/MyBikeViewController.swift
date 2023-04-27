@@ -69,6 +69,7 @@ private enum Constant {
         static let titleColor: UIColor = .white
         static let backgroundColor: UIColor = Colors.appGreen.color
         static let cornerRadius: CGFloat = 25
+        static let animateDuration: TimeInterval = 0.8
     }
 }
 
@@ -125,7 +126,7 @@ extension MyBikeViewController: MyBikeViewInterface {
     }
     
     func updateUIIfReturnBikeSuccess() {
-        UIView.animate(withDuration: 0.8) { [weak self] in
+        UIView.animate(withDuration: Constant.ReturnBikeButton.animateDuration) { [weak self] in
             guard let self = self else { return }
             
             self.emptyView.isHidden = false
