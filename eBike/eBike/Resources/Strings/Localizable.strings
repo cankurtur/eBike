@@ -1,0 +1,58 @@
+/* 
+  Localizable.strings
+  eBike
+
+  Created by Can Kurtur on 21.04.2023.
+  
+*/
+
+"general.areYouOffline" = "Are you offline?";
+"general.checkInternetConnection" = "Check internet connection and try again";
+"general.TryAgain" = "Try again";
+"general.ok" = "OK";
+"general.hudLoading" = "Loading";
+
+"tabBarItems.registerBike" = "Register Bike";
+"tabBarItems.map" = "Map";
+"tabBarItems.myBike" = "My Bike";
+
+"map.annotation.glyphText" = "🚲";
+
+"register.register" = "Register";
+"register.ok" = "OK";
+"register.placeholder.name" = "Name";
+"register.placeholder.pin" = "Pin";
+"register.placeholder.color" = "Color";
+"register.empty" = "";
+"register.locationInfo" = "Bike location will be set as your current location.";
+
+"appPopupView.success" = "Success 🎉";
+"appPopupView.error" = "Error";
+"appPopupView.cool" = "Cool!";
+"appPopupView.ok" = "OK";
+"appPopupView.oops" = "Oops...";
+"appPopupView.youHaveRegister" = "You have successfully register your bike! Check it on the map. 🌍";
+"appPopupView.nameErrorMessage" = "You have to enter a name!";
+"appPopupView.pinErrorMessage" = "You have to enter 4 characters for your pin!";
+"appPopupView.colorErrorMessage" = "You have to select a color!";
+"appPopupView.tripIsComplete" = "Your trip is completed! 🎉";
+"appPopupView.successfullyReturned" = "You have successfully returned the bike.";
+"appPopupView.alreadyHaveBike" = "You already have a rented bike. Check it on the return bike screen!";
+"appPopupView.locationSevicesUnavailable" = "Location services are currently unavailable. Please check device settings and try again.";
+"appPopupView.settings" = "Settings";
+"appPopupView.eBike" = "eBike";
+"appPopupView.giveAccess" = "Access";
+"appPopupView.openAppSettings" = "Open App Settings";
+"appPopupView.somethingWentWrong" = "Something went wrong while trying to access the location.";
+
+"rentBikeView.color" = "Color";
+"rentBikeView.rent" = "Rent!";
+"rentBikeView.iGotIt" = "I Got It!";
+"rentBikeView.bikeOwner" = "Bike Owner";
+"rentBikeView.useThisPin" = "Use this pin to\nunlock your bike. 🔓";
+
+"myBike.dontHaveRentalBike" = "Looks like you do not have a rented bike.";
+"myBike.rentOneNow" = "Rent now!";
+"myBike.yourBikesInfo" = "Your Rented Bike Info";
+"myBike.returnBike" = "Return Bike";
+"myBike.pin" = "PIN";

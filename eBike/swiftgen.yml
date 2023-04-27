@@ -1,0 +1,33 @@
+## Note: all of the config entries below are just examples with placeholders. Be sure to edit and adjust to your needs when uncommenting.
+##
+## For more info, use `swiftgen config doc` to open the full documentation on GitHub.
+## https://github.com/SwiftGen/SwiftGen/tree/6.4.0/Documentation/
+
+input_dir: eBike/Resources/
+output_dir: eBike/Resources/
+strings:
+    inputs: Strings
+    filter: .+\.strings$
+    outputs:
+      - templateName: structured-swift5
+        output: Strings/L10n.swift
+        
+fonts:
+    - inputs: Fonts
+      outputs:
+        - templateName: swift5
+          output: Fonts/Fonts.swift
+          
+xcassets:
+    - inputs: Colors/Colors.xcassets
+      outputs:
+        - templateName: swift5
+          output: Colors/Colors.swift
+          params:
+            enumName: Colors
+    - inputs: Assets.xcassets
+      outputs:
+        - templateName: swift5
+          output: Images/Images.swift
+          params:
+            enumName: Images

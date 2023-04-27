@@ -1,0 +1,1392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		251A1D3529F4138E0049FD41 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D3429F4138E0049FD41 /* Animations.swift */; };
+		251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */; };
+		251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */; };
+		251A1D7329F56A8B0049FD41 /* RegisterBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */; };
+		251A1D7529F56A990049FD41 /* RegisterBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */; };
+		251A1D7729F56AA50049FD41 /* RegisterBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */; };
+		251A1D7A29F56B8D0049FD41 /* RegisterBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */; };
+		251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7B29F56C910049FD41 /* Storyboarded.swift */; };
+		251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */; };
+		251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251A1D7F29F575440049FD41 /* UIFontExtension.swift */; };
+		25205F8F29F5C02300611C42 /* RentBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F8E29F5C02300611C42 /* RentBikeViewController.swift */; };
+		25205F9129F5C02A00611C42 /* RentBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9029F5C02A00611C42 /* RentBikePresenter.swift */; };
+		25205F9329F5C03100611C42 /* RentBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9229F5C03100611C42 /* RentBikeInteractor.swift */; };
+		25205F9529F5C03B00611C42 /* RentBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25205F9429F5C03B00611C42 /* RentBikeRouter.swift */; };
+		25205F9729F5C15E00611C42 /* RentBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25205F9629F5C15E00611C42 /* RentBike.storyboard */; };
+		2527CE7429F590B200D5704E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7329F590B200D5704E /* StringExtension.swift */; };
+		2527CE7A29F591E600D5704E /* NibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE7929F591E600D5704E /* NibView.swift */; };
+		2527CE8229F5969300D5704E /* AppPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8129F5969300D5704E /* AppPopupView.swift */; };
+		2527CE8429F5969900D5704E /* AppPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2527CE8329F5969900D5704E /* AppPopupView.xib */; };
+		2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8529F599C600D5704E /* AppPopupViewModel.swift */; };
+		2527CE8829F5A6CA00D5704E /* DefaultAppPopupState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2527CE8729F5A6CA00D5704E /* DefaultAppPopupState.swift */; };
+		2528B47129F71BF10076989F /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2528B47029F71BF10076989F /* Map.storyboard */; };
+		2528B47429F722DD0076989F /* UserDefaultProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528B47329F722DD0076989F /* UserDefaultProperty.swift */; };
+		2528B47629F722FD0076989F /* UserDefaultsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2528B47529F722FD0076989F /* UserDefaultsExtension.swift */; };
+		25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2D29F1F84C0020D84B /* AppDelegate.swift */; };
+		25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F2F29F1F84C0020D84B /* SceneDelegate.swift */; };
+		25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3629F1F84D0020D84B /* Assets.xcassets */; };
+		25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */; };
+		25360F4F29F1F84D0020D84B /* eBikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F4E29F1F84D0020D84B /* eBikeUITests.swift */; };
+		25360F5129F1F84D0020D84B /* eBikeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */; };
+		25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6029F1FA4C0020D84B /* BaseViewController.swift */; };
+		25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6329F1FA740020D84B /* NSObjectExtension.swift */; };
+		25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6529F1FAA00020D84B /* ViewInterface.swift */; };
+		25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6729F1FAB90020D84B /* PresenterInterface.swift */; };
+		25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6929F1FACB0020D84B /* InteractorInterface.swift */; };
+		25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F6B29F1FADA0020D84B /* RouterInterface.swift */; };
+		25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7229F1FCFF0020D84B /* Localizable.strings */; };
+		25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7529F1FD1B0020D84B /* Colors.xcassets */; };
+		25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 25360F7729F1FDE80020D84B /* swiftgen.yml */; };
+		25360F7B29F1FEB30020D84B /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7A29F1FEB30020D84B /* L10n.swift */; };
+		25360F7D29F1FEC40020D84B /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7C29F1FEC40020D84B /* Images.swift */; };
+		25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F7E29F1FECC0020D84B /* Fonts.swift */; };
+		25360F8129F1FED70020D84B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8029F1FED70020D84B /* Colors.swift */; };
+		25360F8329F1FFB70020D84B /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 25360F8229F1FFB70020D84B /* Config.plist */; };
+		25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8629F2002C0020D84B /* NetworkProtocol.swift */; };
+		25360F8929F200460020D84B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8829F200460020D84B /* NetworkManager.swift */; };
+		25360F8B29F200560020D84B /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8A29F200560020D84B /* Responses.swift */; };
+		25360F8D29F200640020D84B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8C29F200640020D84B /* Endpoint.swift */; };
+		25360F8F29F200A70020D84B /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F8E29F200A70020D84B /* Errors.swift */; };
+		25360F9129F200B80020D84B /* BaseUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9029F200B80020D84B /* BaseUrl.swift */; };
+		25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9329F200E30020D84B /* HTTPMethodExrension.swift */; };
+		25360F9729F201010020D84B /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9629F201010020D84B /* Typealias.swift */; };
+		25360F9C29F201480020D84B /* MonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9B29F201480020D84B /* MonitorManager.swift */; };
+		25360F9E29F201810020D84B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360F9D29F201810020D84B /* Config.swift */; };
+		25360FA329F20DF00020D84B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA229F20DF00020D84B /* MainViewController.swift */; };
+		25360FA529F20E260020D84B /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA429F20E260020D84B /* MainPresenter.swift */; };
+		25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA629F20E2D0020D84B /* MainInteractor.swift */; };
+		25360FA929F20E330020D84B /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FA829F20E330020D84B /* MainRouter.swift */; };
+		25360FAB29F2136F0020D84B /* TabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FAA29F2136F0020D84B /* TabType.swift */; };
+		25360FCE29F2DC290020D84B /* CircularSpotifyText-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */; };
+		25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */; };
+		25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */; };
+		25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */; };
+		25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */; };
+		25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */; };
+		25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */; };
+		25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */; };
+		25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FD729F2DFDB0020D84B /* MapViewController.swift */; };
+		25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FD929F2DFE70020D84B /* MapPresenter.swift */; };
+		25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDB29F2DFF10020D84B /* MapInteractor.swift */; };
+		25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDD29F2DFF70020D84B /* MapRouter.swift */; };
+		25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FDF29F2E23A0020D84B /* UIViewExtension.swift */; };
+		25360FE229F33FD50020D84B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE129F33FD50020D84B /* LocationManager.swift */; };
+		25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE329F350C70020D84B /* BikeAnnotation.swift */; };
+		25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE629F352CC0020D84B /* BikesEndpointItem.swift */; };
+		25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */; };
+		25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */; };
+		25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEC29F3F8530020D84B /* EncodableExtension.swift */; };
+		25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FEE29F3F8820020D84B /* BikesResponseModel.swift */; };
+		25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25360FF029F3FF120020D84B /* MKMapViewExtension.swift */; };
+		25360FF429F40AE20020D84B /* refresh.json in Resources */ = {isa = PBXBuildFile; fileRef = 25360FF329F40AE20020D84B /* refresh.json */; };
+		258B207229F97DB500C57456 /* AccessPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258B207129F97DB500C57456 /* AccessPopupView.swift */; };
+		258B207429F97DBA00C57456 /* AccessPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258B207329F97DBA00C57456 /* AccessPopupView.xib */; };
+		25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31129F5D78D001B128F /* UIColorExtension.swift */; };
+		25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */; };
+		25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */; };
+		25D3C8C229F6F0CE0056FF00 /* MyBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C129F6F0CE0056FF00 /* MyBikeViewController.swift */; };
+		25D3C8C429F6F0D90056FF00 /* MyBikePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C329F6F0D80056FF00 /* MyBikePresenter.swift */; };
+		25D3C8C629F6F0E10056FF00 /* MyBikeBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C529F6F0E10056FF00 /* MyBikeBikeInteractor.swift */; };
+		25D3C8C829F6F0E90056FF00 /* MyBikeBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */; };
+		25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */; };
+		25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F329F84A9B006CB941 /* HUDManager.swift */; };
+		25E559F829F876C4006CB941 /* BasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F729F876C4006CB941 /* BasePresenter.swift */; };
+		25E559FA29F897F3006CB941 /* ArrayExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25E559F929F897F3006CB941 /* ArrayExtension.swift */; };
+		25FCB00529FA4AB5008BF4CD /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */; };
+		25FCB00629FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */; };
+		25FCB00729FA4AB5008BF4CD /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00129FA4AB5008BF4CD /* MapRouter.swift */; };
+		25FCB00829FA4AB5008BF4CD /* MapInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */; };
+		25FCB00929FA4AB5008BF4CD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00329FA4AB5008BF4CD /* MapViewController.swift */; };
+		25FCB00A29FA4AB5008BF4CD /* MapPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */; };
+		25FCB00F29FA5069008BF4CD /* MyBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */; };
+		25FCB01129FA5072008BF4CD /* MyBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */; };
+		25FCB01329FA507D008BF4CD /* MyBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */; };
+		25FCB01529FA508A008BF4CD /* MyBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */; };
+		25FCB01A29FA624C008BF4CD /* RentBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */; };
+		25FCB01C29FA6256008BF4CD /* RentBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */; };
+		25FCB01E29FA625F008BF4CD /* RentBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */; };
+		25FCB02029FA6275008BF4CD /* RentBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */; };
+		25FCB02329FA65CC008BF4CD /* RegisterBikeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */; };
+		25FCB02529FA65D8008BF4CD /* RegisterBikeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */; };
+		25FCB02729FA65E1008BF4CD /* RegisterBikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */; };
+		25FCB02929FA65EF008BF4CD /* RegisterBikePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */; };
+		25FCB02B29FA6978008BF4CD /* LocationManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */; };
+		25FCB02E29FA6D24008BF4CD /* MockNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */; };
+		25FCB03129FAE239008BF4CD /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03029FAE239008BF4CD /* MainRouter.swift */; };
+		25FCB03329FAE241008BF4CD /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03229FAE241008BF4CD /* MainInteractor.swift */; };
+		25FCB03529FAE251008BF4CD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03429FAE251008BF4CD /* MainViewController.swift */; };
+		25FCB03729FAE25A008BF4CD /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */; };
+		36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB06B36702166CF86FC6B55E /* Pods_eBike.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25360F4129F1F84D0020D84B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25360F2229F1F84C0020D84B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25360F2929F1F84C0020D84B;
+			remoteInfo = eBike;
+		};
+		25360F4B29F1F84D0020D84B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25360F2229F1F84C0020D84B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25360F2929F1F84C0020D84B;
+			remoteInfo = eBike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.release.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.release.xcconfig"; sourceTree = "<group>"; };
+		251A1D3429F4138E0049FD41 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
+		251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMessagesManager.swift; sourceTree = "<group>"; };
+		251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeViewController.swift; sourceTree = "<group>"; };
+		251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikePresenter.swift; sourceTree = "<group>"; };
+		251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeInteractor.swift; sourceTree = "<group>"; };
+		251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeRouter.swift; sourceTree = "<group>"; };
+		251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterBike.storyboard; sourceTree = "<group>"; };
+		251A1D7B29F56C910049FD41 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
+		251A1D7F29F575440049FD41 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		25205F8E29F5C02300611C42 /* RentBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeViewController.swift; sourceTree = "<group>"; };
+		25205F9029F5C02A00611C42 /* RentBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikePresenter.swift; sourceTree = "<group>"; };
+		25205F9229F5C03100611C42 /* RentBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeInteractor.swift; sourceTree = "<group>"; };
+		25205F9429F5C03B00611C42 /* RentBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeRouter.swift; sourceTree = "<group>"; };
+		25205F9629F5C15E00611C42 /* RentBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RentBike.storyboard; sourceTree = "<group>"; };
+		2527CE7329F590B200D5704E /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		2527CE7929F591E600D5704E /* NibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibView.swift; sourceTree = "<group>"; };
+		2527CE8129F5969300D5704E /* AppPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupView.swift; sourceTree = "<group>"; };
+		2527CE8329F5969900D5704E /* AppPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppPopupView.xib; sourceTree = "<group>"; };
+		2527CE8529F599C600D5704E /* AppPopupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPopupViewModel.swift; sourceTree = "<group>"; };
+		2527CE8729F5A6CA00D5704E /* DefaultAppPopupState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppPopupState.swift; sourceTree = "<group>"; };
+		2528B47029F71BF10076989F /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		2528B47329F722DD0076989F /* UserDefaultProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultProperty.swift; sourceTree = "<group>"; };
+		2528B47529F722FD0076989F /* UserDefaultsExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsExtension.swift; sourceTree = "<group>"; };
+		25360F2A29F1F84C0020D84B /* eBike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eBike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25360F2D29F1F84C0020D84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		25360F2F29F1F84C0020D84B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		25360F3629F1F84D0020D84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25360F3929F1F84D0020D84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25360F3B29F1F84D0020D84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25360F4029F1F84D0020D84B /* eBikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25360F4A29F1F84D0020D84B /* eBikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eBikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25360F4E29F1F84D0020D84B /* eBikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITests.swift; sourceTree = "<group>"; };
+		25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eBikeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25360F6029F1FA4C0020D84B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		25360F6329F1FA740020D84B /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		25360F6529F1FAA00020D84B /* ViewInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		25360F6729F1FAB90020D84B /* PresenterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		25360F6929F1FACB0020D84B /* InteractorInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		25360F6B29F1FADA0020D84B /* RouterInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterInterface.swift; sourceTree = "<group>"; };
+		25360F7229F1FCFF0020D84B /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		25360F7529F1FD1B0020D84B /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		25360F7729F1FDE80020D84B /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = SOURCE_ROOT; };
+		25360F7A29F1FEB30020D84B /* L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		25360F7C29F1FEC40020D84B /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		25360F7E29F1FECC0020D84B /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		25360F8029F1FED70020D84B /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		25360F8229F1FFB70020D84B /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		25360F8629F2002C0020D84B /* NetworkProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		25360F8829F200460020D84B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		25360F8A29F200560020D84B /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		25360F8C29F200640020D84B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		25360F8E29F200A70020D84B /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		25360F9029F200B80020D84B /* BaseUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUrl.swift; sourceTree = "<group>"; };
+		25360F9329F200E30020D84B /* HTTPMethodExrension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethodExrension.swift; sourceTree = "<group>"; };
+		25360F9629F201010020D84B /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
+		25360F9B29F201480020D84B /* MonitorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorManager.swift; sourceTree = "<group>"; };
+		25360F9D29F201810020D84B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		25360FA229F20DF00020D84B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25360FA429F20E260020D84B /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		25360FA629F20E2D0020D84B /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		25360FA829F20E330020D84B /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		25360FAA29F2136F0020D84B /* TabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabType.swift; sourceTree = "<group>"; };
+		25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Black.otf"; sourceTree = "<group>"; };
+		25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Light.otf"; sourceTree = "<group>"; };
+		25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Book.otf"; sourceTree = "<group>"; };
+		25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Bold.otf"; sourceTree = "<group>"; };
+		25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-Medium.otf"; sourceTree = "<group>"; };
+		25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-MediumItalic.otf"; sourceTree = "<group>"; };
+		25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BookItalic.otf"; sourceTree = "<group>"; };
+		25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularSpotifyText-BlackItalic.otf"; sourceTree = "<group>"; };
+		25360FD729F2DFDB0020D84B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		25360FD929F2DFE70020D84B /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		25360FDB29F2DFF10020D84B /* MapInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		25360FDD29F2DFF70020D84B /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		25360FDF29F2E23A0020D84B /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		25360FE129F33FD50020D84B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		25360FE329F350C70020D84B /* BikeAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeAnnotation.swift; sourceTree = "<group>"; };
+		25360FE629F352CC0020D84B /* BikesEndpointItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesEndpointItem.swift; sourceTree = "<group>"; };
+		25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewBikeRequest.swift; sourceTree = "<group>"; };
+		25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateBikeRequest.swift; sourceTree = "<group>"; };
+		25360FEC29F3F8530020D84B /* EncodableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableExtension.swift; sourceTree = "<group>"; };
+		25360FEE29F3F8820020D84B /* BikesResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikesResponseModel.swift; sourceTree = "<group>"; };
+		25360FF029F3FF120020D84B /* MKMapViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
+		25360FF329F40AE20020D84B /* refresh.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = refresh.json; sourceTree = "<group>"; };
+		258B207129F97DB500C57456 /* AccessPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessPopupView.swift; sourceTree = "<group>"; };
+		258B207329F97DBA00C57456 /* AccessPopupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccessPopupView.xib; sourceTree = "<group>"; };
+		25B2A31129F5D78D001B128F /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
+		25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationExtension.swift; sourceTree = "<group>"; };
+		25D3C8C129F6F0CE0056FF00 /* MyBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeViewController.swift; sourceTree = "<group>"; };
+		25D3C8C329F6F0D80056FF00 /* MyBikePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikePresenter.swift; sourceTree = "<group>"; };
+		25D3C8C529F6F0E10056FF00 /* MyBikeBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeBikeInteractor.swift; sourceTree = "<group>"; };
+		25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeBikeRouter.swift; sourceTree = "<group>"; };
+		25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBike.storyboard; sourceTree = "<group>"; };
+		25E559F329F84A9B006CB941 /* HUDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDManager.swift; sourceTree = "<group>"; };
+		25E559F729F876C4006CB941 /* BasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenter.swift; sourceTree = "<group>"; };
+		25E559F929F897F3006CB941 /* ArrayExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayExtension.swift; sourceTree = "<group>"; };
+		25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
+		25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLocationManagerDelegateConformed.swift; sourceTree = "<group>"; };
+		25FCB00129FA4AB5008BF4CD /* MapRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapInteractor.swift; sourceTree = "<group>"; };
+		25FCB00329FA4AB5008BF4CD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPresenterTests.swift; sourceTree = "<group>"; };
+		25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeRouter.swift; sourceTree = "<group>"; };
+		25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeInteractor.swift; sourceTree = "<group>"; };
+		25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikeViewController.swift; sourceTree = "<group>"; };
+		25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBikePresenterTests.swift; sourceTree = "<group>"; };
+		25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManagerTests.swift; sourceTree = "<group>"; };
+		25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNotificationCenter.swift; sourceTree = "<group>"; };
+		25FCB03029FAE239008BF4CD /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		25FCB03229FAE241008BF4CD /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		25FCB03429FAE251008BF4CD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eBike.debug.xcconfig"; path = "Target Support Files/Pods-eBike/Pods-eBike.debug.xcconfig"; sourceTree = "<group>"; };
+		BB06B36702166CF86FC6B55E /* Pods_eBike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eBike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25360F2729F1F84C0020D84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36036C17487BDEFA5968C436 /* Pods_eBike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F3D29F1F84D0020D84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F4729F1F84D0020D84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		251A1D6F29F56A510049FD41 /* RegisterBike */ = {
+			isa = PBXGroup;
+			children = (
+				251A1D7029F56A830049FD41 /* RegisterBikeViewController.swift */,
+				251A1D7229F56A8B0049FD41 /* RegisterBikePresenter.swift */,
+				251A1D7429F56A990049FD41 /* RegisterBikeInteractor.swift */,
+				251A1D7629F56AA50049FD41 /* RegisterBikeRouter.swift */,
+			);
+			path = RegisterBike;
+			sourceTree = "<group>";
+		};
+		251A1D7829F56B7E0049FD41 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				251A1D7B29F56C910049FD41 /* Storyboarded.swift */,
+				251A1D7D29F56CA30049FD41 /* StoryboardNames.swift */,
+				2528B47029F71BF10076989F /* Map.storyboard */,
+				251A1D7929F56B8D0049FD41 /* RegisterBike.storyboard */,
+				25205F9629F5C15E00611C42 /* RentBike.storyboard */,
+				25D3C8CB29F6F1030056FF00 /* MyBike.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		25205F8D29F5C00D00611C42 /* RentBike */ = {
+			isa = PBXGroup;
+			children = (
+				25205F8E29F5C02300611C42 /* RentBikeViewController.swift */,
+				25205F9029F5C02A00611C42 /* RentBikePresenter.swift */,
+				25205F9229F5C03100611C42 /* RentBikeInteractor.swift */,
+				25205F9429F5C03B00611C42 /* RentBikeRouter.swift */,
+			);
+			path = RentBike;
+			sourceTree = "<group>";
+		};
+		2527CE7529F591A100D5704E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				258B207029F97D9A00C57456 /* AccessPopup */,
+				2527CE7629F591A900D5704E /* AppPopup */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2527CE7629F591A900D5704E /* AppPopup */ = {
+			isa = PBXGroup;
+			children = (
+				2527CE8129F5969300D5704E /* AppPopupView.swift */,
+				2527CE8329F5969900D5704E /* AppPopupView.xib */,
+				2527CE8529F599C600D5704E /* AppPopupViewModel.swift */,
+				2527CE8729F5A6CA00D5704E /* DefaultAppPopupState.swift */,
+			);
+			path = AppPopup;
+			sourceTree = "<group>";
+		};
+		2528B47229F722B90076989F /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				25B2A31329F5D9E2001B128F /* UserDefaultsConfig.swift */,
+				2528B47329F722DD0076989F /* UserDefaultProperty.swift */,
+				2528B47529F722FD0076989F /* UserDefaultsExtension.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		25360F2129F1F84C0020D84B = {
+			isa = PBXGroup;
+			children = (
+				25360F7729F1FDE80020D84B /* swiftgen.yml */,
+				25360F2C29F1F84C0020D84B /* eBike */,
+				25360F4329F1F84D0020D84B /* eBikeTests */,
+				25360F4D29F1F84D0020D84B /* eBikeUITests */,
+				25360F2B29F1F84C0020D84B /* Products */,
+				830ADD8DB21D50D375B5E3AA /* Pods */,
+				CD9E90459F5001BE4C018646 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		25360F2B29F1F84C0020D84B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25360F2A29F1F84C0020D84B /* eBike.app */,
+				25360F4029F1F84D0020D84B /* eBikeTests.xctest */,
+				25360F4A29F1F84D0020D84B /* eBikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25360F2C29F1F84C0020D84B /* eBike */ = {
+			isa = PBXGroup;
+			children = (
+				25360F5D29F1F9A50020D84B /* App */,
+				25360F5E29F1FA330020D84B /* Module */,
+				2527CE7529F591A100D5704E /* Components */,
+				25360F8429F200130020D84B /* Network */,
+				25360FE529F352C10020D84B /* Rest */,
+				25360F9229F200CC0020D84B /* Extensions */,
+				25360F9829F201220020D84B /* Utils */,
+				25360F6D29F1FCC60020D84B /* Resources */,
+				251A1D7829F56B7E0049FD41 /* Storyboards */,
+				25360F3B29F1F84D0020D84B /* Info.plist */,
+			);
+			path = eBike;
+			sourceTree = "<group>";
+		};
+		25360F4329F1F84D0020D84B /* eBikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB02C29FA6D18008BF4CD /* NotificationCenter */,
+				25FCAFFD29FA4AB5008BF4CD /* LocationManager */,
+				25FCB02F29FAE227008BF4CD /* Main */,
+				25FCB00D29FA5053008BF4CD /* MyBike */,
+				25FCB00029FA4AB5008BF4CD /* Map */,
+				25FCB01829FA6161008BF4CD /* RentBike */,
+				25FCB02129FA65B0008BF4CD /* RegisterBike */,
+			);
+			path = eBikeTests;
+			sourceTree = "<group>";
+		};
+		25360F4D29F1F84D0020D84B /* eBikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25360F4E29F1F84D0020D84B /* eBikeUITests.swift */,
+				25360F5029F1F84D0020D84B /* eBikeUITestsLaunchTests.swift */,
+			);
+			path = eBikeUITests;
+			sourceTree = "<group>";
+		};
+		25360F5D29F1F9A50020D84B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				25360F2D29F1F84C0020D84B /* AppDelegate.swift */,
+				25360F2F29F1F84C0020D84B /* SceneDelegate.swift */,
+				25360F8229F1FFB70020D84B /* Config.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		25360F5E29F1FA330020D84B /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				25360F5F29F1FA3D0020D84B /* Base */,
+				25360FA129F20DCF0020D84B /* Main */,
+				25360FD629F2DFA80020D84B /* Map */,
+				251A1D6F29F56A510049FD41 /* RegisterBike */,
+				25205F8D29F5C00D00611C42 /* RentBike */,
+				25D3C8C029F6F0B70056FF00 /* MyBike */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		25360F5F29F1FA3D0020D84B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				25360F6029F1FA4C0020D84B /* BaseViewController.swift */,
+				25E559F729F876C4006CB941 /* BasePresenter.swift */,
+				25360F6529F1FAA00020D84B /* ViewInterface.swift */,
+				25360F6729F1FAB90020D84B /* PresenterInterface.swift */,
+				25360F6929F1FACB0020D84B /* InteractorInterface.swift */,
+				25360F6B29F1FADA0020D84B /* RouterInterface.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		25360F6229F1FA5F0020D84B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25360F9329F200E30020D84B /* HTTPMethodExrension.swift */,
+			);
+			name = Extensions;
+			path = ../Extensions;
+			sourceTree = "<group>";
+		};
+		25360F6D29F1FCC60020D84B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25360FF229F40ACA0020D84B /* Lottie */,
+				25360F6E29F1FCD70020D84B /* Strings */,
+				25360F6F29F1FCDD0020D84B /* Fonts */,
+				25360F7029F1FCE20020D84B /* Colors */,
+				25360F7129F1FCE70020D84B /* Images */,
+				25360F3629F1F84D0020D84B /* Assets.xcassets */,
+				25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25360F6E29F1FCD70020D84B /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				25360F7A29F1FEB30020D84B /* L10n.swift */,
+				25360F7229F1FCFF0020D84B /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		25360F6F29F1FCDD0020D84B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				25360FC629F2DC290020D84B /* CircularSpotifyText-Black.otf */,
+				25360FCD29F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf */,
+				25360FC929F2DC290020D84B /* CircularSpotifyText-Bold.otf */,
+				25360FC829F2DC290020D84B /* CircularSpotifyText-Book.otf */,
+				25360FCC29F2DC290020D84B /* CircularSpotifyText-BookItalic.otf */,
+				25360FC729F2DC290020D84B /* CircularSpotifyText-Light.otf */,
+				25360FCA29F2DC290020D84B /* CircularSpotifyText-Medium.otf */,
+				25360FCB29F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf */,
+				25360F7E29F1FECC0020D84B /* Fonts.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25360F7029F1FCE20020D84B /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				25360F8029F1FED70020D84B /* Colors.swift */,
+				25360F7529F1FD1B0020D84B /* Colors.xcassets */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		25360F7129F1FCE70020D84B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				25360F7C29F1FEC40020D84B /* Images.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		25360F8429F200130020D84B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				25360F8529F200200020D84B /* Base */,
+				25360F6229F1FA5F0020D84B /* Extensions */,
+				25360F9529F200EC0020D84B /* Typealias */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		25360F8529F200200020D84B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				25360F8629F2002C0020D84B /* NetworkProtocol.swift */,
+				25360F8829F200460020D84B /* NetworkManager.swift */,
+				25360F8A29F200560020D84B /* Responses.swift */,
+				25360F8C29F200640020D84B /* Endpoint.swift */,
+				25360F8E29F200A70020D84B /* Errors.swift */,
+				25360F9029F200B80020D84B /* BaseUrl.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		25360F9229F200CC0020D84B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				251A1D7F29F575440049FD41 /* UIFontExtension.swift */,
+				25360F6329F1FA740020D84B /* NSObjectExtension.swift */,
+				25360FDF29F2E23A0020D84B /* UIViewExtension.swift */,
+				25360FEC29F3F8530020D84B /* EncodableExtension.swift */,
+				25360FF029F3FF120020D84B /* MKMapViewExtension.swift */,
+				2527CE7329F590B200D5704E /* StringExtension.swift */,
+				25B2A31129F5D78D001B128F /* UIColorExtension.swift */,
+				25B2A31529F5E2A6001B128F /* NSNotificationExtension.swift */,
+				25E559F929F897F3006CB941 /* ArrayExtension.swift */,
+			);
+			name = Extensions;
+			path = Network/Extensions;
+			sourceTree = "<group>";
+		};
+		25360F9529F200EC0020D84B /* Typealias */ = {
+			isa = PBXGroup;
+			children = (
+				25360F9629F201010020D84B /* Typealias.swift */,
+			);
+			path = Typealias;
+			sourceTree = "<group>";
+		};
+		25360F9829F201220020D84B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2528B47229F722B90076989F /* UserDefaults */,
+				25360F9B29F201480020D84B /* MonitorManager.swift */,
+				25360F9D29F201810020D84B /* Config.swift */,
+				25360FE129F33FD50020D84B /* LocationManager.swift */,
+				251A1D3829F4264F0049FD41 /* SwiftMessagesManager.swift */,
+				2527CE7929F591E600D5704E /* NibView.swift */,
+				25E559F329F84A9B006CB941 /* HUDManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		25360FA129F20DCF0020D84B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25360FA229F20DF00020D84B /* MainViewController.swift */,
+				25360FA429F20E260020D84B /* MainPresenter.swift */,
+				25360FA629F20E2D0020D84B /* MainInteractor.swift */,
+				25360FA829F20E330020D84B /* MainRouter.swift */,
+				25360FAA29F2136F0020D84B /* TabType.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25360FD629F2DFA80020D84B /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				25360FD729F2DFDB0020D84B /* MapViewController.swift */,
+				25360FD929F2DFE70020D84B /* MapPresenter.swift */,
+				25360FDB29F2DFF10020D84B /* MapInteractor.swift */,
+				25360FDD29F2DFF70020D84B /* MapRouter.swift */,
+				25360FE329F350C70020D84B /* BikeAnnotation.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		25360FE529F352C10020D84B /* Rest */ = {
+			isa = PBXGroup;
+			children = (
+				25360FE629F352CC0020D84B /* BikesEndpointItem.swift */,
+				25360FE829F3F7F70020D84B /* CreateNewBikeRequest.swift */,
+				25360FEA29F3F8190020D84B /* UpdateBikeRequest.swift */,
+				25360FEE29F3F8820020D84B /* BikesResponseModel.swift */,
+			);
+			path = Rest;
+			sourceTree = "<group>";
+		};
+		25360FF229F40ACA0020D84B /* Lottie */ = {
+			isa = PBXGroup;
+			children = (
+				25360FF329F40AE20020D84B /* refresh.json */,
+				251A1D3429F4138E0049FD41 /* Animations.swift */,
+			);
+			path = Lottie;
+			sourceTree = "<group>";
+		};
+		258B207029F97D9A00C57456 /* AccessPopup */ = {
+			isa = PBXGroup;
+			children = (
+				258B207129F97DB500C57456 /* AccessPopupView.swift */,
+				258B207329F97DBA00C57456 /* AccessPopupView.xib */,
+			);
+			path = AccessPopup;
+			sourceTree = "<group>";
+		};
+		25D3C8C029F6F0B70056FF00 /* MyBike */ = {
+			isa = PBXGroup;
+			children = (
+				25D3C8C129F6F0CE0056FF00 /* MyBikeViewController.swift */,
+				25D3C8C329F6F0D80056FF00 /* MyBikePresenter.swift */,
+				25D3C8C529F6F0E10056FF00 /* MyBikeBikeInteractor.swift */,
+				25D3C8C729F6F0E90056FF00 /* MyBikeBikeRouter.swift */,
+			);
+			path = MyBike;
+			sourceTree = "<group>";
+		};
+		25FCAFFD29FA4AB5008BF4CD /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				25FCAFFE29FA4AB5008BF4CD /* MockLocationManager.swift */,
+				25FCAFFF29FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift */,
+				25FCB02A29FA6978008BF4CD /* LocationManagerTests.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		25FCB00029FA4AB5008BF4CD /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB00129FA4AB5008BF4CD /* MapRouter.swift */,
+				25FCB00229FA4AB5008BF4CD /* MapInteractor.swift */,
+				25FCB00329FA4AB5008BF4CD /* MapViewController.swift */,
+				25FCB00429FA4AB5008BF4CD /* MapPresenterTests.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		25FCB00D29FA5053008BF4CD /* MyBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB00E29FA5069008BF4CD /* MyBikeRouter.swift */,
+				25FCB01029FA5072008BF4CD /* MyBikeInteractor.swift */,
+				25FCB01229FA507D008BF4CD /* MyBikeViewController.swift */,
+				25FCB01429FA508A008BF4CD /* MyBikePresenterTests.swift */,
+			);
+			path = MyBike;
+			sourceTree = "<group>";
+		};
+		25FCB01829FA6161008BF4CD /* RentBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB01929FA624C008BF4CD /* RentBikeRouter.swift */,
+				25FCB01B29FA6256008BF4CD /* RentBikeInteractor.swift */,
+				25FCB01D29FA625F008BF4CD /* RentBikeViewController.swift */,
+				25FCB01F29FA6275008BF4CD /* RentBikePresenterTests.swift */,
+			);
+			path = RentBike;
+			sourceTree = "<group>";
+		};
+		25FCB02129FA65B0008BF4CD /* RegisterBike */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB02229FA65CC008BF4CD /* RegisterBikeRouter.swift */,
+				25FCB02429FA65D8008BF4CD /* RegisterBikeInteractor.swift */,
+				25FCB02629FA65E1008BF4CD /* RegisterBikeViewController.swift */,
+				25FCB02829FA65EF008BF4CD /* RegisterBikePresenterTests.swift */,
+			);
+			path = RegisterBike;
+			sourceTree = "<group>";
+		};
+		25FCB02C29FA6D18008BF4CD /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB02D29FA6D24008BF4CD /* MockNotificationCenter.swift */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		25FCB02F29FAE227008BF4CD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25FCB03029FAE239008BF4CD /* MainRouter.swift */,
+				25FCB03229FAE241008BF4CD /* MainInteractor.swift */,
+				25FCB03429FAE251008BF4CD /* MainViewController.swift */,
+				25FCB03629FAE25A008BF4CD /* MainPresenterTests.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		830ADD8DB21D50D375B5E3AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */,
+				1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD9E90459F5001BE4C018646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB06B36702166CF86FC6B55E /* Pods_eBike.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25360F2929F1F84C0020D84B /* eBike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25360F5429F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBike" */;
+			buildPhases = (
+				B05FF317661D0EA289E72964 /* [CP] Check Pods Manifest.lock */,
+				25360F7929F1FE070020D84B /* SwiftGen */,
+				25360F2629F1F84C0020D84B /* Sources */,
+				25360F2729F1F84C0020D84B /* Frameworks */,
+				25360F2829F1F84C0020D84B /* Resources */,
+				1BE626FCC492FB6741353967 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = eBike;
+			productName = eBike;
+			productReference = 25360F2A29F1F84C0020D84B /* eBike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25360F3F29F1F84D0020D84B /* eBikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25360F5729F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeTests" */;
+			buildPhases = (
+				25360F3C29F1F84D0020D84B /* Sources */,
+				25360F3D29F1F84D0020D84B /* Frameworks */,
+				25360F3E29F1F84D0020D84B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25360F4229F1F84D0020D84B /* PBXTargetDependency */,
+			);
+			name = eBikeTests;
+			productName = eBikeTests;
+			productReference = 25360F4029F1F84D0020D84B /* eBikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25360F4929F1F84D0020D84B /* eBikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25360F5A29F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeUITests" */;
+			buildPhases = (
+				25360F4629F1F84D0020D84B /* Sources */,
+				25360F4729F1F84D0020D84B /* Frameworks */,
+				25360F4829F1F84D0020D84B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25360F4C29F1F84D0020D84B /* PBXTargetDependency */,
+			);
+			name = eBikeUITests;
+			productName = eBikeUITests;
+			productReference = 25360F4A29F1F84D0020D84B /* eBikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25360F2229F1F84C0020D84B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					25360F2929F1F84C0020D84B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					25360F3F29F1F84D0020D84B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 25360F2929F1F84C0020D84B;
+					};
+					25360F4929F1F84D0020D84B = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 25360F2929F1F84C0020D84B;
+					};
+				};
+			};
+			buildConfigurationList = 25360F2529F1F84C0020D84B /* Build configuration list for PBXProject "eBike" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25360F2129F1F84C0020D84B;
+			productRefGroup = 25360F2B29F1F84C0020D84B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25360F2929F1F84C0020D84B /* eBike */,
+				25360F3F29F1F84D0020D84B /* eBikeTests */,
+				25360F4929F1F84D0020D84B /* eBikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25360F2829F1F84C0020D84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25360F3A29F1F84D0020D84B /* LaunchScreen.storyboard in Resources */,
+				25360FD429F2DC290020D84B /* CircularSpotifyText-BookItalic.otf in Resources */,
+				25360FCF29F2DC290020D84B /* CircularSpotifyText-Light.otf in Resources */,
+				25360F7829F1FDE80020D84B /* swiftgen.yml in Resources */,
+				25205F9729F5C15E00611C42 /* RentBike.storyboard in Resources */,
+				25360FF429F40AE20020D84B /* refresh.json in Resources */,
+				25D3C8CC29F6F1030056FF00 /* MyBike.storyboard in Resources */,
+				2528B47129F71BF10076989F /* Map.storyboard in Resources */,
+				25360FD129F2DC290020D84B /* CircularSpotifyText-Bold.otf in Resources */,
+				258B207429F97DBA00C57456 /* AccessPopupView.xib in Resources */,
+				25360F7629F1FD1B0020D84B /* Colors.xcassets in Resources */,
+				25360FD529F2DC290020D84B /* CircularSpotifyText-BlackItalic.otf in Resources */,
+				25360FD029F2DC290020D84B /* CircularSpotifyText-Book.otf in Resources */,
+				25360FCE29F2DC290020D84B /* CircularSpotifyText-Black.otf in Resources */,
+				25360FD329F2DC290020D84B /* CircularSpotifyText-MediumItalic.otf in Resources */,
+				2527CE8429F5969900D5704E /* AppPopupView.xib in Resources */,
+				25360FD229F2DC290020D84B /* CircularSpotifyText-Medium.otf in Resources */,
+				25360F7329F1FCFF0020D84B /* Localizable.strings in Resources */,
+				25360F8329F1FFB70020D84B /* Config.plist in Resources */,
+				251A1D7A29F56B8D0049FD41 /* RegisterBike.storyboard in Resources */,
+				25360F3729F1F84D0020D84B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F3E29F1F84D0020D84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F4829F1F84D0020D84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE626FCC492FB6741353967 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eBike/Pods-eBike-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eBike/Pods-eBike-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eBike/Pods-eBike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25360F7929F1FE070020D84B /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ -f \"${PODS_ROOT}/SwiftGen/bin/swiftgen\" ]]; then\n  \"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\nelse\n  echo \"warning: SwiftGen is not installed. Run 'pod install --repo-update' to install it.\"\nfi\n";
+		};
+		B05FF317661D0EA289E72964 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eBike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25360F2629F1F84C0020D84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25360FEF29F3F8820020D84B /* BikesResponseModel.swift in Sources */,
+				25E559F829F876C4006CB941 /* BasePresenter.swift in Sources */,
+				25360F6A29F1FACB0020D84B /* InteractorInterface.swift in Sources */,
+				25360FE429F350C70020D84B /* BikeAnnotation.swift in Sources */,
+				25B2A31229F5D78D001B128F /* UIColorExtension.swift in Sources */,
+				25360FA929F20E330020D84B /* MainRouter.swift in Sources */,
+				25360FA329F20DF00020D84B /* MainViewController.swift in Sources */,
+				25360F6429F1FA740020D84B /* NSObjectExtension.swift in Sources */,
+				25205F9129F5C02A00611C42 /* RentBikePresenter.swift in Sources */,
+				258B207229F97DB500C57456 /* AccessPopupView.swift in Sources */,
+				25360FEB29F3F8190020D84B /* UpdateBikeRequest.swift in Sources */,
+				25360FA529F20E260020D84B /* MainPresenter.swift in Sources */,
+				25360F7D29F1FEC40020D84B /* Images.swift in Sources */,
+				25360FF129F3FF120020D84B /* MKMapViewExtension.swift in Sources */,
+				251A1D7329F56A8B0049FD41 /* RegisterBikePresenter.swift in Sources */,
+				25360FE729F352CC0020D84B /* BikesEndpointItem.swift in Sources */,
+				25360F9429F200E30020D84B /* HTTPMethodExrension.swift in Sources */,
+				251A1D7529F56A990049FD41 /* RegisterBikeInteractor.swift in Sources */,
+				25360FDC29F2DFF10020D84B /* MapInteractor.swift in Sources */,
+				25205F9329F5C03100611C42 /* RentBikeInteractor.swift in Sources */,
+				25360FE029F2E23A0020D84B /* UIViewExtension.swift in Sources */,
+				25360FE929F3F7F70020D84B /* CreateNewBikeRequest.swift in Sources */,
+				25360FED29F3F8530020D84B /* EncodableExtension.swift in Sources */,
+				25D3C8C629F6F0E10056FF00 /* MyBikeBikeInteractor.swift in Sources */,
+				25360FDE29F2DFF70020D84B /* MapRouter.swift in Sources */,
+				25205F8F29F5C02300611C42 /* RentBikeViewController.swift in Sources */,
+				251A1D8029F575440049FD41 /* UIFontExtension.swift in Sources */,
+				25360F9E29F201810020D84B /* Config.swift in Sources */,
+				25E559FA29F897F3006CB941 /* ArrayExtension.swift in Sources */,
+				25360F7F29F1FECC0020D84B /* Fonts.swift in Sources */,
+				25360F9C29F201480020D84B /* MonitorManager.swift in Sources */,
+				25360F9129F200B80020D84B /* BaseUrl.swift in Sources */,
+				2527CE8829F5A6CA00D5704E /* DefaultAppPopupState.swift in Sources */,
+				2527CE7429F590B200D5704E /* StringExtension.swift in Sources */,
+				25360F6129F1FA4C0020D84B /* BaseViewController.swift in Sources */,
+				25360F7B29F1FEB30020D84B /* L10n.swift in Sources */,
+				25360FD829F2DFDB0020D84B /* MapViewController.swift in Sources */,
+				251A1D3529F4138E0049FD41 /* Animations.swift in Sources */,
+				2527CE8229F5969300D5704E /* AppPopupView.swift in Sources */,
+				25360FE229F33FD50020D84B /* LocationManager.swift in Sources */,
+				2528B47629F722FD0076989F /* UserDefaultsExtension.swift in Sources */,
+				2528B47429F722DD0076989F /* UserDefaultProperty.swift in Sources */,
+				25E559F429F84A9B006CB941 /* HUDManager.swift in Sources */,
+				25360F2E29F1F84C0020D84B /* AppDelegate.swift in Sources */,
+				25360F8129F1FED70020D84B /* Colors.swift in Sources */,
+				25360F6629F1FAA00020D84B /* ViewInterface.swift in Sources */,
+				25360FAB29F2136F0020D84B /* TabType.swift in Sources */,
+				25B2A31629F5E2A6001B128F /* NSNotificationExtension.swift in Sources */,
+				25B2A31429F5D9E2001B128F /* UserDefaultsConfig.swift in Sources */,
+				25D3C8C429F6F0D90056FF00 /* MyBikePresenter.swift in Sources */,
+				25360FDA29F2DFE70020D84B /* MapPresenter.swift in Sources */,
+				251A1D7E29F56CA30049FD41 /* StoryboardNames.swift in Sources */,
+				2527CE8629F599C600D5704E /* AppPopupViewModel.swift in Sources */,
+				25360F8729F2002C0020D84B /* NetworkProtocol.swift in Sources */,
+				251A1D7729F56AA50049FD41 /* RegisterBikeRouter.swift in Sources */,
+				25360FA729F20E2D0020D84B /* MainInteractor.swift in Sources */,
+				25D3C8C829F6F0E90056FF00 /* MyBikeBikeRouter.swift in Sources */,
+				25360F9729F201010020D84B /* Typealias.swift in Sources */,
+				25D3C8C229F6F0CE0056FF00 /* MyBikeViewController.swift in Sources */,
+				25360F3029F1F84C0020D84B /* SceneDelegate.swift in Sources */,
+				25360F8B29F200560020D84B /* Responses.swift in Sources */,
+				25360F8929F200460020D84B /* NetworkManager.swift in Sources */,
+				25360F6C29F1FADA0020D84B /* RouterInterface.swift in Sources */,
+				25360F8D29F200640020D84B /* Endpoint.swift in Sources */,
+				251A1D7129F56A830049FD41 /* RegisterBikeViewController.swift in Sources */,
+				251A1D3929F4264F0049FD41 /* SwiftMessagesManager.swift in Sources */,
+				25360F8F29F200A70020D84B /* Errors.swift in Sources */,
+				25205F9529F5C03B00611C42 /* RentBikeRouter.swift in Sources */,
+				2527CE7A29F591E600D5704E /* NibView.swift in Sources */,
+				25360F6829F1FAB90020D84B /* PresenterInterface.swift in Sources */,
+				251A1D7C29F56C910049FD41 /* Storyboarded.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F3C29F1F84D0020D84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25FCB02329FA65CC008BF4CD /* RegisterBikeRouter.swift in Sources */,
+				25FCB03529FAE251008BF4CD /* MainViewController.swift in Sources */,
+				25FCB01129FA5072008BF4CD /* MyBikeInteractor.swift in Sources */,
+				25FCB03729FAE25A008BF4CD /* MainPresenterTests.swift in Sources */,
+				25FCB02529FA65D8008BF4CD /* RegisterBikeInteractor.swift in Sources */,
+				25FCB00529FA4AB5008BF4CD /* MockLocationManager.swift in Sources */,
+				25FCB02929FA65EF008BF4CD /* RegisterBikePresenterTests.swift in Sources */,
+				25FCB00929FA4AB5008BF4CD /* MapViewController.swift in Sources */,
+				25FCB00A29FA4AB5008BF4CD /* MapPresenterTests.swift in Sources */,
+				25FCB02029FA6275008BF4CD /* RentBikePresenterTests.swift in Sources */,
+				25FCB03129FAE239008BF4CD /* MainRouter.swift in Sources */,
+				25FCB00729FA4AB5008BF4CD /* MapRouter.swift in Sources */,
+				25FCB01529FA508A008BF4CD /* MyBikePresenterTests.swift in Sources */,
+				25FCB01C29FA6256008BF4CD /* RentBikeInteractor.swift in Sources */,
+				25FCB00829FA4AB5008BF4CD /* MapInteractor.swift in Sources */,
+				25FCB00629FA4AB5008BF4CD /* MockLocationManagerDelegateConformed.swift in Sources */,
+				25FCB02E29FA6D24008BF4CD /* MockNotificationCenter.swift in Sources */,
+				25FCB02729FA65E1008BF4CD /* RegisterBikeViewController.swift in Sources */,
+				25FCB02B29FA6978008BF4CD /* LocationManagerTests.swift in Sources */,
+				25FCB03329FAE241008BF4CD /* MainInteractor.swift in Sources */,
+				25FCB00F29FA5069008BF4CD /* MyBikeRouter.swift in Sources */,
+				25FCB01A29FA624C008BF4CD /* RentBikeRouter.swift in Sources */,
+				25FCB01329FA507D008BF4CD /* MyBikeViewController.swift in Sources */,
+				25FCB01E29FA625F008BF4CD /* RentBikeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25360F4629F1F84D0020D84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25360F4F29F1F84D0020D84B /* eBikeUITests.swift in Sources */,
+				25360F5129F1F84D0020D84B /* eBikeUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25360F4229F1F84D0020D84B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25360F2929F1F84C0020D84B /* eBike */;
+			targetProxy = 25360F4129F1F84D0020D84B /* PBXContainerItemProxy */;
+		};
+		25360F4C29F1F84D0020D84B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25360F2929F1F84C0020D84B /* eBike */;
+			targetProxy = 25360F4B29F1F84D0020D84B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25360F3829F1F84D0020D84B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25360F3929F1F84D0020D84B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25360F5229F1F84D0020D84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		25360F5329F1F84D0020D84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25360F5529F1F84D0020D84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDFD4496B58827BB26266A5 /* Pods-eBike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eBike/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will use your location to find bikes near you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		25360F5629F1F84D0020D84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCD1D48AF57F32B3B11DB93 /* Pods-eBike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = eBike/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We will use your location to find bikes near you";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		25360F5829F1F84D0020D84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eBike.app/eBike";
+			};
+			name = Debug;
+		};
+		25360F5929F1F84D0020D84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eBike.app/eBike";
+			};
+			name = Release;
+		};
+		25360F5B29F1F84D0020D84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eBike;
+			};
+			name = Debug;
+		};
+		25360F5C29F1F84D0020D84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WZ2D3R22K6;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cankurtur.eBikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = eBike;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25360F2529F1F84C0020D84B /* Build configuration list for PBXProject "eBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25360F5229F1F84D0020D84B /* Debug */,
+				25360F5329F1F84D0020D84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25360F5429F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25360F5529F1F84D0020D84B /* Debug */,
+				25360F5629F1F84D0020D84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25360F5729F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25360F5829F1F84D0020D84B /* Debug */,
+				25360F5929F1F84D0020D84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25360F5A29F1F84D0020D84B /* Build configuration list for PBXNativeTarget "eBikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25360F5B29F1F84D0020D84B /* Debug */,
+				25360F5C29F1F84D0020D84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 25360F2229F1F84C0020D84B /* Project object */;
+}
