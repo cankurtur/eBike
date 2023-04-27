@@ -14,8 +14,8 @@ class BasePresenter {
     private let router: RouterInterface
     private let interactor: InteractorInterface
     private weak var view: ViewInterface?
-    let locationManager: LocationManager
-    let notificationCenter: NotificationCenterProtocol?
+    var locationManager: LocationManagerInterface
+    var notificationCenter: NotificationCenterProtocol?
     
     var hasLocationPermission: Bool {
         guard let status = locationManager.getAuthorizationStatus() else {
@@ -28,7 +28,7 @@ class BasePresenter {
     init(router: RouterInterface,
          interactor: InteractorInterface,
          view: ViewInterface?,
-         locationManager: LocationManager = LocationManager.shared,
+         locationManager: LocationManagerInterface = LocationManager.shared,
          notificationCenter: NotificationCenterProtocol = NotificationCenter.default) {
         self.router = router
         self.interactor = interactor

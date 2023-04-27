@@ -191,7 +191,7 @@ private extension MyBikeViewController {
         returnBikeButton.titleLabel?.font = Constant.ReturnBikeButton.titleFont
         returnBikeButton.backgroundColor = Constant.ReturnBikeButton.backgroundColor
         returnBikeButton.layer.cornerRadius = Constant.ReturnBikeButton.cornerRadius
-        returnBikeButton.addTarget(self, action: #selector(RetunBikeButtonTapped), for: .touchUpInside)
+        returnBikeButton.addTarget(self, action: #selector(retunBikeButtonTapped), for: .touchUpInside)
     }
 }
 
@@ -203,7 +203,7 @@ private extension MyBikeViewController {
         presenter.addNewBikeButtonTapped()
     }
     
-    func RetunBikeButtonTapped() {
-        presenter.RetunBikeButtonTapped()
+    func retunBikeButtonTapped() {
+        presenter.retunBikeButtonTapped()
     }
 }

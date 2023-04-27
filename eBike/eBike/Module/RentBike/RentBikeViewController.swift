@@ -109,6 +109,7 @@ extension RentBikeViewController: RentBikeViewInterface {
 }
 
 // MARK: - Prepares
+
 private extension RentBikeViewController {
    func prepareViews() {
         pinView.isHidden = true

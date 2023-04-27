@@ -11,7 +11,7 @@ import Foundation
 
 protocol MyBikePresenterInterface: PresenterInterface {
     func addNewBikeButtonTapped()
-    func RetunBikeButtonTapped()
+    func retunBikeButtonTapped()
 }
 
 // MARK: - MyBikePresenter
@@ -50,7 +50,7 @@ extension MyBikePresenter: MyBikePresenterInterface {
         router.navigateToMap()
     }
     
-    func RetunBikeButtonTapped() {
+    func retunBikeButtonTapped() {
         guard hasLocationPermission else {
             handleLocationPermission()
             return
